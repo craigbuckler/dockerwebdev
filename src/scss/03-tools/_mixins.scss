@@ -1,0 +1,17 @@
+/*
+box reset
+*/
+@mixin reset {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+responsive breakpoint mixin:
+@include respond('medium') { ... }
+*/
+@mixin respond($bp) {
+  @media (min-width: map-get($breakpoint, $bp)) {
+    @content;
+  }
+}
