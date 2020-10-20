@@ -1,0 +1,14 @@
+#menu {
+
+  user-select: none;
+
+  & > ul {
+    @include resetlist;
+  }
+
+  .active {
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+}

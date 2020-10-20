@@ -1,0 +1,12 @@
+{% if tags %}
+
+<p>tags:</p>
+
+<ul>
+  {% for tag in tags %}
+    {% set tagUrl %}/tag/{{ tag | normalise }}{% endset %}
+    <li><a href="{{ tagUrl | url }}/">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endif %}

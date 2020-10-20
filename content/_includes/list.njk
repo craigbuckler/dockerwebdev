@@ -1,0 +1,41 @@
+---
+priority: 0.2
+---
+{% extends "page.njk" %}
+
+{% block content %}
+
+  <h1>
+    {% if title %}{{ title }}{% else %}{{ list }} list{% endif %}
+    {% if pagination.pages.length > 1 %}, page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}{% endif %}
+  </h1>
+
+  {{ content | safe }}
+
+  <ul>
+  {%- for post in pagedlist -%}
+    <li>
+      <h2><a href="{{ post.url }}">
+        {% if post.data.date %}<datetime>{{ post.data.date | datefriendly }}</datetime>: {% endif %}
+        {{ post.data.title }}
+      </a></h2>
+      <p>{{ post.data.description }}
+    </li>
+  {%- endfor -%}
+  </ul>
+
+  <hr>
+
+  {% if pagination.href.previous or pagination.href.next %}
+  <ul>
+    {% if pagination.href.previous %}
+      <li><a href="{{ pagination.href.previous }}">previous</a></li>
+    {% endif %}
+
+    {% if pagination.href.next %}
+      <li><a href="{{ pagination.href.next }}">next</a></li>
+    {% endif %}
+  </ul>
+  {% endif %}
+
+{% endblock %}

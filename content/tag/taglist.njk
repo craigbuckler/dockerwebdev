@@ -1,0 +1,15 @@
+---
+title: All tags
+layout: page.njk
+permalink: /tag/
+priority: 0.2
+---
+
+<ul>
+{% for tag in collections.taglist %}
+
+  {% set tagUrl %}/tag/{{ tag | lower }}/{% endset %}
+  <li><a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a></li>
+
+{% endfor %}
+</ul>

@@ -1,0 +1,21 @@
+---
+priority: 0.2
+---
+{% extends "page.njk" %}
+
+{% block content %}
+
+  <h1>{{ title }}</h1>
+
+  {{ content | safe }}
+
+  <ul>
+    {% set taglist = collections[ tag ] %}
+    {% for post in taglist | reverse %}{% if post.data.draft != true %}
+      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+    {% endif %}{% endfor %}
+  </ul>
+
+  <p><a href="{{ '/tag/' | url }}">all tags</a></p>
+
+{% endblock %}

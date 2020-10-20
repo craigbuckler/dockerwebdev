@@ -1,10 +1,8 @@
 // main styles
-
 @import '01-settings/_variables';
 
 @import '03-tools/_mixins';
 
 @import '04-generic/_reset';
 
-// shame CSS (fix later)
-@import '_shame';
+@import '07-components/_menu';

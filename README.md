@@ -1,19 +1,28 @@
 # DockerWebDev.com
 
-[DockerWebDev.com website](https://dockerwebdev.com/) - eleventy static site.
+[DockerWebDev.com website](https://dockerwebdev.com/) - Eleventy static site.
+
+Settings and design tokens in `site.json`. Site built using Eleventy, PostCSS, and Rollup.js.
 
 Run in development mode:
 
 ```sh
-npm run dev
+npm start
 ```
+
+Build production site:
+
+```sh
+npm run build
+```
+
 
 ## PostCSS setup
 
-Commands:
+Build critical and main CSS files:
 
-* `npm run watch:css` - development mode with source maps
-* `npm run build:css` - production mode
+* `npm run watch:cst && npm run watch:css` - development mode with source maps
+* `npm run build:cst && npm run build:css` - production mode
 
 Permits Sass-like SCSS syntax including:
 
@@ -31,7 +40,7 @@ PostCSS configuration defined in `postcss.config.js`.
 
 ## Rollup.js setup
 
-Commands:
+Build all script files:
 
 * `npm run watch:js` - development mode with source maps
 * `npm run build:js` - production mode

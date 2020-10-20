@@ -6,6 +6,11 @@ box reset
   margin: 0;
 }
 
+@mixin resetlist {
+  list-style-type: none;
+  @include reset;
+}
+
 /*
 responsive breakpoint mixin:
 @include respond('medium') { ... }
