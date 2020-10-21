@@ -1,5 +1,20 @@
-<link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
-<script type="module" src="{{ '/js/main.js' | url }}"></script>
+<!-- load CSS asynchronously -->
+<script>
+  (function() {
+    var css = document.createElement('link');
+    css.href = '{{ "/css/main.css" | url }}';
+    css.rel = 'stylesheet';
+    document.head.appendChild(css);
+  })();
+</script>
+
+<!-- load CSS synchronously if no JS -->
+<noscript>
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+</noscript>
+
+<!-- main ES6 asynchronously -->
+<script type="module" src="{{ '/js/main.js' | url }}" defer></script>
 
 </body>
 </html>

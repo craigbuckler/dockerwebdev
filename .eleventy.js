@@ -9,13 +9,13 @@ const
   build = global.build = 'build',
 
   // meta data
-  pkg = require('./package.json');
+  pkg = require('./package.json'),
+  meta = global.meta = require('./site.json');
 
 
 module.exports = config => {
 
-  // site meta data
-  const meta = require('./site.json');
+  // update meta data
   meta.version = pkg.version;
   meta.now = new Date();
 
@@ -44,6 +44,9 @@ module.exports = config => {
 
   // minify HTML
   config.addTransform('htmlminify', require('./lib/transforms/htmlminify'));
+
+  // create Ajax data files
+  config.addTransform('ajaxdata', require('./lib/transforms/ajaxdata'));
 
 
   /* --- FILTERS --- */
@@ -77,11 +80,11 @@ module.exports = config => {
 
   /* --- CUSTOM COLLECTIONS --- */
 
-  // post collection (in src/articles)
+  // post collection (in src/tutorials)
   config.addCollection('post', collection =>
 
     collection
-      .getFilteredByGlob(`./${src}/articles/*.md`)
+      .getFilteredByGlob(`./${src}/tutorials/*.md`)
       .filter(p => dev || (!p.data.draft && p.date <= meta.now))
 
   );

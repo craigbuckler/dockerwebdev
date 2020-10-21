@@ -1,8 +1,9 @@
 // main styles
 @import '01-settings/_variables';
+@import '01-settings/_tokens';
 
-@import '03-tools/_mixins';
+@import '02-tools/_mixins';
 
-@import '04-generic/_reset';
+@import '03-generic/_reset';
 
-@import '07-components/_menu';
+@import '06-components/_menu';

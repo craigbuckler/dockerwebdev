@@ -2,17 +2,23 @@
 
 {% include "./partials/_header.njk" %}
 
-{% block content %}
+<main>
 
-  <h1>{{ title }}</h1>
+  <article>
+    {% block content %}
 
-  {{ content | safe }}
+      <h1>{{ title }}</h1>
 
-{% endblock %}
+      {{ content | safe }}
 
-{% include "./partials/_pagelist.njk" %}
+    {% endblock %}
+  </article>
 
-{% include "./partials/_taglist.njk" %}
+  {% include "./partials/_taglist.njk" %}
+
+  {% include "./partials/_nextback.njk" %}
+
+</main>
 
 {% include "./partials/_footer.njk" %}
 

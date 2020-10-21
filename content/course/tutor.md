@@ -5,6 +5,8 @@ eleventyNavigation:
   key: tutor
   parent: course
   order: 2200
+tags:
+  - course
 ---
 
 About Craig Buckler

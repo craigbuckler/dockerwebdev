@@ -5,6 +5,8 @@ eleventyNavigation:
   key: requirements
   parent: course
   order: 2100
+tags:
+  - course
 ---
 
 Course requirements.

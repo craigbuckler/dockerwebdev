@@ -1,4 +1,5 @@
 {
   "layout": "page.njk",
+  "collection": "course",
   "priority": 0.5
 }

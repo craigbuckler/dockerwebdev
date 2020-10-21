@@ -15,9 +15,10 @@
     "watch:cst": "NODE_ENV=development postcss src/scss/critical.scss -o build/css/critical.css -w --verbose",
     "build:css": "postcss src/scss/main.scss -o build/css/main.css --no-map",
     "watch:css": "NODE_ENV=development postcss src/scss/main.scss -o build/css/main.css -w --verbose",
+    "purge:css": "purgecss --config ./purgecss.config.js",
     "build:js": "rollup --config",
     "watch:js": "NODE_ENV=development rollup --config --sourcemap inline --watch --no-watch.clearScreen",
-    "build": "npm run clean && build:cst && build:css && build:js && build:htm",
+    "build": "npm run clean && npm run build:cst && npm run build:css && npm run build:js && npm run build:htm && npm run purge:css",
     "start": "npm run clean && npm run build:cst && clear && concurrently 'npm:watch:*'"
   },
   "repository": {
@@ -52,6 +53,7 @@
     "postcss-map-get": "0.2.9",
     "postcss-nested": "5.0.1",
     "postcss-scss": "3.0.2",
+    "purgecss": "3.0.0",
     "rollup": "2.32.0",
     "rollup-plugin-terser": "7.0.2"
   }

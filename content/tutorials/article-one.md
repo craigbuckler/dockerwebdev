@@ -10,4 +10,4 @@ tags:
 
 This is a tutorial!
 
-![my image](/images/docker-video.webp)
+![my image]({{ '/images/docker-video.webp' | url }})

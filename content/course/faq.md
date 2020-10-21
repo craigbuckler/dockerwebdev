@@ -5,6 +5,8 @@ eleventyNavigation:
   key: faq
   parent: course
   order: 2300
+tags:
+  - course
 ---
 
 FAQs

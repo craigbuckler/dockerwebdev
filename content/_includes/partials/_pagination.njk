@@ -1,0 +1,13 @@
+{% if pagination.href.previous or pagination.href.next %}
+  <nav class="pagenav">
+
+    {% if pagination.href.previous %}
+      <p><a href="{{ pagination.href.previous | url }}">newer</a></p>
+    {% endif %}
+
+    {% if pagination.href.next %}
+      <p><a href="{{ pagination.href.next | url }}">older</a></p>
+    {% endif %}
+
+  </nav>
+  {% endif %}

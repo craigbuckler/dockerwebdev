@@ -1,0 +1,6 @@
+{
+  "layout": "tutorial.njk",
+  "collection": "post",
+  "reversed": true,
+  "priority": 0.9
+}

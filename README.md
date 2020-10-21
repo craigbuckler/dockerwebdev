@@ -17,14 +17,16 @@ npm run build
 ```
 
 
-## PostCSS setup
+## CSS processing
 
-Build critical and main CSS files:
+Build critical and main CSS files using PostCSS:
 
 * `npm run watch:cst && npm run watch:css` - development mode with source maps
 * `npm run build:cst && npm run build:css` - production mode
 
-Permits Sass-like SCSS syntax including:
+Optionally, `npm run purge:css` can be run to remove unused styles.
+
+PostCSS permits Sass-like SCSS syntax including:
 
 * `@import '_partial';`
 * `$variable: 'value';`
@@ -38,9 +40,9 @@ The resulting file is minified using cssnano.
 PostCSS configuration defined in `postcss.config.js`.
 
 
-## Rollup.js setup
+## JavaScript processing
 
-Build all script files:
+Build all script files using Rollup.js:
 
 * `npm run watch:js` - development mode with source maps
 * `npm run build:js` - production mode
