@@ -1,0 +1,16 @@
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $type_body_font;
+  font-size: $type_body_size;
+  font-weight: $type_body_weight;
+  line-height: $type_body_lineheight;
+  min-height: 100%;
+  @include reset;
+  color: var(--col-fore1);
+  background-color: var(--col-back1);
+  overflow-y: scroll;
+}

@@ -1,0 +1,10 @@
+a:link, a:visited {
+  text-decoration: underline;
+  color: var(--col-link1);
+  outline-offset: 0.2em;
+}
+
+a:hover, a:focus, a:active {
+  filter: var(--col-hover);
+  outline: 2px dotted currentColor;
+}

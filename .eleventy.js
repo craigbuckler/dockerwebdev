@@ -10,8 +10,7 @@ const
 
   // meta data
   pkg = require('./package.json'),
-  meta = global.meta = require('./site.json');
-
+  meta = global.meta = require('./lib/json').flatten( require('./site.json') );
 
 module.exports = config => {
 
@@ -36,11 +35,11 @@ module.exports = config => {
 
   /* --- TRANSFORMS -- */
 
-  // automatic image dimensions
-  config.addTransform('imagesize', require('./lib/transforms/imagesize'));
-
   // inline assets
   config.addTransform('inline', require('./lib/transforms/inline'));
+
+  // automatic image dimensions
+  config.addTransform('imagesize', require('./lib/transforms/imagesize'));
 
   // minify HTML
   config.addTransform('htmlminify', require('./lib/transforms/htmlminify'));
@@ -58,7 +57,7 @@ module.exports = config => {
   config.addFilter('htmlclean', require('./lib/filters/htmlclean'));
 
   // normalise strings
-  config.addFilter('normalise', require('./lib/filters/util').normalise);
+  config.addFilter('normalise', require('./lib/string').normalise);
 
   // format dates
   const dateformat = require('./lib/filters/dateformat');
@@ -125,7 +124,7 @@ module.exports = config => {
       output: build
     },
 
-    templateFormats: ['md', 'njk'],
+    templateFormats: ['md', 'html', 'njk'],
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

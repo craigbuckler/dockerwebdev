@@ -26,6 +26,14 @@ Build critical and main CSS files using PostCSS:
 
 Optionally, `npm run purge:css` can be run to remove unused styles.
 
+Tokens are imported from `site.json` and set as Sass variables. Nested properties are flattened, e.g.
+
+```json
+"dark": { "back": "#000", "fore": "#FFF" }
+```
+
+becomes the variables `$dark_back` and `$dark_fore`.
+
 PostCSS permits Sass-like SCSS syntax including:
 
 * `@import '_partial';`
@@ -33,7 +41,7 @@ PostCSS permits Sass-like SCSS syntax including:
 * `$map: ('small':10em,'medium':20em,'large':30em);` and `map-get($map, 'small'));`
 * image `resolve(img)`, `width(img)`, `height(img)`, `size(img)`, `inline(img)`
 * selector nesting
-* source maps in development mode
+* source maps are output in development mode
 
 The resulting file is minified using cssnano.
 
@@ -71,13 +79,13 @@ Images can be compression once using `npm run image:all` to process all images i
 Minify images once only, e.g. for JPGs:
 
 ```sh
-imagemin ./src/images.orig/**/*.jpg --plugin=mozjpeg --out-dir=./src/images
+imagemin ./src/images.orig/**/*.jpg --plugin=mozjpeg --out-dir=./content/images
 ```
 
 or individually, e.g. convert a PNG to webp format:
 
 ```sh
-imagemin ./src/images.orig/image.png --plugin=webp > ./src/images/
+imagemin ./src/images.orig/image.png --plugin=webp > ./content/images/image.webp
 ```
 
 [`imagemin-cli`](https://www.npmjs.com/package/imagemin-cli) and plugins are installed globally:

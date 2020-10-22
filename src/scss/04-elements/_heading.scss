@@ -1,0 +1,20 @@
+h1, h2, h3, blockquote {
+  font-family: $type_head_font;
+  font-weight: $type_head_weight;
+  line-height: $type_head_lineheight;
+  color: var(--col-fore2);
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(2 * $type_head_size);
+}
+
+h2 {
+  font-size: calc(1.5 * $type_head_size);
+}
+
+h3, blockquote, .intro {
+  font-size: $type_head_size;
+  font-weight: $type_head_weight;
+}

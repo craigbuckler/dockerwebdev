@@ -1,5 +1,5 @@
 // import site tokens
-const variables = require('./lib/json').flatten( require('./site.json').tokens );
+const variables = require('./lib/json').flatten( require('./site.json').token );
 
 module.exports = (ctx) => {
 
@@ -17,6 +17,7 @@ module.exports = (ctx) => {
         basePath: 'src',
         loadPaths: ['images']
       }),
+      require('autoprefixer')(),
       require('cssnano')()
     ]
 

@@ -1,4 +1,14 @@
 // reset styles
 *, *:before, *:after {
   box-sizing: border-box;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none !important;
+  }
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

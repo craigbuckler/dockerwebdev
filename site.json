@@ -4,25 +4,73 @@
   "root": "/",
   "language": "en-GB",
   "description": "How to use Docker for web development. A concise and practical book and video course to help you use Docker in web projects.",
-  "keywords": "docker, docker-compose, docker swarm, kubernetes, training, course, book, video, introduction, tutorial, web, development, environment, dependencies, deployment, production, windows, mac os, linux",
+  "keywords": "docker, docker-compose, docker swarm, kubernetes, learn, training, course, book, video, introduction, tutorial, web, development, environment, dependencies, deployment, production, windows, mac os, linux",
   "topic": "Docker book and video course",
   "author": "Craig Buckler",
   "twitter": "@craigbuckler",
   "changefreq": "monthly",
   "analytics": "UA-168413909-1",
 
-  "themecolor": "#232c33",
+  "token": {
 
-  "tokens": {
+    "type": {
 
-    "light": {
-      "back": "#eee",
-      "fore": "#333"
+      "body": {
+        "font": "Corbel, \"Lucida Sans\", \"DejaVu Sans\", \"Liberation Sans\", Helvetica, Arial, sans-serif",
+        "size": "min(calc(1rem + 0.5vw), 2rem)",
+        "weight": 300,
+        "lineheight": 1.4
+      },
+
+      "head": {
+        "font": "Cambria, \"Hoefler Text\", Utopia, \"Liberation Serif\", \"Nimbus Roman No9 L Regular\", Times, \"Times New Roman\", serif",
+        "size": "1.2em",
+        "weight": 400,
+        "lineheight": 1
+      }
+
     },
 
-    "dark": {
-      "back": "#222",
-      "fore": "#fff"
+    "theme": {
+
+      "color": "#232c33",
+
+      "dark": {
+        "fore1": "#e7e8eb",
+        "fore2": "#f28024",
+
+        "back1": "#232c33",
+        "back2": "#1c2227",
+        "back3": "#046fbd",
+
+        "link1": "#6abbf6",
+        "link2": "#0053a2",
+        "link3": "#2d363e",
+
+        "hint1": "#090",
+        "hint2": "#c22",
+
+        "hover": "contrast(1.2)"
+      },
+
+      "light": {
+        "fore1": "#333",
+        "fore2": "#f26",
+
+        "back1": "#fff",
+        "back2": "#ddd",
+        "back3": "#ccc",
+
+        "link1": "#6abbf6",
+        "link2": "#0053a2",
+        "link3": "#2d363e",
+
+        "hint1": "#090",
+        "hint2": "#c22",
+
+        "hover": "contrast(0.8)"
+      }
+
     }
 
   }

@@ -1,0 +1,59 @@
+// book and video section
+.media {
+  position: relative;
+  max-width: 30rem;
+  perspective: 1000px;
+  padding: 0;
+  filter: drop-shadow(0px 8px 10px rgba(0,0,0,0.5));
+
+  img {
+    position: absolute;
+    bottom: -7em;
+    left: -5vw;
+    transform: translateX(-50px);
+    animation: video 2s ease-in-out 5s 1 forwards;
+  }
+
+}
+
+.book {
+  position: relative;
+  padding: 1rem;
+  background-color: #232c33;
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotateY(-20deg);
+  animation: book 3s ease-in-out 4s 1 forwards;
+
+  h1, .intro {
+    text-align: center;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 100%;
+    top: 0;
+    width: 2.5rem;
+    height: 100%;
+    transform-origin: bottom left;
+    transform: rotateY(60deg);
+    background-color: #ccc;
+    background-image: repeating-linear-gradient(
+      90deg,
+      #ddd,
+      #ddd 2px,
+      #aaa 2px,
+      #aaa 4px
+    );
+  }
+}
+
+@keyframes book {
+  to { transform: rotateY(-6deg); }
+}
+
+@keyframes video {
+  to { transform: translateX(0); }
+}

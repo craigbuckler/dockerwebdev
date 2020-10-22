@@ -2,13 +2,17 @@
 
   user-select: none;
 
-  & > ul {
-    @include resetlist;
-  }
-
   .active {
     font-weight: bold;
     pointer-events: none;
+  }
+
+  & > ul, ul ul {
+    display: none;
+  }
+
+  & #menuopen:checked ~ ul, ul input:checked ~ ul {
+    display: block;
   }
 
 }

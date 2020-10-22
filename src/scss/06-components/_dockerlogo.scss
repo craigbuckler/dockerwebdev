@@ -1,0 +1,26 @@
+// animated SVG
+#docker {
+  display: block;
+  max-width: 85%;
+  height: auto;
+  margin: 2em auto;
+}
+
+#docker-whale {
+  transform-origin: center;
+  transform: rotate(-1deg) translateY(-2%);
+  animation: whale 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes whale {
+  to { transform: rotate(1deg) translateY(1%); }
+}
+
+path#docker-sea {
+  transform: translateX(-1%);
+  animation: sea 1.7s ease 0s infinite alternate;
+}
+
+@keyframes sea {
+  to { transform: translateX(2%); }
+}

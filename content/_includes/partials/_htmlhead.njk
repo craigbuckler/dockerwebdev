@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
 
-  <!-- preload assets -->
-  <link rel="preload" href="{{ '/css/main.css' | url }}" as="style" />
-  <link rel="preload" href="{{ '/js/main.js' | url }}" as="script" />
-
   <!-- meta data -->
   <meta name="description" content="{{ description }}" />
   {% if keywords %}<meta name="keywords" content="{{ keywords }}, {% meta 'keywords' %}" />{% endif %}
@@ -17,10 +13,10 @@
 
   <!-- application -->
   <meta name="application-name" content="{% meta 'site' %}" />
-  <meta name="theme-color" content="{% meta 'themecolor' %}" />
+  <meta name="theme-color" content="{% meta 'token_theme_color' %}" />
 
   <!-- icons -->
-  <link rel="icon" type="image/svg+xml" href="{{ '/images/icon.svg' | url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/icons/favicon.svg' | url }}" />
 
   <!-- feed -->
   <link rel="alternate" type="application/rss+xml" title="RSS: {% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" >
@@ -45,6 +41,15 @@
 
   <!-- critical CSS -->
   <link rel="stylesheet" href="/css/critical.css" inline />
+
+  <!-- main CSS -->
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+  </noscript>
+
+  <!-- main ES6 -->
+  <script type="module" src="{{ '/js/main.js' | url }}" defer></script>
 
 </head>
 <body>
