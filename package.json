@@ -21,7 +21,9 @@
     "build": "npm run clean && npm run build:cst && npm run build:css && npm run build:js && npm run build:htm && npm run purge:css && npm run build:htm",
     "start": "npm run clean && npm run build:cst && clear && concurrently 'npm:watch:*'"
   },
-  "browserslist": ["> 1%"],
+  "browserslist": [
+    "> 1%"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/craigbuckler/dockerwebdev.git"
