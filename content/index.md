@@ -9,13 +9,13 @@ eleventyNavigation:
   order: 1000
 ---
 
-<header>
+<div class="flex2 slantdark5">
 
 {% include "./_includes/snippets/_media.html" %}
 
 <section>
 
-<h2>Learn how to use Docker</h2>
+<h2>Learn Docker</h2>
 
 <p>A concise and easy-to-follow book &amp; video course demonstrating how to set-up practical web development environments on Windows, macOS, and Linux using Docker.</p>
 
@@ -25,7 +25,7 @@ eleventyNavigation:
 
 </section>
 
-</header>
+</div>
 
 ## Learn how to use Docker
 

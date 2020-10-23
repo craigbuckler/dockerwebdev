@@ -1,0 +1,49 @@
+.prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5em 0 0 0;
+
+
+  li {
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  p {
+    color: var(--col-fore1);
+  }
+
+  span {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 300;
+    color: var(--col-fore1);
+  }
+
+  h3, .price {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .button {
+    width: 7.5em;
+    margin: 0.4em 0;
+  }
+
+  li:not(.feature) .button {
+    background-color: var(--col-link3);
+  }
+
+  .price {
+    font-weight: 600;
+    color: var(--col-hint1);
+  }
+
+}

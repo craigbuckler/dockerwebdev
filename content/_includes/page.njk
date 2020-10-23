@@ -22,10 +22,4 @@
 
 {% include "./partials/_footer.njk" %}
 
-<nav id="menu">
-  <input type="checkbox" id="menuopen">
-  <label for="menuopen">menu</label>
-  {% navlist collections.all | eleventyNavigation, page, 2 %}
-</nav>
-
 {% include "./partials/_htmlfoot.njk" %}

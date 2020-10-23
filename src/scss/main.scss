@@ -5,13 +5,16 @@
 
 @import '03-generic/_reset';
 @import '03-generic/_theme';
+@import '03-generic/_slant';
 
 @import '04-elements/_body';
 @import '04-elements/_heading';
+@import '04-elements/_block';
 @import '04-elements/_link';
 
-@import '05-layout/_headfoot';
+@import '05-layout/_flex';
 
 @import '06-components/_menu';
 @import '06-components/_media';
+@import '06-components/_prices';
 @import '06-components/_dockerlogo';

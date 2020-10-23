@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
 
+  <!-- critical CSS -->
+  <link rel="stylesheet" href="/css/critical.css" inline />
+
+  <!-- main CSS -->
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="{{ '/css/main.css' | url }}" /></noscript>
+
+  <!-- main ES6 -->
+  <script type="module" src="{{ '/js/main.js' | url }}" defer></script>
+
   <!-- meta data -->
   <meta name="description" content="{{ description }}" />
   {% if keywords %}<meta name="keywords" content="{{ keywords }}, {% meta 'keywords' %}" />{% endif %}
@@ -19,8 +29,9 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/images/icons/favicon.svg' | url }}" />
 
   <!-- feed -->
-  <link rel="alternate" type="application/rss+xml" title="RSS: {% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" >
-  <link rel="alternate" type="application/atom+xml" title="Atom: {% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" />
+  <link rel="sitemap" type="application/xml" href="{% meta 'url' %}{{ '/sitemap.xml' | url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" />
+  <link rel="alternate" type="application/atom+xml" title="{% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" />
 
   <!-- social media -->
   <meta property="og:site_name" content="{% meta 'site' %}">
@@ -38,18 +49,6 @@
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
   <meta property="twitter:image" content="{% meta 'url' %}{{ '/images/ad.png' | url }}">
-
-  <!-- critical CSS -->
-  <link rel="stylesheet" href="/css/critical.css" inline />
-
-  <!-- main CSS -->
-  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
-  </noscript>
-
-  <!-- main ES6 -->
-  <script type="module" src="{{ '/js/main.js' | url }}" defer></script>
 
 </head>
 <body>

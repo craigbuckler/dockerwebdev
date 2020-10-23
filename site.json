@@ -17,7 +17,7 @@
 
       "body": {
         "font": "Corbel, \"Lucida Sans\", \"DejaVu Sans\", \"Liberation Sans\", Helvetica, Arial, sans-serif",
-        "size": "min(calc(1rem + 0.5vw), 2rem)",
+        "size": "min(calc(1rem + 0.4vw), 2rem)",
         "weight": 300,
         "lineheight": 1.4
       },
@@ -50,7 +50,7 @@
         "hint1": "#090",
         "hint2": "#c22",
 
-        "hover": "contrast(1.2)"
+        "hover": "hue-rotate(20deg) brightness(1.3)"
       },
 
       "light": {
@@ -68,7 +68,7 @@
         "hint1": "#090",
         "hint2": "#c22",
 
-        "hover": "contrast(0.8)"
+        "hover": "hue-rotate(-20deg) brightness(0.8)"
       }
 
     }

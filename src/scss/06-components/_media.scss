@@ -1,45 +1,63 @@
 // book and video section
 .media {
   position: relative;
-  max-width: 30rem;
   perspective: 1000px;
-  padding: 0;
   filter: drop-shadow(0px 8px 10px rgba(0,0,0,0.5));
 
   img {
     position: absolute;
-    bottom: -7em;
+    bottom: -5vh;
     left: -5vw;
-    transform: translateX(-50px);
-    animation: video 2s ease-in-out 5s 1 forwards;
+    transform: translateY(-3vw);
+    animation: video 2s ease-in-out 3s 1 forwards;
   }
 
 }
 
+@keyframes video {
+  to { transform: translateY(0); }
+}
+
 .book {
   position: relative;
-  padding: 1rem;
-  background-color: #232c33;
+  max-width: 18em;
+  padding: 1.5vmin;
+  margin: 0 auto;
   transform-style: preserve-3d;
   transform-origin: bottom right;
-  transform: rotateY(-20deg);
-  animation: book 3s ease-in-out 4s 1 forwards;
+  transform: rotateY(-25deg);
+  animation: book 2s ease-in-out 3s 1 forwards;
 
   h1, .intro {
     text-align: center;
+    margin-block-start: 0.2em;
+  }
+
+  &, &::before {
+    background-color: var(--col-back1);
+    border-radius: 3px;
+  }
+
+  &::before, &::after {
+    position: absolute;
+    content: '';
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(1rem) translateZ(-2rem);
   }
 
   &::after {
-    position: absolute;
-    display: block;
-    content: '';
-    left: 100%;
-    top: 0;
+    left: 98%;
+    top: 1%;
     width: 2.5rem;
-    height: 100%;
+    height: 98%;
     transform-origin: bottom left;
     transform: rotateY(60deg);
-    background-color: #ccc;
     background-image: repeating-linear-gradient(
       90deg,
       #ddd,
@@ -51,9 +69,5 @@
 }
 
 @keyframes book {
-  to { transform: rotateY(-6deg); }
-}
-
-@keyframes video {
-  to { transform: translateX(0); }
+  to { transform: rotateY(-15deg); }
 }
