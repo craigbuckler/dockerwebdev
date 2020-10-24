@@ -3,12 +3,10 @@
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4vw;
-  margin: 0 auto;
-  padding: 10vh 2vw;
+  gap: $layout_padding;
+  @include mainsize;
 
   & > * {
-    max-width: 26em;
-    padding: 0 2vw;
+    max-width: $layout_widthcolumn;
   }
 }

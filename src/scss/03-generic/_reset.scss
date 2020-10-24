@@ -1,6 +1,7 @@
 // reset styles
 *, *:before, *:after {
   box-sizing: border-box;
+  @include reset;
 
   @media (prefers-reduced-motion: reduce) {
     animation: none !important;

@@ -1,17 +1,21 @@
 {% if pagedlist %}
+<nav class="pagedlist">
+
   <ul>
 
     {%- for post in pagedlist -%}
-      <li>
-        <h2><a href="{{ post.url | url }}">
-          {{ post.data.title }}
-        </a></h2>
+      <li><a href="{{ post.url | url }}">
+
+        <h2>{{ post.data.title }}</h2>
 
         {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
 
         <p>{{ post.data.description }}</p>
-      </li>
+
+      </a></li>
     {%- endfor -%}
 
   </ul>
+
+</nav>
 {% endif %}

@@ -1,0 +1,15 @@
+main article:first-child {
+  padding-top: 3em;
+}
+
+.primary > *:not(blockquote):not(ul):not(ol):not(pre),
+.primary ul, .primary ol,
+blockquote p
+{
+  max-width: $layout_width;
+  @include mainsize;
+}
+
+.primary ul, .primary ol {
+  padding-left: calc(2 * $layout_padding);
+}

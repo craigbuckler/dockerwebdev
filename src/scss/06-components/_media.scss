@@ -6,31 +6,31 @@
 
   img {
     position: absolute;
-    bottom: -5vh;
+    bottom: 0rem;
     left: -5vw;
-    transform: translateY(-3vw);
-    animation: video 2s ease-in-out 3s 1 forwards;
+    transform: translateX(-3vw);
+    animation: video 2.5s ease-in-out 2s 1 forwards;
   }
 
 }
 
 @keyframes video {
-  to { transform: translateY(0); }
+  to { transform: translateX(0); }
 }
 
 .book {
   position: relative;
-  max-width: 18em;
-  padding: 1.5vmin;
+  max-width: 90%;
+  padding: 1rem 0;
   margin: 0 auto;
   transform-style: preserve-3d;
   transform-origin: bottom right;
   transform: rotateY(-25deg);
-  animation: book 2s ease-in-out 3s 1 forwards;
+  animation: book 2s ease-in-out 2s 1 forwards;
 
   h1, .intro {
     text-align: center;
-    margin-block-start: 0.2em;
+    margin-top: 0.4em;
   }
 
   &, &::before {

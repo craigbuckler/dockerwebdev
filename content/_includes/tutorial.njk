@@ -1,16 +1,20 @@
 ---
 priority: 0.9
 ---
-{% extends "page.njk" %}
+{% extends "base.njk" %}
 
 {% block content %}
 
-  <h1>{{ title }}</h1>
+  <article class="primary">
 
-  {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
+    <h1>{{ title }}</h1>
 
-  <p class="words">{{ content | wordcount | readtime }}</p>
+    {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
 
-  {{ content | safe }}
+    <p class="words">{{ content | wordcount | readtime }}</p>
+
+    {{ content | safe }}
+
+  </article>
 
 {% endblock %}

@@ -11,6 +11,10 @@ body {
   min-height: 100%;
   @include reset;
   color: var(--col-fore1);
-  background-color: var(--col-back1);
+  background-color: var(--col-back2);
   overflow-y: scroll;
+}
+
+main {
+  background-color: var(--col-back1);
 }

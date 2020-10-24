@@ -1,46 +1,33 @@
-p {
-  margin: 1em 0 0 0;
+p, ul, ol, blockquote {
+  margin-top: 1em;
 }
 
 h2 + p, h3 + p {
-  margin: 0.2em;
+  margin-top: 0.2em;
 }
 
 blockquote {
-  padding: 1rem;
   background-color: var(--col-back2);
-  border-left: 4px solid var(--col-back3);
+  border-left: 1vw solid var(--col-back3);
+  clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
 }
 
 blockquote p {
   font-style: italic;
   text-align: center;
-  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
-ul, ol, li {
-  padding: 0;
-  margin: 1em 0 1.5em 3em;
+ul {
+  list-style-type: square;
 }
 
 li {
-  margin: 0.6em 0 0 0;
+  margin-top: 0.8em;
 }
 
-dl {
-  margin: 1.5em 0;
-}
-
-dt {
-  font-size: 1.2em;
-  margin: 1.5em 0 0.2em 0;
-}
-
-dd {
-  margin: 0;
-}
-
-strong, em, a {
+strong, a {
   font-weight: 400;
 }
 
@@ -49,7 +36,7 @@ del {
 }
 
 .note {
-  font-size: 0.8em;
+  font-size: 0.85em;
   text-align: center;
-  margin-top: 0.8em;
+  margin-top: 0.85em;
 }

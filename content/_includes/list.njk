@@ -1,17 +1,21 @@
 ---
 priority: 0.2
 ---
-{% extends "page.njk" %}
+{% extends "base.njk" %}
 
 {% block content %}
 
-  <h1>
-    {{ title }}{% if pagination.pages.length > 1 %}: page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}{% endif %}
-  </h1>
+  <article class="primary">
 
-  {{ content | safe }}
+    <h1>
+      {{ title }}{% if pagination.pages.length > 1 %}: page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}{% endif %}
+    </h1>
 
-  {% include "./partials/_pagedlist.njk" %}
+    {{ content | safe }}
+
+    {% include "./partials/_pagedlist.njk" %}
+
+  </article>
 
   {% include "./partials/_pagination.njk" %}
 

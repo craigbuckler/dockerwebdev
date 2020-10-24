@@ -1,0 +1,29 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 1.2;
+  padding: 2px;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  user-select: none;
+
+  &, ul ul {
+    background-color: rgba(20,20,20,0.75);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a:link, a:visited {
+    display: block;
+    padding: 0.7em 1em;
+    text-decoration: none;
+    outline-offset: 0;
+  }
+}

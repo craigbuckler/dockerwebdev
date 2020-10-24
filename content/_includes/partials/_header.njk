@@ -1,10 +1,8 @@
-<header class="nav">
+<header>
 
   <p><a href="{{ '/' | url }}">Docker for Web Developers</a></p>
 
   <nav class="menu">
-    <input type="checkbox" id="menuopen">
-    <label for="menuopen">menu</label>
     {% navlist collections.all | eleventyNavigation, page, 2 %}
   </nav>
 

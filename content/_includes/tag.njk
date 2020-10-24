@@ -1,21 +1,21 @@
 ---
 priority: 0.2
 ---
-{% extends "page.njk" %}
+{% extends "base.njk" %}
 
 {% block content %}
 
-  <h1>{{ title }}</h1>
+  <article class="primary">
 
-  {{ content | safe }}
+    <h1>{{ title }}</h1>
 
-  <ul>
-    {% set taglist = collections[ tag ] %}
-    {% for post in taglist | reverse %}{% if post.data.draft != true %}
-      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-    {% endif %}{% endfor %}
-  </ul>
+    {{ content | safe }}
 
-  <p><a href="{{ '/tag/' | url }}">all tags</a></p>
+    {% set pagedlist = collections[ tag ] %}
+    {% include "./partials/_pagedlist.njk" %}
+
+    <p><a href="{{ '/tag/' | url }}">all tags</a></p>
+
+  </article>
 
 {% endblock %}

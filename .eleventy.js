@@ -74,7 +74,7 @@ module.exports = config => {
   config.addShortcode('meta', name => meta[name] || '');
 
   // page navigation
-  config.addShortcode('navlist', require('./lib/shortcodes/navlist'));
+  config.addShortcode('navlist', require('./lib/shortcodes/navlist-simple'));
 
 
   /* --- CUSTOM COLLECTIONS --- */

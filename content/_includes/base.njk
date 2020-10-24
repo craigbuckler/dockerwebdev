@@ -1,0 +1,21 @@
+{% include "./partials/_htmlhead.njk" %}
+
+{% include "./partials/_header.njk" %}
+
+<main>
+
+  {% block content %}
+
+    {{ content | safe }}
+
+  {% endblock %}
+
+  {% include "./partials/_taglist.njk" %}
+
+  {% include "./partials/_nextback.njk" %}
+
+</main>
+
+{% include "./partials/_footer.njk" %}
+
+{% include "./partials/_htmlfoot.njk" %}

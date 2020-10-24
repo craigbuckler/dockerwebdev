@@ -24,10 +24,18 @@
 
       "head": {
         "font": "Cambria, \"Hoefler Text\", Utopia, \"Liberation Serif\", \"Nimbus Roman No9 L Regular\", Times, \"Times New Roman\", serif",
-        "size": "1.2em",
+        "size": "1.4em",
         "weight": 400,
-        "lineheight": 1
+        "lineheight": 1.1
       }
+
+    },
+
+    "layout": {
+
+      "width": "50rem",
+      "widthcolumn": "32rem",
+      "padding": "4vw"
 
     },
 

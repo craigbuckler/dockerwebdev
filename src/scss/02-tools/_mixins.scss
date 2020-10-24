@@ -11,6 +11,13 @@ box reset
   @include reset;
 }
 
+@mixin mainsize {
+  padding-left: $layout_padding;
+  padding-right: $layout_padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*
 responsive breakpoint mixin:
 @include respond('medium') { ... }
