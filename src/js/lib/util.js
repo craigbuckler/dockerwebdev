@@ -9,7 +9,6 @@ export function normalise(str) {
 }
 
 
-
 // thottle event: call no more than every delay
 export function eventThrottle(attachTo, event, callback, delay = 300) {
 
@@ -25,6 +24,7 @@ export function eventThrottle(attachTo, event, callback, delay = 300) {
   }, false);
 
 }
+
 
 // debounce event: call after same event has stopped for delay
 export function eventDebounce(attachTo, event, callback, delay = 300) {

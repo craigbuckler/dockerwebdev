@@ -43,4 +43,35 @@ A concise and easy-to-follow book & video course demonstrating how to set-up pra
 
 > A concise and easy-to-follow book & video course demonstrating how to set-up practical web development environments on Windows, macOS, and Linux using Docker.
 
+A concise and easy-to-follow book & video course demonstrating how to set-up practical web development environments on Windows, macOS, and Linux using Docker.
+
+> A concise and easy-to-follow book & video course.
+
+Some `// example code` in JavaScript:
+
+```js/2-6
+const
+  // development mode
+  dev = global.dev = (process.env.NODE_ENV === 'development'),
+
+  // directories
+  src = global.src = 'content',
+  build = global.build = 'build',
+
+  // meta data
+  pkg = require('./package.json'),
+  meta = global.meta = require('./lib/json').flatten( require('./site.json') );
+
+
+// format a date to DD MMMM, YYYY
+module.exports.friendly = date => (
+
+  date instanceof Date ?
+    date.getUTCDate() + ' ' + toMonth.format(date) + ', ' + date.getUTCFullYear() : ''
+
+);
+```
+
+Nice!
+
 </article>

@@ -26,6 +26,11 @@ module.exports = config => {
 
   /* --- PLUGINS --- */
 
+  // syntax highlighting
+  config.addPlugin( require('@11ty/eleventy-plugin-syntaxhighlight'), {
+    alwaysWrapLineHighlights: true
+  } );
+
   // navigation
   config.addPlugin( require('@11ty/eleventy-navigation') );
 

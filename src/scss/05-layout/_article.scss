@@ -4,6 +4,9 @@ main article:first-child {
 
 .primary > *:not(blockquote):not(ul):not(ol):not(pre),
 .primary ul, .primary ol,
+.pagenav > *,
+.tags > *,
+.nextback > *,
 blockquote p
 {
   max-width: $layout_width;

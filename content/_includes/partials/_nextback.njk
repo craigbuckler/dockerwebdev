@@ -13,7 +13,7 @@
       {% set prev = 'next' %}
     {% endif %}
 
-    <nav id="nextback">
+    <nav class="nextback">
 
       {% if nextPost %}
         <p class="next"><em>{{ next }}:</em> <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></p>

@@ -12,6 +12,12 @@ blockquote {
   clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
 }
 
+blockquote:nth-of-type(2n) {
+  border-left: 0 none;
+  border-right: 1vw solid var(--col-back3);
+  clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 85%);
+}
+
 blockquote p {
   font-style: italic;
   text-align: center;

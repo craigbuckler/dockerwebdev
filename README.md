@@ -16,6 +16,17 @@ Build production site:
 npm run build
 ```
 
+## Syntax highlighting
+
+JavaScript example which highlights lines 1, 2, and 3:
+
+```md
+```js/0-2
+// code
+```
+
+Syntax highlighting is handled with Prism styles.
+
 
 ## CSS processing
 
