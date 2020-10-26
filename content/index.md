@@ -47,7 +47,7 @@ A concise and easy-to-follow book & video course demonstrating how to set-up pra
 
 > A concise and easy-to-follow book & video course.
 
-Some `// example code` in JavaScript:
+Some `// example code` in JavaScript with lines 3-7 highlighted:
 
 ```js/2-6
 const
@@ -72,6 +72,18 @@ module.exports.friendly = date => (
 );
 ```
 
-Nice!
+<p style="--linestart:29">Start at line 30:</p>
+
+```js
+// format a date to DD MMMM, YYYY
+module.exports.friendly = date => (
+
+  date instanceof Date ?
+    date.getUTCDate() + ' ' + toMonth.format(date) + ', ' + date.getUTCFullYear() : ''
+
+);
+```
+
+</div>
 
 </article>

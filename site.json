@@ -27,6 +27,13 @@
         "size": "1.4em",
         "weight": 400,
         "lineheight": 1.1
+      },
+
+      "code": {
+        "font": "Inconsolata, Monaco, Consolas, \"Courier New\", Courier, monospace",
+        "size": "inherit",
+        "weight": 300,
+        "lineheight": 1.4
       }
 
     },

@@ -1,6 +1,10 @@
 // line numbers
-pre {
+body, h2 {
   counter-reset: lineNumber;
+}
+
+[style*="--linestart"] {
+	counter-set: lineNumber var(--linestart);
 }
 
 code .highlight-line:before {
@@ -19,17 +23,17 @@ code .highlight-line:before {
 
 pre[class*="language-"],
 code {
-  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
-  font-size: inherit;
-  color: #c5c8c6;
+  font-family: $type_code_font;
+  font-size: $type_code_size;
+	line-height: $type_code_lineheight;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.5;
 	tab-size: 2;
 	hyphens: none;
+	color: #c5c8c6;
 }
 
 // code block
@@ -46,9 +50,10 @@ pre[class*="language-"] {
 
 // inline code
 :not(pre) > code {
-	padding: 0.2em;
-  border-radius: .3em;
-  background: #1d1f21;
+	padding: 0.2em 0.3em 0.3em;
+	background: #1d1f21;
+	border: 1px solid #393d41;
+	border-radius: .3em;
 }
 
 .token.comment,

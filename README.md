@@ -27,6 +27,12 @@ JavaScript example which highlights lines 1, 2, and 3:
 
 Syntax highlighting is handled with Prism styles.
 
+Line numbers continue unless an `H2` tag or explicit `--linestart` custom property is set, e.g.
+
+```html
+<p style="--linestart:29">The next code snippet starts at line 30:</p>
+```
+
 
 ## CSS processing
 
