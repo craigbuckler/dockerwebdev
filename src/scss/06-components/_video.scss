@@ -1,0 +1,24 @@
+// full-width 16x9 video
+.primary > .video {
+  max-width: 100vmin;
+}
+
+.video {
+
+  div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+  }
+
+}

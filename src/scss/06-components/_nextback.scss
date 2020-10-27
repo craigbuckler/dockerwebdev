@@ -2,7 +2,7 @@
 
   ul {
     display: flex;
-    gap: 2em;
+    gap: $layout_padding;
     list-style-type: none;
     margin-top: 3em;
   }

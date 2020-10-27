@@ -7,6 +7,7 @@
   @include mainsize;
 
   & > * {
+    width: 100%;
     max-width: $layout_widthcolumn;
   }
 }
