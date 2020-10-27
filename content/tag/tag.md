@@ -17,4 +17,4 @@ permalink: /tag/{{ tag | normalise }}/
 priority: 0.3
 ---
 
-Pages referencing the topic "{{ tag }}":
+The following articles and tutorials reference the topic "{{ tag }}":

@@ -1,11 +1,11 @@
 main article:first-child {
-  padding-top: 3em;
+  padding-top: 4em;
 }
 
 .primary > *:not(blockquote):not(ul):not(ol):not(pre),
 .primary ul, .primary ol,
 .pagenav > *,
-.tags > *,
+.taglist > *,
 .nextback > *,
 blockquote p
 {

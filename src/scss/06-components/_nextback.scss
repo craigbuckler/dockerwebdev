@@ -1,0 +1,45 @@
+.nextback {
+
+  ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    margin-top: 3em;
+  }
+
+  &.back ul {
+    flex-direction: row-reverse;
+  }
+
+  li {
+    @include reset;
+    flex: 1 1 50%;
+  }
+
+  .back {
+    text-align: right;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    outline: 0 none;
+  }
+
+  em {
+    display: block;
+    font-size: 0.85em;
+    color: var(--col-fore1);
+  }
+
+  strong {
+    text-decoration: underline;
+  }
+
+  a:hover, a:active, a:focus {
+    strong {
+      outline: 2px dotted currentColor;
+      outline-offset: 0.2em;
+    }
+  }
+}

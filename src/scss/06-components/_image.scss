@@ -1,0 +1,13 @@
+.imgcircle {
+
+  margin-top: 1em;
+
+  img {
+    float: left;
+    max-width: 33%;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    shape-margin: 0.5rem;
+  }
+
+}

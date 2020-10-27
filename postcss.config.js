@@ -14,8 +14,8 @@ module.exports = (ctx) => {
       require('postcss-map-get')(),
       require('postcss-nested')(),
       require('postcss-assets')({
-        basePath: 'src',
-        loadPaths: ['images']
+        basePath: 'content',
+        loadPaths: ['images/']
       }),
       require('autoprefixer')(),
       require('cssnano')()

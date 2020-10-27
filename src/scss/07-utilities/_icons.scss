@@ -1,0 +1,23 @@
+// inline SVG icons
+@mixin icon($name) {
+  .#{$name}:before {
+    background-image: inline('svg/#{$name}.svg');
+  }
+}
+
+.icon, .icon::before {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.icon::before {
+  content: '';
+  width: 1.6em;
+  height: 1em;
+  font-weight: normal;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+@include icon(tag);

@@ -30,6 +30,10 @@
     transform: translateY(2px) rotateX(0);
   }
 
+  a {
+    white-space: nowrap;
+  }
+
   // disable active link
   .active {
     color: var(--col-fore1);

@@ -8,7 +8,7 @@ pagination:
   alias: pagedlist
   data: collections.post
   reverse: true
-  size: 3
+  size: 12
 ---
 
-A selection of free Docker tutorials which do not feature in the "Docker for Web Developers" book and video course.
+The following tutorials contain excerpts from the ["Docker for Web Developers" book and video course]({{ '/' | url }}) as well as additional information you may find useful.

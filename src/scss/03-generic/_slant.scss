@@ -1,3 +1,14 @@
+.slantdark1 {
+  background: repeating-linear-gradient(
+    -4deg,
+    var(--col-back1),
+    var(--col-back1) 30%,
+    var(--col-back2) 30%,
+    var(--col-back2)
+  ) no-repeat 0 0;
+  background-size: 100% 15rem;
+}
+
 .slantdark5 {
   background: repeating-linear-gradient(
     -5deg,

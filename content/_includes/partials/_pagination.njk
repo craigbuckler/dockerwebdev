@@ -1,13 +1,19 @@
 {% if pagination.href.previous or pagination.href.next %}
-  <nav class="pagenav">
+  <nav class="nextback">
+
+    <ul>
+    {% if pagination.href.next %}
+      <li class="next"><a href="{{ pagination.href.next | url }}" class="icon right">
+        <strong>older tutorials</strong>
+      </a></li>
+    {% endif %}
 
     {% if pagination.href.previous %}
-      <p><a href="{{ pagination.href.previous | url }}">newer</a></p>
+      <li class="back"><a href="{{ pagination.href.previous | url }}" class="icon left">
+        <strong>newer tutorials</strong>
+      </a></li>
     {% endif %}
-
-    {% if pagination.href.next %}
-      <p><a href="{{ pagination.href.next | url }}">older</a></p>
-    {% endif %}
+    </ul>
 
   </nav>
   {% endif %}

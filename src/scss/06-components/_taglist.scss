@@ -1,0 +1,26 @@
+main > .taglist {
+  background-color: var(--col-back2);
+  margin-top: 2em;
+}
+
+.taglist {
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 0.8em;
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  li {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}

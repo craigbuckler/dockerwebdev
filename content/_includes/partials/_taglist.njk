@@ -1,12 +1,11 @@
 {% if tags %}
-<nav class="tags">
-
-  <p>Topics referenced in this tutorial:</p>
+<nav class="taglist">
 
   <ul>
+    <li>topics:</li>
     {% for tag in tags %}
       {% set tagUrl %}/tag/{{ tag | normalise }}{% endset %}
-      <li><a href="{{ tagUrl | url }}/">{{ tag }}</a></li>
+      <li><a href="{{ tagUrl | url }}/" class="icon tag">{{ tag }}</a></li>
     {% endfor %}
   </ul>
 

@@ -5,7 +5,7 @@ priority: 0.2
 
 {% block content %}
 
-  <article class="primary">
+  <article class="primary slantdark1">
 
     <h1>{{ title }}</h1>
 
@@ -14,7 +14,7 @@ priority: 0.2
     {% set pagedlist = collections[ tag ] %}
     {% include "./partials/_pagedlist.njk" %}
 
-    <p><a href="{{ '/tag/' | url }}">all topics</a></p>
+    <p><a href="{{ '/tag/' | url }}" class="icon tag">all topics</a></p>
 
   </article>
 

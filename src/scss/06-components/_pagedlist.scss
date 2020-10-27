@@ -1,0 +1,47 @@
+.pagedlist {
+
+  margin-top: 1.5em;
+
+  ul, li {
+    @include resetlist;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem,1fr));
+    gap: 3vmin;
+  }
+
+  a {
+    display: block;
+    min-height: 100%;
+    padding: 1.5vmin 2vmin;
+    background-color: var(--col-back2);
+    border: 2px solid var(--col-back3);
+    text-decoration: none;
+    transform: translateY(0) scale(1);
+    transition: transform 0.3s ease-out;
+  }
+
+  a:hover, a:active, a:focus {
+    transform: translateY(-1vmin) scale(1.03);
+  }
+
+  a * {
+    margin: 0;
+    font-weight: $type_body_weight;
+
+    &:not(h2) {
+      color: var(--col-fore1);
+    }
+  }
+
+  .time {
+    font-size: 0.85em;
+  }
+
+  p:not(.time) {
+    margin-top: 0.5rem;
+  }
+
+}

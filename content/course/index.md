@@ -1,6 +1,7 @@
 ---
-title: About the Docker course
-description: About course
+title: The Docker course
+description: Details about the "Docker for Web Developers" book and video course.
+keywords: about, details, information
 layout: list.njk
 eleventyNavigation:
   key: course

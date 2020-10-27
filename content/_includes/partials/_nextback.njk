@@ -7,21 +7,35 @@
 
     {% if reversed %}
       {% set next = 'next' %}
-      {% set prev = 'previous' %}
+      {% set back = 'back' %}
     {% else %}
-      {% set next = 'previous' %}
-      {% set prev = 'next' %}
+      {% set next = 'back' %}
+      {% set back = 'next' %}
     {% endif %}
 
-    <nav class="nextback">
+    <nav class="nextback {{ back }}">
 
-      {% if nextPost %}
-        <p class="next"><em>{{ next }}:</em> <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></p>
-      {% endif %}
+      <ul>
 
-      {% if previousPost %}
-        <p class="prev"><em>{{ prev }}:</em> <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></p>
-      {% endif %}
+        <li class="{{ next }}">
+          {% if nextPost %}
+            <a href="{{ nextPost.url | url }}">
+              <em>{{ next }}</em>
+              <strong>{{ nextPost.data.title }}</strong>
+            </a>
+          {% endif %}
+        </li>
+
+        <li class="{{ back }}">
+          {% if previousPost %}
+            <a href="{{ previousPost.url | url }}">
+              <em>{{ back }}</em>
+              <strong>{{ previousPost.data.title }}</strong>
+            </a>
+          {% endif %}
+        </li>
+
+      </ul>
 
     </nav>
 

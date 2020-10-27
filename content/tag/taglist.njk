@@ -1,5 +1,5 @@
 ---
-title: All topics
+title: All Docker topics
 layout: page.njk
 permalink: /tag/
 priority: 0.2
@@ -9,11 +9,17 @@ eleventyNavigation:
   order: 3100
 ---
 
-<ul>
-{% for tag in collections.taglist %}
+<p>The following Docker topics are discussed on this site:</p>
 
-  {% set tagUrl %}/tag/{{ tag | lower }}/{% endset %}
-  <li><a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a></li>
+<nav class="taglist">
 
-{% endfor %}
-</ul>
+  <ul>
+  {% for tag in collections.taglist %}
+
+    {% set tagUrl %}/tag/{{ tag | normalise }}/{% endset %}
+    <li><a href="{{ tagUrl | url }}" class="icon tag">{{ tag }}</a></li>
+
+  {% endfor %}
+  </ul>
+
+</nav>

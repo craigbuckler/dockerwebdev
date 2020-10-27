@@ -5,10 +5,11 @@ priority: 0.2
 
 {% block content %}
 
-  <article class="primary">
+  <article class="primary slantdark1">
 
     <h1>
-      {{ title }}{% if pagination.pages.length > 1 %}: page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}{% endif %}
+      {{ title }}
+      {% if pagination.pages.length > 1 %} <span>page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>{% endif %}
     </h1>
 
     {{ content | safe }}
