@@ -1,9 +1,9 @@
 // full-width 16x9 video
-.primary > .video {
-  max-width: 100vmin;
-}
-
 .video {
+
+  padding-top: $layout_padding;
+  padding-bottom: $layout_padding;
+  background-color: var(--col-back2);
 
   div {
     position: relative;

@@ -1,10 +1,11 @@
 ---
-title: Your Docker tutor
+title: Your tutor
 description: The "Docker for Web Developers" course was devised and developed by Craig Buckler.
+keywords: Craig Buckler, tutor, instructor, trainer
 eleventyNavigation:
   key: tutor
   parent: course
-  order: 2300
+  order: 2400
 tags:
   - course
 ---
@@ -59,3 +60,5 @@ I was eventually shown the light by another developer *(thanks Glynne!)* I dived
 > This is the course I wanted when I started using Docker
 
 The course concisely explains the benefits of Docker then jumps straight in with real-world examples and development projects using a variety of technologies. You'll be running Docker in minutes and quickly learn the core concepts.
+
+<a class="button" href="{{ '/' | url }}">buy now</a>

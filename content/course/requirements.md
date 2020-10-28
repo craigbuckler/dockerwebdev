@@ -1,10 +1,11 @@
 ---
 title: Is this course for you?
-description: This course is designed for web developers with no previous knowledge of Docker.
+description: This book and video course is designed for web developers with no previous knowledge of Docker.
+keywords: requirements, prerequisites, knowledge, you
 eleventyNavigation:
   key: requirements
   parent: course
-  order: 2200
+  order: 2300
 tags:
   - course
 ---
@@ -28,4 +29,8 @@ The course provides example projects which refer to JavaScript, PHP, MySQL, Mong
 
 Docker makes it easy to try software without affecting your development PC. You may have no interest in PHP, but you can run PHP code without learning about the language.
 
+> you don't need to know any particular technology &ndash; all Docker examples can be adapted to your own stack
+
 Experimentation becomes risk-free with Docker. Perhaps you're considering a new database or want to try a beta release of WordPress. That software and all its dependencies can be run and removed in minutes.
+
+<a class="button" href="{{ '/' | url }}">buy now</a>

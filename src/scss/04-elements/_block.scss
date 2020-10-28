@@ -25,6 +25,10 @@ blockquote p {
   padding-bottom: 1.5em;
 }
 
+ul, ol {
+  padding-left: $layout_paddinglist;
+}
+
 ul {
   list-style-type: square;
 }

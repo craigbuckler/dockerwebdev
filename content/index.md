@@ -17,7 +17,7 @@ eleventyNavigation:
 
 <h2>Learn Docker quickly</h2>
 
-<p>A concise and easy-to-follow book &amp; video course demonstrating how to set-up practical web development environments on Windows, macOS, and Linux using Docker.</p>
+<p>A concise and easy-to-follow book &amp; video course demonstrating how to set-up practical web project environments on Windows, macOS, and Linux using Docker.</p>
 
 {% include "./_includes/snippets/_content.html" %}
 
@@ -32,12 +32,12 @@ eleventyNavigation:
 
 ## What is Docker?
 
-Docker will revolutionise your web projects. Docker benefits include:
+Docker is a software management tool which will revolutionise your web projects. You will quickly discover its benefits including:
 
 
 ### Install project dependencies in minutes
 
-Docker can install, configure, manage, and remove all the software your project requires. That could include web servers, language runtimes, frameworks, databases, and more.
+Docker can install, configure, manage, and remove any software your project requires. That could include web servers, language runtimes, frameworks, databases, and more.
 
 
 ### Dependencies are lightweight & isolated
