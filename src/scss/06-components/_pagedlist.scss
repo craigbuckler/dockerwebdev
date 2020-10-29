@@ -7,15 +7,20 @@
   }
 
   ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem,1fr));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     gap: 15px;
+  }
+
+  li {
+    flex: 1 1 14em;
   }
 
   a {
     display: block;
     min-height: 100%;
-    padding: 1.5vmin 2vmin;
+    padding: 2.5vmin;
     background-color: var(--col-back2);
     border: 2px solid var(--col-back3);
     text-decoration: none;
@@ -36,12 +41,17 @@
     }
   }
 
+  h2 {
+    font-size: 1.4em;
+  }
+
   .time {
     font-size: 0.85em;
   }
 
   p:not(.time) {
     margin-top: 0.5rem;
+    line-height: 1.2;
   }
 
 }

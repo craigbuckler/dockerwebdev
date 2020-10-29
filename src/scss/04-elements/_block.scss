@@ -25,6 +25,14 @@ blockquote p {
   padding-bottom: 1.5em;
 }
 
+cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.75em;
+  margin-top: 0.75em;
+}
+
 ul, ol {
   padding-left: $layout_paddinglist;
 }
@@ -43,6 +51,16 @@ strong, a {
 
 del {
   color: var(--col-hint2);
+}
+
+hr {
+  width: calc($layout_width / 2);
+  max-width: 100%;
+  height: 0;
+  padding: 0;
+  margin: 2em auto;
+  border: 0 none;
+  border-top: 2px dotted var(--col-back3);
 }
 
 .note {

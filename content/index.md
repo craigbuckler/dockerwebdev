@@ -73,7 +73,10 @@ It's considered too technical, unnecessary, or something for DevOps experts. Ter
 
 You'll be launching Docker within minutes and can progress at your own pace.
 
-[Find out more about the Docker course]({{ '/course/' | url }}) or buy it now&hellip;
+> "I knew the sum total of nothing about Docker a month ago. I certainly didn't appreciate what it could do for the average web developer."
+> <cite>[Ben Frain, UK web developer](https://benfrain.com/)</cite>
+
+[Find out more about the *"Docker for Web Developers"* course]({{ '/course/' | url }}) or buy it now&hellip;
 
 {% include "./_includes/snippets/_prices.html" %}
 

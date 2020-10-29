@@ -1,11 +1,16 @@
-.prices {
+ul.prices {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
   padding-left: 0;
+  padding-right: 0;
   margin-top: 1.5em;
-  margin-left: 0;
+
+  & + p {
+    margin-bottom: 3em;
+  }
 
   li {
     text-align: center;

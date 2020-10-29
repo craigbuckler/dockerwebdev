@@ -3,7 +3,7 @@ main article:first-child {
 }
 
 .primary > *:not(blockquote):not(ul):not(ol):not(pre),
-.primary > ul, .primary > ol,
+.primary ul, .primary ol,
 .pagenav > *,
 .taglist > *,
 .nextback > *,
@@ -13,6 +13,10 @@ blockquote p
   @include mainsize;
 }
 
-.primary > ul, .primary > ol {
+.primary ul, .primary ol {
   padding-left: calc($layout_padding + $layout_paddinglist);
+
+  ul, ol {
+    padding-left: $layout_paddinglist;
+  }
 }

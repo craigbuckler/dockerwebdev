@@ -1,6 +1,9 @@
 <header>
 
-  <p><a href="{{ '/' | url }}">Docker for Web Developers</a></p>
+  <p><a href="{{ '/' | url }}">
+    <img src="/images/icons/logo.svg" inline />
+    <span>Docker for Web Developers</span>
+  </a></p>
 
   <nav class="menu">
     {% navlist collections.all | eleventyNavigation, page, 2 %}

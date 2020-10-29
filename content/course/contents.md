@@ -1,5 +1,5 @@
 ---
-title: Course contents
+title: Docker course contents
 description: A list of subjects covered in the "Docker for Web Developers" book and video course.
 keywords: content, index, subjects, topics
 eleventyNavigation:
@@ -14,7 +14,9 @@ The course book and video follow the Docker topics shown below. The book also pr
 
 The content is updated as Docker and other technologies evolve. You will receive all updates for no further charge.
 
-<a class="button" href="{{ '/' | url }}">buy now</a>
+Buy *"Docker for Web Developers"*&hellip;
+
+{% include "../_includes/snippets/_prices.html" %}
 
 <ol start="0" class="courselist">
   <li>About this book

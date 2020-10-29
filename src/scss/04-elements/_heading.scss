@@ -1,4 +1,4 @@
-h1, h2, h3, dt, blockquote {
+h1, h2, h3, summary, dt, blockquote {
   font-family: $type_head_font;
   font-weight: $type_head_weight;
   line-height: $type_head_lineheight;
@@ -18,11 +18,11 @@ h2 {
   font-size: calc(1.5 * $type_head_size);
 }
 
-h2, h3, dt {
+h2, h3, summary, dt {
   margin-top: 2em;
 }
 
-h3, dt, blockquote, .intro {
+h3, summary, dt, blockquote, .intro {
   font-size: $type_head_size;
   font-weight: $type_head_weight;
 }

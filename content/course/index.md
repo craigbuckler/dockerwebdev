@@ -13,19 +13,30 @@ pagination:
   size: 100
 ---
 
-The "Docker for Web Developers" book and video course includes:
+*"Docker for Web Developers"* provides:
 
-1. a brief introduction to Docker benefits, concepts, and terminology
-1. installation of Docker and Docker Compose on Windows, macOS, and Linux
-1. how to run MySQL and the Adminer PHP database client using Docker and Docker Compose
-1. how to create a full WordPress theme/plugin development environment
-1. how to build a simple Node.js *"Hello World"* application
-1. how to create a complex multi-container quiz application using NGINX, MongoDB, Node.js, and client-side build tools
-1. how to make local code updates with live reloading and debugging in VS Code and browser DevTools
-1. how to push application images to Docker Hub
-1. how to deploy to production servers using Docker Swarm and Kubernetes
-1. appendices with the most useful Docker, Docker Compose, and Dockerfile commands.
+{% include "../_includes/snippets/_content.html" %}
 
-See the [full content]({{ '/course/contents/' | url }}) and [book excerpts and sample videos]({{ '/course/samples/' | url }}), or&hellip;
+> "you're missing a trick if you haven’t looked at Docker yet"
+> <cite>[Ben Frain, UK web developer](https://benfrain.com/)</cite>
 
-<a class="button" href="{{ '/' | url }}">buy now</a>
+By the end of the course, you will know:
+
+1. The benefits of Docker, its concepts, and terminology.
+1. How to install Docker and Docker Compose on Windows, macOS, and Linux.
+1. How to launch MySQL and the Adminer PHP database client using Docker and Docker Compose. The same concepts apply to any other database and application.
+1. How to set-up a full WordPress theme/plugin development environment using Docker.
+1. How to build a simple *"Hello World"* application using a language running with Docker.
+1. How to use Docker to set-up, code, and debug a complex multi-dependency application using NGINX, MongoDB, Node.js, and client-side build tools.
+1. How to make local code updates, use live reloading, and debug a Dockerized application in VS Code and browser DevTools.
+1. How to push application images to Docker Hub.
+1. How to deploy to a Dockerized application to production servers using Docker Swarm and Kubernetes.
+1. All the most useful Docker, Docker Compose, and Dockerfile commands.
+
+---
+
+Buy *"Docker for Web Developers"*&hellip;
+
+{% include "../_includes/snippets/_prices.html" %}
+
+or find out more about the course&hellip;

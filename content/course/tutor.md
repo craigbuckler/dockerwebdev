@@ -1,5 +1,5 @@
 ---
-title: Your tutor
+title: Your Docker tutor
 description: The "Docker for Web Developers" course was devised and developed by Craig Buckler.
 keywords: Craig Buckler, tutor, instructor, trainer
 eleventyNavigation:
@@ -43,13 +43,15 @@ When I first encountered Docker, it seemed like an unnecessary and somewhat daun
 
 > The documentation is comprehensive but Docker has a steep learning curve.
 
-Tutorials can be poor and often:
+Other Docker courses and tutorials can be frustrating. They:
+
+1. pad content and take ages to get to the point
 
 1. presume the reader fully understands all Docker jargon
 
 1. fail to explain or over-explain esoteric points, and
 
-1. rarely address how Docker can be used during development.
+1. rarely advise how to use Docker during development.
 
    When I started, I presumed Docker couldn't handle dynamic application restarts or debugging. Tutorials often claimed every code change required a slow and cumbersome application rebuild.
 
@@ -59,6 +61,10 @@ I was eventually shown the light by another developer *(thanks Glynne!)* I dived
 
 > This is the course I wanted when I started using Docker
 
-The course concisely explains the benefits of Docker then jumps straight in with real-world examples and development projects using a variety of technologies. You'll be running Docker in minutes and quickly learn the core concepts.
+The course concisely explains the benefits of Docker then jumps straight in with real-world examples and development projects using a variety of technologies. You'll be running Docker in minutes and will quickly learn the core concepts.
 
-<a class="button" href="{{ '/' | url }}">buy now</a>
+---
+
+Buy *"Docker for Web Developers"*&hellip;
+
+{% include "../_includes/snippets/_prices.html" %}

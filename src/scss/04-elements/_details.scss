@@ -1,0 +1,26 @@
+details {
+
+  *:not(summary) {
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease 0s;
+
+    &:nth-child(3) {
+      transition-delay: 0.2s;
+    }
+
+    &:nth-child(4) {
+      transition-delay: 0.4s;
+    }
+  }
+
+  &[open] *:not(summary) {
+    transform: scaleX(100%);
+  }
+
+}
+
+summary {
+  user-select: none;
+  cursor: pointer;
+}
