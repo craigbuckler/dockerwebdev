@@ -8,6 +8,9 @@
   <!-- critical CSS -->
   <link rel="stylesheet" href="/css/critical.css" inline />
 
+  <!-- media CSS -->
+  {% if mediacss %}<link rel="stylesheet" href="/css/criticalmedia.css" inline />{% endif %}
+
   <!-- main CSS -->
   <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="{{ '/css/main.css' | url }}" /></noscript>

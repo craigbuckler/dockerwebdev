@@ -14,7 +14,7 @@ header {
   user-select: none;
 
   &, ul ul {
-    background-color: rgba(20,20,20,0.75);
+    background-color: var(--col-back4);
   }
 
   a:link, a:visited {

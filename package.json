@@ -13,14 +13,16 @@
     "watch:htm": "NODE_ENV=development npx eleventy --serve",
     "build:cst": "postcss src/scss/critical.scss -o build/css/critical.css --no-map",
     "watch:cst": "NODE_ENV=development postcss src/scss/critical.scss -o build/css/critical.css -m -w --verbose",
+    "build:csm": "postcss src/scss/criticalmedia.scss -o build/css/criticalmedia.css --no-map",
+    "watch:csm": "NODE_ENV=development postcss src/scss/criticalmedia.scss -o build/css/criticalmedia.css -m -w --verbose",
     "build:css": "postcss src/scss/main.scss -o build/css/main.css --no-map",
     "watch:css": "NODE_ENV=development postcss src/scss/main.scss -o build/css/main.css -m -w --verbose",
     "purge:css": "purgecss --config ./purgecss.config.js",
     "build:es6": "rollup --config",
     "watch:es6": "NODE_ENV=development rollup --config --sourcemap --watch --no-watch.clearScreen",
-    "build:con": "concurrently 'npm run build:cst' 'npm run build:css' 'npm run build:es6'",
+    "build:con": "concurrently 'npm run build:cst' 'npm run build:csm' 'npm run build:css' 'npm run build:es6'",
     "build": "npm run clean && npm run build:con && npm run build:htm && npm run purge:css && npm run build:htm",
-    "start": "npm run clean && clear && npm run build:cst && concurrently 'npm:watch:*'"
+    "start": "npm run clean && clear && npm run build:cst && npm run build:csm && concurrently 'npm:watch:*'"
   },
   "browserslist": [
     "> 2%"
@@ -52,10 +54,11 @@
     "html-minifier": "4.0.0",
     "image-size": "0.9.3",
     "inline-source": "7.2.0",
+    "markdown-it-anchor": "6.0.0",
     "postcss": "8.1.4",
     "postcss-advanced-variables": "3.0.1",
     "postcss-assets": "5.0.0",
-    "postcss-cli": "8.1.0",
+    "postcss-cli": "8.2.0",
     "postcss-map-get": "0.2.9",
     "postcss-nested": "5.0.1",
     "postcss-scss": "3.0.2",

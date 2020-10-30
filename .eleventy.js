@@ -8,6 +8,10 @@ const
   src = global.src = 'content',
   build = global.build = 'build',
 
+  // modules
+  markdownIt = require('markdown-it'),
+  markdownItAnchor = require('markdown-it-anchor'),
+
   // meta data
   pkg = require('./package.json'),
   meta = global.meta = require('./lib/json').flatten( require('./site.json') );
@@ -17,6 +21,17 @@ module.exports = config => {
   // update meta data
   meta.version = pkg.version;
   meta.now = new Date();
+
+  /* --- MARKDOWN OPTIONS --- */
+
+  config.setLibrary('md', markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true
+  }).use(markdownItAnchor, {
+    permalink: false
+  }));
 
 
   /* --- PASS-THROUGH COPY --- */

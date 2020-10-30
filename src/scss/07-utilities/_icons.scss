@@ -1,22 +1,50 @@
 // inline SVG icons
 @mixin icon($name) {
-  .#{$name}:before {
+  .#{$name}::before {
     background-image: inline('svg/#{$name}.svg');
   }
 }
 
-.icon, .icon::before {
+@mixin iconalt($name) {
+  .#{$name}::after {
+    background-image: inline('svg/#{$name}.svg');
+  }
+}
+
+.icon, .icon:not(.next)::before, .icon.next::after {
   display: inline-block;
   vertical-align: middle;
 }
 
-.icon::before {
+.icon:not(.next)::before, .icon.next::after {
   content: '';
   width: 1.6em;
-  height: 1em;
+  height: 1.6em;
   font-weight: normal;
+  margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
+// @include icon(bookopen);
+@include icon(business);
+// @include icon(camera);
+@include icon(chat);
+// @include icon(code);
+@include icon(codepen);
+// @include icon(download);
+@include icon(email);
+@include icon(github);
+@include icon(facebook);
+@include icon(linkedin);
+@include icon(news);
+@include icon(share);
 @include icon(tag);
+@include icon(tick);
+@include icon(twitter);
+@include icon(user);
+
+// @include icon(up);
+// @include icon(down);
+@include icon(back);
+@include iconalt(next);

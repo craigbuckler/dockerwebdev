@@ -1,33 +1,34 @@
-// critical styles (page head)
+// main styles (loaded async)
 @import '01-settings/_variables';
 
 @import '02-tools/_mixins';
 
-@import '03-generic/_reset';
-@import '03-generic/_theme';
-@import '03-generic/_slant';
+// @import '03-generic/_reset';
+// @import '03-generic/_theme';
+// @import '03-generic/_slant';
 
-@import '04-elements/_body';
-@import '04-elements/_heading';
-@import '04-elements/_block';
+// @import '04-elements/_body';
+// @import '04-elements/_heading';
+// @import '04-elements/_block';
 @import '04-elements/_details';
 @import '04-elements/_code';
-@import '04-elements/_link';
+// @import '04-elements/_link';
 
-@import '05-layout/_article';
-@import '05-layout/_flex';
-@import '05-layout/_header';
+// @import '05-layout/_article';
+// @import '05-layout/_flex';
+// @import '05-layout/_header';
 @import '05-layout/_footer';
 
-@import '06-components/_menu';
-@import '06-components/_media';
-@import '06-components/_prices';
-@import '06-components/_pagedlist';
+// @import '06-components/_menu';
+// @import '06-components/_media';
+// @import '06-components/_prices';
+// @import '06-components/_pagedlist';
 @import '06-components/_taglist';
 @import '06-components/_nextback';
-@import '06-components/_image';
+// @import '06-components/_image';
 @import '06-components/_video';
-@import '06-components/_dockerlogo';
 @import '06-components/_courselist';
+@import '06-components/_iconlist';
+// @import '06-components/_dockerlogo';
 
 @import '07-utilities/_icons';

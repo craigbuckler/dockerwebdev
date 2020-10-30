@@ -17,7 +17,7 @@
 
       "body": {
         "font": "Corbel, \"Lucida Sans\", \"DejaVu Sans\", \"Liberation Sans\", Helvetica, Arial, sans-serif",
-        "size": "calc(100% + 1vmin)",
+        "size": "calc(100% + .8vmin)",
         "weight": 300,
         "lineheight": 1.4
       },
@@ -58,6 +58,7 @@
         "back1": "#232c33",
         "back2": "#1c2227",
         "back3": "#046fbd",
+        "back4": "rgba(20,20,20,.85)",
 
         "link1": "#6abbf6",
         "link2": "#0053a2",
@@ -71,15 +72,16 @@
 
       "light": {
         "fore1": "#333",
-        "fore2": "#f26",
+        "fore2": "#000",
 
         "back1": "#fff",
-        "back2": "#ddd",
+        "back2": "#d8d8d8",
         "back3": "#ccc",
+        "back4": "rgba(220,220,220,.85)",
 
-        "link1": "#6abbf6",
-        "link2": "#0053a2",
-        "link3": "#2d363e",
+        "link1": "#1d91b4",
+        "link2": "#37b1d9",
+        "link3": "#aaa",
 
         "hint1": "#090",
         "hint2": "#c22",

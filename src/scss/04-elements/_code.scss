@@ -1,5 +1,5 @@
 // line numbers
-body, h2 {
+body, h2, h3 {
   counter-reset: lineNumber;
 }
 
@@ -39,7 +39,7 @@ code {
 // code block
 pre[class*="language-"] {
 	padding: 1em;
-	margin: 1em 0;
+	margin: 2em 0;
 	overflow: auto;
 }
 
@@ -50,7 +50,7 @@ pre[class*="language-"] {
 
 // inline code
 :not(pre) > code {
-	padding: 0.2em 0.3em 0.3em;
+	padding: 0.1em 0.3em;
 	background: #1d1f21;
 	border: 1px solid #393d41;
 	border-radius: .3em;

@@ -2,4 +2,8 @@ footer {
   font-size: 0.85em;
   padding-top: 4em;
   padding-bottom: 3em;
+
+  &.flex2 > section {
+    max-width: calc($layout_widthcolumn - 4rem);
+  }
 }

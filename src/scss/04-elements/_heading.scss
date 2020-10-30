@@ -3,6 +3,7 @@ h1, h2, h3, summary, dt, blockquote {
   font-weight: $type_head_weight;
   line-height: $type_head_lineheight;
   color: var(--col-fore2);
+  scroll-margin-top: 4rem;
 }
 
 h1 {

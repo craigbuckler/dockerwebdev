@@ -2,12 +2,13 @@ main article:first-child {
   padding-top: 4em;
 }
 
-.primary > *:not(blockquote):not(ul):not(ol):not(pre),
+.primary > *:not(blockquote):not(aside):not(ul):not(ol):not(pre),
 .primary ul, .primary ol,
 .pagenav > *,
 .taglist > *,
 .nextback > *,
-blockquote p
+blockquote p,
+aside p
 {
   max-width: $layout_width;
   @include mainsize;

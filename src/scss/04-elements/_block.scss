@@ -1,4 +1,4 @@
-p, ul, ol, blockquote {
+p, ul, ol, blockquote, aside {
   margin-top: 1em;
 }
 
@@ -33,6 +33,15 @@ cite {
   margin-top: 0.75em;
 }
 
+aside {
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 1em;
+  background-color: var(--col-back2);
+  border: 3px solid var(--col-back3);
+  border-style: solid none;
+}
+
 ul, ol {
   padding-left: $layout_paddinglist;
 }
@@ -51,6 +60,16 @@ strong, a {
 
 del {
   color: var(--col-hint2);
+}
+
+kbd {
+  font-family: $type_code_font;
+  font-size: 0.85em;
+  padding: 0 0.2em;
+  color: var(--col-back2);
+  background-color: var(--col-fore1);
+  border-radius: 3px;
+  box-shadow: 0 0.15em 0 var(--col-fore2);
 }
 
 hr {

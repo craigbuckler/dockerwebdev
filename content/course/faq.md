@@ -103,13 +103,15 @@ The following frequently-asked questions should answer most queries, but please 
 <details>
 <summary>How much does it cost?</summary>
 
-<p><a href="{{ '/' | url }}">$99 US dollars for the full book and video course</a>, plus your country's sales tax where applicable.</p>
+<p><a href="{{ '/' | url }}">$99 US dollars for the full book and video course</a>.</p>
+
+<p>Your country's sales tax for digital services will be added where applicable. Please note this may differ from ebook tax because you're receiving additional products such as the code and support chat room.</p>
 </details>
 
 <details>
 <summary>Can I purchase the books or videos separately?</summary>
 
-<p>Yes, but I recommend buying both. The book contains more information, but some concepts may be easier to follow on video.</p>
+<p>Yes, but I recommend buying both. The book contains more information and reference materials, but some concepts may be easier to follow on video.</p>
 </details>
 
 <details>
@@ -145,7 +147,7 @@ The following frequently-asked questions should answer most queries, but please 
 <details>
 <summary>Are my details kept private?</summary>
 
-<p>Yes. Both I and Gumroad have <a href="https://gumroad.com/privacy">strict privacy policies</a>.</p>
+<p>Yes. See the strict <a href="{{ '/privacy-policy' | url }}">DockerWebDev.com privacy policy</a> and the <a href="https://gumroad.com/privacy">Gumroad privacy policy</a>.</p>
 </details>
 
 <details>

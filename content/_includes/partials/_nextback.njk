@@ -20,7 +20,7 @@
         <li class="{{ next }}">
           {% if nextPost %}
             <a href="{{ nextPost.url | url }}">
-              <em>{{ next }}</em>
+              <em class="icon {{ next }}">{{ next }}</em>
               <strong>{{ nextPost.data.title }}</strong>
             </a>
           {% endif %}
@@ -29,7 +29,7 @@
         <li class="{{ back }}">
           {% if previousPost %}
             <a href="{{ previousPost.url | url }}">
-              <em>{{ back }}</em>
+              <em class="icon {{ back }}">{{ back }}</em>
               <strong>{{ previousPost.data.title }}</strong>
             </a>
           {% endif %}

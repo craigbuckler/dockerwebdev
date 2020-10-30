@@ -2,7 +2,7 @@ details {
 
   *:not(summary) {
     transform-origin: 0 0;
-    transform: scaleX(0);
+    transform: scaleX(1%);
     transition: transform 0.3s ease 0s;
 
     &:nth-child(3) {
@@ -21,6 +21,7 @@ details {
 }
 
 summary {
+  outline: 0 none;
   user-select: none;
   cursor: pointer;
 }

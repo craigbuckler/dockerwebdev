@@ -4,12 +4,15 @@
   @include reset;
 
   @media (prefers-reduced-motion: reduce) {
-    animation: none !important;
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
   }
 
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 1.5em auto;
 }

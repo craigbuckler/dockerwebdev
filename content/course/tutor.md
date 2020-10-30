@@ -29,12 +29,14 @@ You may have encountered some of my other books, courses, and training materials
 
 You can find out more about me at:
 
-* [craigbuckler.com](https://craigbuckler.com/) - personal site
-* [OptimalWorks.net](https://www.optimalworks.net/) - business site
-* [@craigbuckler on Twitter](https://twitter.com/craigbuckler)
-* [LinkedIn](https://www.linkedin.com/in/craigbuckler)
-* [GitHub](https://github.com/craigbuckler)
-* [Codepen.io](https://codepen.io/craigbuckler)
+<ol class="iconlist">
+<li><a href="https://craigbuckler.com/" class="icon user">craigbuckler.com</a> &ndash; personal site</li>
+<li><a href="https://www.optimalworks.net/" class="icon business">OptimalWorks.net</a> &ndash; business site</li>
+<li><a href="https://twitter.com/craigbuckler" class="icon twitter">@craigbuckler on Twitter</a></li>
+<li><a href="https://www.linkedin.com/in/craigbuckler" class="icon linkedin">LinkedIn</a></li>
+<li><a href="https://github.com/craigbuckler" class="icon github">GitHub</a></li>
+<li><a href="https://codepen.io/craigbuckler" class="icon codepen">Codepen.io</a></li>
+</ol>
 
 
 ## Why did I create a Docker course?
@@ -43,9 +45,9 @@ When I first encountered Docker, it seemed like an unnecessary and somewhat daun
 
 > The documentation is comprehensive but Docker has a steep learning curve.
 
-Other Docker courses and tutorials can be frustrating. They:
+Other Docker courses and tutorials can be frustrating. They often:
 
-1. pad content and take ages to get to the point
+1. pad content and take too long to get to the point
 
 1. presume the reader fully understands all Docker jargon
 
@@ -59,9 +61,9 @@ Other Docker courses and tutorials can be frustrating. They:
 
 I was eventually shown the light by another developer *(thanks Glynne!)* I dived deep into Docker and I realised what I'd been missing.
 
-> This is the course I wanted when I started using Docker
+> "Docker for Web Developers" is the course I wanted when I started using Docker
 
-The course concisely explains the benefits of Docker then jumps straight in with real-world examples and development projects using a variety of technologies. You'll be running Docker in minutes and will quickly learn the core concepts.
+The course concisely explains the benefits of Docker then jumps straight in with real-world examples and development projects using a variety of technologies. You'll be running Docker in minutes and will learn the core concepts quickly.
 
 ---
 

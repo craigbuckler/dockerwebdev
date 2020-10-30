@@ -3,6 +3,7 @@ title: Docker for Web Developers
 description: A book and video course showing how to revolutionize your web development projects with Docker.
 keywords: learn, help
 layout: base.njk
+mediacss: true
 priority: 1.0
 eleventyNavigation:
   key: buy
