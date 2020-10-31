@@ -1,12 +1,12 @@
 a:link, a:visited {
   text-decoration: underline;
-  color: var(--col-link1);
+  color: $theme_link1;
   outline-offset: 0.2em;
 }
 
 a:hover, a:focus, a:active {
   outline: 2px dotted currentColor;
-  filter: var(--col-hover);
+  filter: $theme_hover;
 }
 
 .button, .button:link, .button:visited {
@@ -18,7 +18,7 @@ a:hover, a:focus, a:active {
   text-align: center;
   padding: 0 1em;
   margin: 0 auto;
-  color: var(--col-fore1);
-  background-color: var(--col-link2);
+  color: $theme_fore1;
+  background-color: $theme_link2;
   border-radius: 0.2em;
 }

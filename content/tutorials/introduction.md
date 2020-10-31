@@ -1,6 +1,6 @@
 ---
-title: "Docker for Web Developers, chapter 1: Introduction"
-description: The first chapter of "Docker for Web Developers" which introduces the core concepts and benefits of Docker.
+title: Do you need Docker?
+description: The first chapter of "Docker for Web Developers" which introduces the concepts and benefits of Docker.
 date: 2020-10-28
 keywords: excerpt, sample, chapter, introduction, summary
 tags:

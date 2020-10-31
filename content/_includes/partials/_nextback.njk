@@ -17,23 +17,23 @@
 
       <ul>
 
-        <li class="{{ next }}">
-          {% if nextPost %}
+        {% if nextPost %}
+          <li class="{{ next }}">
             <a href="{{ nextPost.url | url }}">
               <em class="icon {{ next }}">{{ next }}</em>
               <strong>{{ nextPost.data.title }}</strong>
             </a>
-          {% endif %}
-        </li>
+          </li>
+        {% endif %}
 
-        <li class="{{ back }}">
-          {% if previousPost %}
+        {% if previousPost %}
+          <li class="{{ back }}">
             <a href="{{ previousPost.url | url }}">
               <em class="icon {{ back }}">{{ back }}</em>
               <strong>{{ previousPost.data.title }}</strong>
             </a>
-          {% endif %}
-        </li>
+          </li>
+        {% endif %}
 
       </ul>
 

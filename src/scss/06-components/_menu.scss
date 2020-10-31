@@ -38,7 +38,7 @@
 
   // disable active link
   .active {
-    color: var(--col-fore1);
+    color: $theme_fore1;
     pointer-events: none;
   }
 

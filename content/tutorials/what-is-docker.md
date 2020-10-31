@@ -1,6 +1,6 @@
 ---
-title: "Docker for Web Developers, chapter 2: What is Docker?"
-description: The second chapter of "Docker for Web Developers" explains what Docker is, how it works, and how it can assist when setting up web development environments.
+title: What is Docker and how does it work?
+description: The second chapter of "Docker for Web Developers" explains what Docker is, how it works, and how it can help when setting up web development environments.
 keywords: excerpt, sample, chapter, technology
 date: 2020-10-29
 tags:
@@ -408,4 +408,4 @@ What you've learned in this chapter:
 
    However, it's not necessarily essential or practical to use it for every application component on production systems.
 
-Enough theory. It's time to [install Docker]({{ 'tutorials/install-docker' | url }})&hellip;
+Enough theory. It's time to [install Docker]({{ '/tutorials/install-docker' | url }})&hellip;

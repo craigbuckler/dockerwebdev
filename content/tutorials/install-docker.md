@@ -1,6 +1,6 @@
 ---
-title: "Docker for Web Developers, chapter 3: How to install Docker"
-description: The third chapter of "Docker for Web Developers" which provides Docker installation instructions for Windows, mac OS, and Linux.
+title: How to install Docker on Windows, mac OS, and Linux
+description: The third chapter of "Docker for Web Developers" provides Docker installation instructions for Windows, mac OS, and Linux.
 date: 2020-10-30
 keywords: excerpt, sample, chapter, install, load
 tags:

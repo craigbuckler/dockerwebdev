@@ -1,6 +1,7 @@
 ---
-title: How Docker will benefit your web projects
-description: An brief introduction to using Docker during web development.
+title: The benefits of Docker for web development
+description: How you can use Docker to revolutionize your web application development projects.
+keywords: benefits
 date: 2020-10-31
 tags:
   - concepts

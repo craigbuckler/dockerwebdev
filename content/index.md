@@ -3,7 +3,6 @@ title: Docker for Web Developers
 description: A book and video course showing how to revolutionize your web development projects with Docker.
 keywords: learn, help
 layout: base.njk
-mediacss: true
 priority: 1.0
 eleventyNavigation:
   key: buy
@@ -18,7 +17,7 @@ eleventyNavigation:
 
 <h2>Learn Docker quickly</h2>
 
-<p>A concise and easy-to-follow book &amp; video course demonstrating how to set-up practical web project environments on Windows, macOS, and Linux using Docker.</p>
+<p>A concise and easy-to-follow book &amp; video course showing how to use Docker to set-up practical web project environments on Windows, macOS, &amp; Linux.</p>
 
 {% include "./_includes/snippets/_content.html" %}
 

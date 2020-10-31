@@ -14,11 +14,11 @@ body {
   line-height: $type_body_lineheight;
   min-height: 100%;
   @include reset;
-  color: var(--col-fore1);
-  background-color: var(--col-back2);
+  color: $theme_fore1;
+  background-color: $theme_back2;
   overflow-y: scroll;
 }
 
 main {
-  background-color: var(--col-back1);
+  background-color: $theme_back1;
 }

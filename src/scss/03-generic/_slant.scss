@@ -1,10 +1,10 @@
 .slantdark1 {
   background: repeating-linear-gradient(
     -4deg,
-    var(--col-back1),
-    var(--col-back1) 30%,
-    var(--col-back2) 30%,
-    var(--col-back2)
+    $theme_back1,
+    $theme_back1 30%,
+    $theme_back2 30%,
+    $theme_back2
   ) no-repeat 0 0;
   background-size: 100% 15rem;
 }
@@ -12,19 +12,19 @@
 .slantdark5 {
   background: repeating-linear-gradient(
     -5deg,
-    var(--col-back1),
-    var(--col-back1) 20%,
-    var(--col-back2) 20%,
-    var(--col-back2)
+    $theme_back1,
+    $theme_back1 20%,
+    $theme_back2 20%,
+    $theme_back2
   );
 }
 
 .slantlight2 {
   background: repeating-linear-gradient(
     2deg,
-    var(--col-back2),
-    var(--col-back2) 80%,
-    var(--col-back1) 80%,
-    var(--col-back1)
+    $theme_back2,
+    $theme_back2 80%,
+    $theme_back1 80%,
+    $theme_back1
   );
 }

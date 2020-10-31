@@ -7,14 +7,14 @@ h2 + p, h3 + p {
 }
 
 blockquote {
-  background-color: var(--col-back2);
-  border-left: 1vw solid var(--col-back3);
+  background-color: $theme_back2;
+  border-left: 1vw solid $theme_back3;
   clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
 }
 
 blockquote:nth-of-type(2n) {
   border-left: 0 none;
-  border-right: 1vw solid var(--col-back3);
+  border-right: 1vw solid $theme_back3;
   clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 85%);
 }
 
@@ -37,8 +37,8 @@ aside {
   font-style: italic;
   text-align: center;
   padding-bottom: 1em;
-  background-color: var(--col-back2);
-  border: 3px solid var(--col-back3);
+  background-color: $theme_back2;
+  border: 3px solid $theme_back3;
   border-style: solid none;
 }
 
@@ -59,17 +59,17 @@ strong, a {
 }
 
 del {
-  color: var(--col-hint2);
+  color: $theme_hint2;
 }
 
 kbd {
   font-family: $type_code_font;
   font-size: 0.85em;
   padding: 0 0.2em;
-  color: var(--col-back2);
-  background-color: var(--col-fore1);
+  color: $theme_back2;
+  background-color: $theme_fore1;
   border-radius: 3px;
-  box-shadow: 0 0.15em 0 var(--col-fore2);
+  box-shadow: 0 0.15em 0 $theme_fore2;
 }
 
 hr {
@@ -79,7 +79,7 @@ hr {
   padding: 0;
   margin: 2em auto;
   border: 0 none;
-  border-top: 2px dotted var(--col-back3);
+  border-top: 2px dotted $theme_back3;
 }
 
 .note {
@@ -91,7 +91,7 @@ hr {
 .time {
   font-weight: 400;
   margin-top: 0;
-  color: var(--col-fore2);
+  color: $theme_fore2;
 }
 
 .words {

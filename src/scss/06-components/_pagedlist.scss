@@ -21,8 +21,8 @@
     display: block;
     min-height: 100%;
     padding: 2.5vmin;
-    background-color: var(--col-back2);
-    border: 2px solid var(--col-back3);
+    background-color: $theme_back2;
+    border: 2px solid $theme_back3;
     text-decoration: none;
     transform: translateY(0) scale(1);
     transition: transform 0.3s ease-out;
@@ -37,7 +37,7 @@
     font-weight: $type_body_weight;
 
     &:not(h2) {
-      color: var(--col-fore1);
+      color: $theme_fore1;
     }
   }
 
