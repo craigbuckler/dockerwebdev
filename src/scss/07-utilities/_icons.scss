@@ -26,6 +26,11 @@
   background-position: 50%;
 }
 
+.icon.next::after {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
 // @include icon(bookopen);
 @include icon(business);
 // @include icon(camera);

@@ -2,6 +2,7 @@
 title: Docker & course FAQs
 description: Frequently asked questions about the "Docker for Web Developers" book and video course.
 keywords: faq, questions, answers
+date: 2020-10-25
 eleventyNavigation:
   key: faq
   parent: course

@@ -1,5 +1,5 @@
-$chaptersize: 2.5em;
-$chapterpad: 3em;
+$chaptersize: 3em;
+$chapterpad: 3.5em;
 
 body {
   counter-set: h1Num -1;
@@ -18,7 +18,7 @@ ol.courselist {
   }
 
   & > li {
-    font-weight: 400;
+    font-weight: bold;
     margin-top: 1em;
   }
 

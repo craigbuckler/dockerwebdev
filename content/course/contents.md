@@ -2,6 +2,7 @@
 title: Docker course contents
 description: A list of subjects covered in the "Docker for Web Developers" book and video course.
 keywords: content, index, subjects, topics
+date: 2020-10-22
 eleventyNavigation:
   key: contents
   parent: course

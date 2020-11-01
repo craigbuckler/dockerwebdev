@@ -25,7 +25,6 @@ ul.prices {
   span {
     display: block;
     font-size: 0.75em;
-    font-weight: 300;
     color: $theme_fore1;
   }
 
@@ -36,15 +35,16 @@ ul.prices {
 
   .button {
     width: 7.5em;
+    padding: 0;
     margin-top: 0.4em;
   }
 
   li:not(.feature) .button {
-    background-color: var(--col-link3);
+    background-color: $theme_link3;
   }
 
   .price {
-    font-weight: 600;
+    font-weight: bold;
     color: $theme_hint1;
   }
 

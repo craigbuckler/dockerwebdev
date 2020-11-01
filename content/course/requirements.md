@@ -2,6 +2,7 @@
 title: Is this Docker course for you?
 description: This book and video course is designed for web developers with no previous knowledge of Docker.
 keywords: requirements, prerequisites, knowledge, you
+date: 2020-10-23
 eleventyNavigation:
   key: requirements
   parent: course

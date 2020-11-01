@@ -55,7 +55,7 @@ li {
 }
 
 strong, a {
-  font-weight: 400;
+  font-weight: calc($type_body_weight + 100);
 }
 
 del {
@@ -89,7 +89,6 @@ hr {
 }
 
 .time {
-  font-weight: 400;
   margin-top: 0;
   color: $theme_fore2;
 }

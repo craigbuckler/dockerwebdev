@@ -2,5 +2,6 @@
   "layout": "tutorial.njk",
   "collection": "post",
   "reversed": true,
+  "dateshow": true,
   "priority": 0.9
 }

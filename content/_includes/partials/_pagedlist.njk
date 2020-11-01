@@ -8,7 +8,7 @@
 
         <h2>{{ post.data.title }}</h2>
 
-        {% if post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
+        {% if dateshow and post.data.date %}<p class="time"><time datetime="{{ post.data.date | dateymd }}">{{ post.data.date | datefriendly }}</time></p>{% endif %}
 
         <p>{{ post.data.description }}</p>
 

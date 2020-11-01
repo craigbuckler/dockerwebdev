@@ -3,13 +3,14 @@ title: The Docker course
 description: Details about the "Docker for Web Developers" book and video course.
 keywords: about, details, information
 layout: list.njk
+date: 2020-10-20
 eleventyNavigation:
   key: course
   order: 2000
 pagination:
   alias: pagedlist
   data: collections.course
-  reverse: true
+  reverse: false
   size: 100
 ---
 
