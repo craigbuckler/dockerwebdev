@@ -18,4 +18,34 @@
 
 {% include "./partials/_footer.njk" %}
 
+{% block schema %}
+
+<script type="application/ld+json">{
+"@context": "http://schema.org/",
+"@type": "Course",
+"name": "{% meta 'site' %}",
+"description": "{% meta 'description' %}",
+"url": "{% meta 'url' %}/",
+"schema:author": {
+"@type": "schema:Person",
+"schema:name": "{% meta 'author' %}"
+},
+"schema:provider": {
+"@type": "schema:Person",
+"schema:name": "{% meta 'author' %}",
+"schema:url": "{% meta 'url' %}/"
+},
+"inLanguage": "English",
+"contentLocation": "online",
+"accessMode": ["textual", "auditory", "visual"],
+"accessModeSufficient": "textual",
+"datePublished": "2020-11-02",
+"isFamilyFriendly": true,
+"image": "{% meta 'url' %}{{ '/images/docker-for-web-developers.png' | url }}",
+"video": "https://www.youtube.com/watch?v=Z3l8Iec4dBk",
+"workExample": "{% meta 'url' %}{{ '/tutorials/' | url }}"
+}</script>
+
+{% endblock %}
+
 {% include "./partials/_htmlfoot.njk" %}

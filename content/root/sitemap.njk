@@ -12,4 +12,12 @@ eleventyExcludeFromCollections: true
     <priority>{{ post.data.priority.toFixed(1) }}</priority>
   </url>
   {% endif %}{% endfor %}
+  {% for tag in collections.taglist %}{% set tagUrl %}/tag/{{ tag | normalise }}/{% endset %}
+  <url>
+    <loc>{% meta 'url' %}{{ tagUrl | url }}</loc>
+    <lastmod>{% meta 'nowymd' %}</lastmod>
+    <changefreq>{% meta 'changefreq' %}</changefreq>
+    <priority>0.1</priority>
+  </url>
+  {% endfor %}
 </urlset>

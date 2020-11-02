@@ -1,0 +1,43 @@
+---
+permalink: /redir.php
+eleventyExcludeFromCollections: true
+---
+<?php
+// requested URL
+$addr = strtolower($_SERVER['REQUEST_URI']);
+$url = '';
+
+// redirects
+$redir = array(
+
+	'index' => '',
+	'welcome' => '',
+	'home' => '',
+  'topic' => 'tag/',
+  'subject' => 'tag/',
+  'article' => 'tutorials/',
+	'blog' => 'tutorials/',
+	'priv' => 'privacy-policy/',
+  'course' => 'course/',
+  'video' => 'course/samples/',
+  'example' => 'course/samples/',
+  'excerpt' => 'course/samples/',
+  'sample' => 'course/samples/'
+
+);
+foreach ($redir as $pold => $pnew) if (strpos($addr, $pold) !== false) $url = '{% meta 'url' %}{{ '/' | url }}' . $pnew;
+
+if ($url !== '') {
+
+	// redirect found
+	header('HTTP/1.1 301 Moved Permanently');
+	header('Location: ' . $url);
+
+}
+else {
+
+	// show error page
+	header('HTTP/1.1 404 Not Found');
+	include('404.html');
+
+}

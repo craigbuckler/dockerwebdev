@@ -81,6 +81,7 @@ module.exports = config => {
 
   // format dates
   const dateformat = require('./lib/filters/dateformat');
+  meta.nowymd = dateformat.ymd(meta.now);
   config.addFilter('datefriendly', dateformat.friendly);
   config.addFilter('dateymd', dateformat.ymd);
 

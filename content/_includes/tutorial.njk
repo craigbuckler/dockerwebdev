@@ -24,3 +24,47 @@ priority: 0.9
   </article>
 
 {% endblock %}
+
+{% block schema %}
+
+<script type="application/ld+json">{
+"@context": "http://schema.org/",
+"@type": "TechArticle",
+"proficiencyLevel": "beginner",
+"headline": "{{ title }}",
+"description": "{{ description }}",
+"datePublished": "{{ date | dateymd }}",
+"dateModified": "{{ date | dateymd }}",
+"inLanguage": "English",
+"contentLocation": "online",
+"accessMode": ["textual"],
+"accessModeSufficient": "textual",
+"isFamilyFriendly": true,
+"wordCount": "{{ content | wordcount }}",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "{% meta 'url' %}{{ page.url | url }}"
+},
+"image": {
+"@type": "imageObject",
+"url": "{% meta 'url' %}{{ '/images/docker-for-web-developers.png' | url }}",
+"width": "1000",
+"height": "500"
+},
+"author": {
+"@type": "Person",
+"name": "{% meta 'author' %}"
+},
+"publisher": {
+"@type": "Organization",
+"name": "{% meta 'site' %}",
+"logo": {
+"@type": "ImageObject",
+"url": "{% meta 'url' %}{{ '/images/icon/logo.png' | url }}",
+"width": 50,
+"height": 50
+}
+}
+}</script>
+
+{% endblock %}

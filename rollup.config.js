@@ -1,8 +1,13 @@
-const productionMode = (process.env.NODE_ENV !== 'development');
-
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import replace from '@rollup/plugin-replace';
 import { terser } from 'rollup-plugin-terser';
+
+const
+  productionMode = (process.env.NODE_ENV !== 'development'),
+  variables = require('./lib/json').flatten( require('./site.json'), '__', '__' );
+
+variables.__dev__ = !productionMode;
 
 const
 
@@ -11,7 +16,8 @@ const
     nodeResolve({
       browser: true
     }),
-    commonjs()
+    commonjs(),
+    replace(variables)
   ],
 
   // output plugins
@@ -49,6 +55,17 @@ export default [
     input: './src/js/sw.js',
     output: {
       file: './build/sw.js',
+      format: 'es',
+      plugins: pluginsOut
+    },
+    plugins
+  },
+
+  // analytics
+  {
+    input: './src/js/analytics.js',
+    output: {
+      file: './build/js/a.js',
       format: 'es',
       plugins: pluginsOut
     },
