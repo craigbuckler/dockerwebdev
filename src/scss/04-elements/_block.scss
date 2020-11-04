@@ -1,5 +1,10 @@
-p, ul, ol, blockquote, aside {
+p, ul, ol {
   margin-top: 1em;
+}
+
+blockquote, aside {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 h2 + p, h3 + p {

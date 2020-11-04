@@ -144,7 +144,7 @@ The [Docker Hub](https://hub.docker.com/) provides a repository of commonly-used
 * language runtimes or frameworks such as [Node.js](https://hub.docker.com/_/node), [PHP](https://hub.docker.com/_/php), [Python](https://hub.docker.com/_/python), [Ruby](https://hub.docker.com/_/ruby), [Rust](https://hub.docker.com/_/rust), and any other language you've heard of.
 * applications such as [WordPress](https://hub.docker.com/_/wordpress), [Drupal](https://hub.docker.com/_/drupal), [Joomla](https://hub.docker.com/_/joomla), [Nextcloud](https://hub.docker.com/_/nextcloud) etc. *(These often require additional containers such as databases.)*
 
-Reminder: [sign-up for Docker Hub account](https://hub.docker.com/) if you'd like to [publish your own images](#push-your-docker-image-to-a-repository).
+Reminder: [sign-up for Docker Hub account](https://hub.docker.com/) if you'd like to [publish your own images]({{ '/course/contents/' | url }}).
 
 
 ### Dockerfile

@@ -1,0 +1,54 @@
+---
+permalink: /manifest.webmanifest
+eleventyExcludeFromCollections: true
+---
+{
+	"lang"							: "{% meta 'language' %}",
+	"dir"								: "ltr",
+	"name"							: "{% meta 'site' %}",
+	"short_name"				: "{% meta 'siteshort' %}",
+	"description"				: "{% meta 'description' %}",
+	"scope"							: "{{ '/' | url }}",
+	"start_url"					: "{{ '/' | url }}",
+	"display"						: "standalone",
+	"theme_color"				: "{% meta 'token_theme_color' %}",
+	"background_color"	: "{% meta 'token_theme_color' %}",
+	"icons": [
+		{
+      "src"           : "{{ '/images/icons/docker-076.png' | url }}",
+      "sizes"         : "76x76",
+      "type"          : "image/png"
+    },
+		{
+      "src"           : "{{ '/images/icons/docker-120.png' | url }}",
+      "sizes"         : "120x120",
+      "type"          : "image/png"
+    },
+		{
+      "src"           : "{{ '/images/icons/docker-152.png' | url }}",
+      "sizes"         : "152x152",
+      "type"          : "image/png"
+    },
+		{
+      "src"           : "{{ '/images/icons/docker-192.png' | url }}",
+      "sizes"         : "192x192",
+      "type"          : "image/png"
+    },
+		{
+      "src"           : "{{ '/images/icons/docker-310.png' | url }}",
+      "sizes"         : "310x310",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "{{ '/images/icons/docker-512.png' | url }}",
+      "sizes"         : "512x512",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "{{ '/images/icons/docker-mask.png' | url }}",
+      "sizes"         : "787x787",
+      "type"          : "image/png",
+      "purpose"       : "maskable"
+    }
+	]
+}

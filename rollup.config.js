@@ -4,10 +4,14 @@ import replace from '@rollup/plugin-replace';
 import { terser } from 'rollup-plugin-terser';
 
 const
+  pkg = require('./package.json'),
   productionMode = (process.env.NODE_ENV !== 'development'),
   variables = require('./lib/json').flatten( require('./site.json'), '__', '__' );
 
 variables.__dev__ = !productionMode;
+variables.__version__ = pkg.version;
+variables.__versionFile__ = pkg.version.replace(/\./g, '-');
+variables.__PWAcache__ = variables.__versionFile__ + '::' + variables.__siteshort__;
 
 const
 
