@@ -31,12 +31,12 @@ You may have encountered some of my other books, courses, and training materials
 You can find out more about me at:
 
 <ol class="iconlist">
-<li><a href="https://craigbuckler.com/" class="icon user">craigbuckler.com</a> &ndash; personal site</li>
-<li><a href="https://www.optimalworks.net/" class="icon business">OptimalWorks.net</a> &ndash; business site</li>
-<li><a href="https://twitter.com/craigbuckler" class="icon twitter">@craigbuckler on Twitter</a></li>
-<li><a href="https://www.linkedin.com/in/craigbuckler" class="icon linkedin">LinkedIn</a></li>
-<li><a href="https://github.com/craigbuckler" class="icon github">GitHub</a></li>
-<li><a href="https://codepen.io/craigbuckler" class="icon codepen">Codepen.io</a></li>
+<li><a data-view="craigbuckler.com" href="https://craigbuckler.com/" class="icon user">craigbuckler.com</a> &ndash; personal site</li>
+<li><a data-view="optimalworks.net" href="https://www.optimalworks.net/" class="icon business">OptimalWorks.net</a> &ndash; business site</li>
+<li><a data-view="twitter" href="https://twitter.com/craigbuckler" class="icon twitter">@craigbuckler on Twitter</a></li>
+<li><a data-view="linkedin" href="https://www.linkedin.com/in/craigbuckler" class="icon linkedin">LinkedIn</a></li>
+<li><a data-view="github" href="https://github.com/craigbuckler" class="icon github">GitHub</a></li>
+<li><a data-view="codepen" href="https://codepen.io/craigbuckler" class="icon codepen">Codepen.io</a></li>
 </ol>
 
 

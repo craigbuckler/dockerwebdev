@@ -1,5 +1,4 @@
 // utility library
-
 const reNorm = /\W/g;
 
 // normalise a string

@@ -116,7 +116,7 @@ I was eventually shown the light by another developer *(thanks Glynne!)* That le
 
 I'd usually develop these directly on Windows or an Ubuntu VM, where it's necessary to install/update Apache, SSL, PHP, MySQL, and WordPress itself. All before commencing the real development work.
 
-The equivalent Docker process takes minutes to initialize and can be cloned for every new project (see [WordPress development with Docker](#wordpress-development-with-docker)). Each installation exists in its own isolated environment which can be source-controlled and distributed to other developers.
+The equivalent Docker process takes minutes to initialize and can be cloned for every new project (see [WordPress development with Docker]({{ '/course/contents/' | url }})). Each installation exists in its own isolated environment which can be source-controlled and distributed to other developers.
 
 That said, I've never deployed WordPress to a production server using Docker. WordPress hosting is ubiquitous and inexpensive; I'm happy to let someone else manage those dependencies. However, potential problems are minimized because I replicated the production server environment on my development PC.
 

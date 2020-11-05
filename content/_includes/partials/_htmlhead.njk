@@ -2,7 +2,7 @@
 <html lang="{% meta 'language' %}">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>{{ title }}</title>
 
   <!-- critical CSS -->
@@ -19,6 +19,9 @@
   {% set analytics %}{% meta 'analytics' %}{% endset %}
   {% if analytics %}<script src="{{ '/js/a.js' | url }}" defer></script>{% endif %}
 
+  <!-- manifest -->
+  <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}" />
+
   <!-- meta data -->
   <meta name="description" content="{{ description }}" />
   {% if keywords %}<meta name="keywords" content="{{ keywords }}, {% meta 'keywords' %}" />{% endif %}
@@ -28,9 +31,25 @@
   <!-- application -->
   <meta name="application-name" content="{% meta 'site' %}" />
   <meta name="theme-color" content="{% meta 'token_theme_color' %}" />
+  <meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="{% meta 'site' %}" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
   <!-- icons -->
   <link rel="icon" type="image/svg+xml" href="{{ '/images/icons/logo.svg' | url }}" />
+
+  <link rel="icon" sizes="192x192" href="{{ '/images/icons/docker-192.png' | url }}" />
+  <link rel="icon" sizes="152x152" href="{{ '/images/icons/docker-152.png' | url }}" />
+  <link rel="icon" sizes="120x120" href="{{ '/images/icons/docker-120.png' | url }}" />
+  <link rel="icon" sizes="76x76" href="{{ '/images/icons/docker-076.png' | url }}" />
+
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ '/images/icons/docker-192.png' | url }}" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/images/icons/docker-152.png' | url }}" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/images/icons/docker-120.png' | url }}" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/images/icons/docker-076.png' | url }}" />
+  <link rel="apple-touch-startup-image" href="{{ '/images/icons/docker-512.png' | url }}">
 
   <!-- feed -->
   <link rel="sitemap" type="application/xml" href="{% meta 'url' %}{{ '/sitemap.xml' | url }}" />

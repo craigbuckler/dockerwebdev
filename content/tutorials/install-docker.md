@@ -100,7 +100,7 @@ After completion, the whale icon in the status bar indicates Docker is running a
 
 ## Install Docker on Windows
 
-Docker Desktop for Windows requires either [WSL2](#windows-subsystem-for-linux-wsl-2) or [Hyper-V](#hyper-v).
+Docker Desktop for Windows requires either [WSL2](#windows-subsystem-for-linux-(wsl)-2) or [Hyper-V](#hyper-v).
 
 
 ### Windows Subsystem for Linux (WSL) 2
@@ -166,7 +166,7 @@ More information about installing and using WSL2:
 
 ### Hyper-V
 
-The Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/) hypervisor is provided free with Windows 10 Professional and Enterprise. *(Windows Home users must use [WSL2](#windows-subsystem-for-linux-wsl-2).)*
+The Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/) hypervisor is provided free with Windows 10 Professional and Enterprise. *(Windows Home users must use [WSL2](#windows-subsystem-for-linux-(wsl)-2).)*
 
 To install Hyper-V:
 
@@ -191,7 +191,7 @@ You can now [install Docker Desktop (see below)](#install-docker-desktop-for-win
 
 Two editions are available: **stable** and **edge** with experimental features. The **stable** version is best for most developers.
 
-Double-click `Docker Desktop Installer.exe` to start the installation process. After completion and launch, the whale icon in the notification area of the task bar indicates Docker is running and ready to accept commands in the Windows Powershell/`cmd` terminal (and Linux if using [WSL2](#windows-subsystem-for-linux-wsl-2)).
+Double-click `Docker Desktop Installer.exe` to start the installation process. After completion and launch, the whale icon in the notification area of the task bar indicates Docker is running and ready to accept commands in the Windows Powershell/`cmd` terminal (and Linux if using [WSL2](#windows-subsystem-for-linux-(wsl)-2)).
 
 ![Docker icon on Windows task bar]({{ '/images/figures/docker-windows.webp' | url }})
 

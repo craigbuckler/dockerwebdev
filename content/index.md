@@ -17,7 +17,7 @@ eleventyNavigation:
 
 <h2>Learn Docker quickly</h2>
 
-<p>A concise and easy-to-follow book &amp; video course showing how to use Docker to set-up practical web project environments on Windows, macOS, &amp; Linux.</p>
+<p>A concise and easy-to-follow book &amp; video course showing how to use Docker and create practical web development environments on Windows, macOS, &amp; Linux.</p>
 
 {% include "./_includes/snippets/_content.html" %}
 
@@ -76,13 +76,19 @@ You'll be launching Docker within minutes and can progress at your own pace.
 > "I knew the sum total of nothing about Docker a month ago. I certainly didn't appreciate what it could do for the average web developer."
 > <cite>[Ben Frain, UK web developer](https://benfrain.com/)</cite>
 
-[Find out more about the *"Docker for Web Developers"* course]({{ '/course/' | url }}) or buy it now&hellip;
+Find out more&hellip;
+
+* [Docker course content]({{ '/course/' | url }})
+* [sample videos and book excerpts]({{ '/course/samples/' | url }})
+* [what you need to know]({{ '/course/requirements/' | url }})
+
+or buy it now&hellip;
 
 {% include "./_includes/snippets/_prices.html" %}
 
 
 ### What if you don't like the course?
 
-It comes with a full money-back guarantee. *What do you have to lose?*
+It comes with a full money-back guarantee. *You have nothing to lose!*
 
 </article>

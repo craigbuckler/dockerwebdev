@@ -1,0 +1,8 @@
+// PWA install
+#install {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

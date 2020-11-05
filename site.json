@@ -1,5 +1,6 @@
 {
   "site": "Docker for Web Developers",
+  "siteshort": "DockerWebDev",
   "url": "https://dockerwebdev.com",
   "root": "/",
   "language": "en-GB",
@@ -9,6 +10,7 @@
   "author": "Craig Buckler",
   "twitter": "@craigbuckler",
   "changefreq": "monthly",
+  "offlinepages": "offlinepages",
   "analytics": "UA-168413909-1",
 
   "token": {
