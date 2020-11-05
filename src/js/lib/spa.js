@@ -63,7 +63,6 @@ import * as ajax from './ajax';
       call = null;
     }
 
-    progress();
     call = ajax.get({ url: url + 'index.json', callback, progress });
 
     // complete callback
@@ -120,7 +119,9 @@ import * as ajax from './ajax';
     }
 
     loader.style.transform = `scaleX(${pc})`;
-    if (pc >= 1) setTimeout(() => { loader.style.transform = 'scaleY(0)'; }, 300);
+    if (pc >= 1) setTimeout(() => {
+      loader.style.transform = 'scaleX(0)';
+    }, 400);
 
   }
 
