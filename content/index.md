@@ -76,7 +76,13 @@ You'll be launching Docker within minutes and can progress at your own pace.
 > "I knew the sum total of nothing about Docker a month ago. I certainly didn't appreciate what it could do for the average web developer."
 > <cite>[Ben Frain, UK web developer](https://benfrain.com/)</cite>
 
-[Find out more about the *"Docker for Web Developers"* course]({{ '/course/' | url }}) or buy it now&hellip;
+Find out more&hellip;
+
+* [Docker course content]({{ '/course/' | url }})
+* [sample videos and book excerpts]({{ '/course/samples/' | url }})
+* [what you need to know]({{ '/course/requirements/' | url }})
+
+or buy it now&hellip;
 
 {% include "./_includes/snippets/_prices.html" %}
 

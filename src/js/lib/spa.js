@@ -11,6 +11,7 @@ import * as ajax from './ajax';
 
   // events
   document.body.addEventListener('click', navLink);
+  document.body.addEventListener('mousedown', navLink);
   window.addEventListener('popstate', navEvent);
 
 
@@ -105,24 +106,21 @@ import * as ajax from './ajax';
 
 
   // create a progress loader
-  let spaLoader;
+  let loader;
   function progress(p) {
 
-    let value = p ? p.loaded / p.total : null;
+    let pc = p ? p.loaded / p.total : 0;
 
-    if (!spaLoader) {
+    if (!loader) {
 
-      let p = document.createElement('progress');
-      p.id = 'spaloader';
-      p.value = 0;
-      p.max = 1;
-      spaLoader = document.body.appendChild(p);
+      let p = document.createElement('div');
+      p.id = 'loader';
+      loader = document.body.appendChild(p);
 
     }
 
-    if (!value) spaLoader.classList.add('active');
-    spaLoader.value = value;
-    if (value >= 1) setTimeout(() => { spaLoader.classList.remove('active'); }, 200);
+    loader.style.transform = `scaleX(${pc})`;
+    if (pc >= 1) setTimeout(() => { loader.style.transform = 'scaleY(0)'; }, 300);
 
   }
 
