@@ -3,6 +3,12 @@
   list-style-type: none;
   padding: 0;
 
+  &.min li {
+    text-indent: -2.1em;
+    padding-left: 2.1em;
+    margin-top: 0.4em;
+  }
+
   a:link, a:visited {
     text-decoration: none;
   }

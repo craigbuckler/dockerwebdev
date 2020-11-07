@@ -32,12 +32,16 @@
     transform: translateY(-1vmin) scale(1.03);
   }
 
-  a * {
+  a > * {
     margin: 0;
     font-weight: $type_body_weight;
 
     &:not(h2) {
       color: $theme_fore1;
+    }
+
+    &.time {
+      color: $theme_fore3;
     }
   }
 

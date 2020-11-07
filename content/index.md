@@ -17,7 +17,7 @@ eleventyNavigation:
 
 <h2>Learn Docker quickly</h2>
 
-<p>A concise and easy-to-follow book &amp; video course showing how to use Docker and create practical web development environments on Windows, macOS, &amp; Linux.</p>
+<p>An easy-to-follow book &amp; video course demonstrating how to create practical web development environments on Windows, macOS, &amp; Linux using Docker.</p>
 
 {% include "./_includes/snippets/_content.html" %}
 

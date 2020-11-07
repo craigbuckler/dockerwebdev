@@ -34,10 +34,6 @@ By the end of the course, you will know:
 1. How to deploy to a Dockerized application to production servers using Docker Swarm and Kubernetes.
 1. All the most useful Docker, Docker Compose, and Dockerfile commands.
 
----
+<hr />
 
-Buy *"Docker for Web Developers"*&hellip;
-
-{% include "../_includes/snippets/_prices.html" %}
-
-or find out more about the course&hellip;
+[Buy *"Docker for Web Developers"*]({{ '/' | url }}) or find out more about the course&hellip;
