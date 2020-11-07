@@ -1,7 +1,5 @@
 // single page app functionality
-// intercept inter-site links and replace with an Ajax call
-import * as ajax from './ajax';
-
+// intercept inter-site links and replace with an Ajax request
 (() => {
 
   if (!window.history) return;
@@ -47,68 +45,63 @@ import * as ajax from './ajax';
   }
 
 
-  // render a new page
+  // load and render new page
   const
     title = document.head.querySelector('title'),
     main = document.body.querySelector('main'),
     menu = document.body.querySelector('nav.menu');
 
-  let call, active = menu.querySelector('a.active');
+  let active = menu.querySelector('a.active');
 
-  function render(url, scrollTop) {
+  async function render(url, scrollTop) {
 
-    // cancel existing call
-    if (call) {
-      call.abort();
-      call = null;
-    }
+    progress(0.6);
+    let data;
 
-    call = ajax.get({ url: url + 'index.json', callback, progress });
+    try {
 
-    // complete callback
-    function callback(err, urlJSON, data) {
-
-      call = null;
-      if (err || !data || !data.title || !data.main) {
-
-        // redirect to page on failure
-        location.assign(url);
-
-      }
-      else {
-
-        // render content
-        title.innerHTML = data.title;
-        main.innerHTML = data.main;
-
-        // update menu
-        if (active) active.classList.remove('active');
-        active = menu.querySelector(`[href="${url}"]`);
-        if (active) {
-          active.classList.add('active');
-          active.blur();
-        }
-
-        // trigger viewload event
-        document.dispatchEvent(
-          new CustomEvent('viewload', { detail: { url }})
-        );
-
-        // scroll to top
-        if (scrollTop) setTimeout(() => { window.scrollTo(0,0); }, 10);
-
-      }
+      // ajax fetch
+      const call = await fetch(url + 'index.json');
+      data = await call.json();
 
     }
+    catch(e) {}
+
+    progress(1);
+    if (!data || !data.title || !data.main) {
+
+      // redirect to page on failure
+      location.assign(url);
+      return;
+
+    }
+
+    // render content
+    title.innerHTML = data.title;
+    main.innerHTML = data.main;
+
+    // update menu
+    if (active) active.classList.remove('active');
+    active = menu.querySelector(`[href="${url}"]`);
+    if (active) {
+      active.classList.add('active');
+      active.blur();
+    }
+
+    // trigger viewload event
+    document.dispatchEvent(
+      new CustomEvent('viewload', { detail: { url }})
+    );
+
+    // scroll to top
+    if (scrollTop) setTimeout(() => { window.scrollTo(0,0); }, 10);
 
   }
 
 
-  // create a progress loader
+  // progress loader
   let loader;
-  function progress(p) {
-
-    let pc = p ? p.loaded / p.total : 0;
+  function progress(pc = 0) {
 
     if (!loader) {
 

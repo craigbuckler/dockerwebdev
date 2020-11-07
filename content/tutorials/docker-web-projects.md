@@ -21,7 +21,7 @@ Docker runs applications. *That's it*. But by *"application"*, I'm referring to 
 * **language runtimes** such as Node.js, PHP, Python, Ruby, Rust etc.
 * **databases** such as MySQL, PostgreSQL, Oracle, MongoDB, redis, etc.
 * **web applications** such as WordPress, Magento, forums, etc.
-* and anything else: Elastic Search, message queues, emailers, etc.
+* and **anything else**: Elastic Search, message queues, emailers, etc.
 
 It doesn't matter which Operating System you're using. If your web project has a dependency, it can be downloaded, configured, and launched on Windows, macOS, or Linux in minutes.
 
