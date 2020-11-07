@@ -9,13 +9,19 @@ tags:
   - database
 ---
 
+<aside>
+
+This Docker tutorial has also been published on [Medium.com](https://medium.com/@craigbuckler/an-introduction-to-docker-for-web-developers-ca10f5b73775).
+
+</aside>
+
 Docker runs applications. *That's it*. But by *"application"*, I'm referring to big web dependency stuff&hellip;
 
 * **web servers** such as Apache and NGINX
 * **language runtimes** such as Node.js, PHP, Python, Ruby, Rust etc.
 * **databases** such as MySQL, PostgreSQL, Oracle, MongoDB, redis, etc.
 * **web applications** such as WordPress, Magento, forums, etc.
-* and anything else: Elastic Search, message queues, emailers, etc.
+* and **anything else**: Elastic Search, message queues, emailers, etc.
 
 It doesn't matter which Operating System you're using. If your web project has a dependency, it can be downloaded, configured, and launched on Windows, macOS, or Linux in minutes.
 
@@ -165,9 +171,3 @@ The course has one objective:
 It starts with a concise explanation of Docker terminology and concepts before demonstrating typical projects such as local WordPress, Node.js, and Single-Page App (SPA) environments.
 
 You can update source files, execute it instantly, and debug client and server code in Chrome DevTools and VS Code. The examples can be adapted to any technology stack, new projects, or existing apps.
-
-<aside>
-
-This Docker tutorial was originally published on [Medium.com](https://medium.com/@craigbuckler/an-introduction-to-docker-for-web-developers-ca10f5b73775).
-
-</aside>

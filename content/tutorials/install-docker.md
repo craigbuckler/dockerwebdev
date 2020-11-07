@@ -182,7 +182,7 @@ To install Hyper-V:
 
    This can be accessed by hitting the Start button and typing the panel name or from **Programs and Features** in the classic Control Panel.
 
-You can now [install Docker Desktop (see below)](#install-docker-desktop-for-windows).
+You can now install Docker Desktop.
 
 
 ### Install Docker Desktop for Windows

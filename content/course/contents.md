@@ -13,11 +13,7 @@ tags:
 
 The course book and video follow the Docker topics shown below. The book also provides additional appendicies with reference information.
 
-The content is updated as Docker and other technologies evolve. You will receive all updates for no further charge.
-
-Buy *"Docker for Web Developers"*&hellip;
-
-{% include "../_includes/snippets/_prices.html" %}
+The content is updated as Docker and other technologies evolve. *All updates are **free** forever* so [**buy it now&hellip;**]({{ '/' | url }})
 
 <ol start="0" class="courselist">
   <li>About this book

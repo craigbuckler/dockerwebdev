@@ -1,4 +1,5 @@
 // utility library
+// not used
 const reNorm = /\W/g;
 
 // normalise a string

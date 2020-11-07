@@ -3,14 +3,14 @@
   ul {
     display: flex;
     flex-direction: row-reverse;
-    gap: $layout_padding;
     list-style-type: none;
     margin-top: 4em;
   }
 
   li {
-    @include reset;
     flex: 1 1 50%;
+    padding: 0 calc($layout_padding / 2);
+    margin: 0;
   }
 
   .back {

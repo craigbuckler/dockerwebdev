@@ -183,8 +183,10 @@ The following frequently-asked questions should answer most queries, but please 
 <p>I want you to be completely satisfied and excited about using Docker in your web projects. If not, <a href="#contact">contact me with your feedback</a> and you'll get a full refund.</p>
 </details>
 
----
+<details open>
+<summary>I'm convinced!</summary>
 
-Buy *"Docker for Web Developers"*&hellip;
+<p>That's great &ndash; buy <em>"Docker for Web Developers"</em> today&hellip;</p>
 
 {% include "../_includes/snippets/_prices.html" %}
+</details>

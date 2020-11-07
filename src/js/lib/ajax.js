@@ -1,3 +1,5 @@
+// XMLHttpRequest library
+// not required - fetch API is used because sw.js handles errors
 export function get({ url, timeout = 10000, callback, progress }) {
 
   return call('GET', url, null, timeout, callback, progress);

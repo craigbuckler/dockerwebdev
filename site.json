@@ -33,7 +33,7 @@
 
       "code": {
         "font": "Inconsolata, Monaco, Consolas, \"Courier New\", Courier, monospace",
-        "size": "inherit",
+        "size": "0.95em",
         "weight": 300,
         "lineheight": 1.4
       }
@@ -55,6 +55,7 @@
 
       "fore1": "#e7e8eb",
       "fore2": "#f28024",
+      "fore3": "#c0c4cb",
 
       "back1": "#232c33",
       "back2": "#1c2227",

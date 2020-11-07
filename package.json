@@ -1,6 +1,6 @@
 {
   "name": "dockerwebdev",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DockerWebDev.com website (Eleventy).",
   "main": "index.js",
   "scripts": {
