@@ -2,6 +2,7 @@
 title: The benefits of Docker for web development
 description: How you can use Docker to revolutionize your web application development projects.
 keywords: benefits
+shareimage: docker-benefits.png
 date: 2020-10-31
 tags:
   - concepts
@@ -11,7 +12,7 @@ tags:
 
 <aside>
 
-This Docker tutorial has also been published on [Medium.com](https://medium.com/@craigbuckler/an-introduction-to-docker-for-web-developers-ca10f5b73775).
+This Docker tutorial has also been published on [Medium.com](https://medium.com/@craigbuckler/an-introduction-to-docker-for-web-developers-ca10f5b73775). It provides a quick overview of Docker concepts with an example which launches a MySQL database and Adminer client.
 
 </aside>
 
@@ -122,7 +123,14 @@ networks:
   mysqlnet:
 ```
 
-<p>Open a terminal, `cd` to that folder and enter:</p>
+<aside>
+
+Spacing is important in YML files so be careful when copying!
+
+</aside>
+
+
+Open a terminal, `cd` to that folder, and enter:
 
 ```bash
 docker-compose up
@@ -134,17 +142,13 @@ It will take several minutes to download the container images and initialize the
 mysql | ... [Server] X Plugin ready for connections.
 ```
 
-Open <localhost:8080> in your browser to launch Adminer.
-
-![Adminer login screen]({{ '/images/figures/adminer-login.webp' | url }})
-
-Enter the login credentials:
+Open <localhost:8080> in your browser to launch Adminer. Enter the login credentials:
 
 * Server: `mysql`
 * Username: `root`
 * Password: `mysecret`
 
-and you can browse, create, edit, or drop databases, tables, users, and other items.
+You can then browse, create, edit, or drop databases, tables, indexes, users, and other items.
 
 You could even create a web application which stores data in the MySQL database at <localhost:3306>.
 

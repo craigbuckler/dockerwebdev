@@ -222,3 +222,9 @@ The content is updated as Docker and other technologies evolve. *All updates are
     </ol>
   </li>
 </ol>
+
+---
+
+Buy the *"Docker for Web Developers"* course today&hellip;
+
+{% include "../_includes/snippets/_prices.html" %}

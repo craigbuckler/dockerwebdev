@@ -2,25 +2,6 @@
   font-size: $type_body_size;
 }
 
-// IE fixes
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  :root {
-    font-size: 140%;
-  }
-
-  header, footer, main, article, aside, details, summary {
-    display: block;
-  }
-
-  .book * {
-    position: relative;
-  }
-
-  .coursevideo {
-    display: none;
-  }
-}
-
 html {
   min-height: 100%;
   scroll-behavior: smooth;

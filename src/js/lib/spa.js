@@ -17,7 +17,7 @@
   function navLink(e) {
 
     const link = e && e.target && e.target.closest('a');
-    if (!link || link.origin !== location.origin) return;
+    if (!link || link.origin !== location.origin || e.button || link.pathname.endsWith('.xml')) return;
 
     // load different page
     const url = link.pathname;

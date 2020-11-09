@@ -36,4 +36,4 @@ By the end of the course, you will know:
 
 <hr />
 
-[Buy *"Docker for Web Developers"*]({{ '/' | url }}) or find out more about the course&hellip;
+[Buy the *"Docker for Web Developers"* course]({{ '/' | url }}) or find out more&hellip;

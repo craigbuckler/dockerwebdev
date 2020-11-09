@@ -5,12 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>{{ title }}</title>
 
-  <!-- critical CSS -->
-  <link rel="stylesheet" href="/css/critical.css"{% if global.prod %} inline{% endif %} />
-
-  <!-- main CSS -->
-  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="{{ '/css/main.css' | url }}" /></noscript>
+  <!-- preload main CSS -->
+  <link rel="preload" href="{{ '/css/main.css' | url }}" as="style" />
 
   <!-- main ES6 modules -->
   <script type="module" src="{{ '/js/main.js' | url }}" defer></script>
@@ -18,6 +14,13 @@
   <!-- analytics ES5 -->
   {% set analytics %}{% meta 'analytics' %}{% endset %}
   {% if analytics %}<script src="{{ '/js/a.js' | url }}" defer></script>{% endif %}
+
+  <!-- critical CSS -->
+  <link rel="stylesheet" href="/css/critical.css"{% if global.prod %} inline{% endif %} />
+
+  <!-- main CSS -->
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="{{ '/css/main.css' | url }}" /></noscript>
 
   <!-- manifest -->
   <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}" />
@@ -38,8 +41,6 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
   <!-- icons -->
-  <link rel="icon" type="image/svg+xml" href="{{ '/images/icons/logo.svg' | url }}" />
-
   <link rel="icon" sizes="192x192" href="{{ '/images/icons/docker-192.png' | url }}" />
   <link rel="icon" sizes="152x152" href="{{ '/images/icons/docker-152.png' | url }}" />
   <link rel="icon" sizes="120x120" href="{{ '/images/icons/docker-120.png' | url }}" />
@@ -51,17 +52,21 @@
   <link rel="apple-touch-icon" sizes="76x76" href="{{ '/images/icons/docker-076.png' | url }}" />
   <link rel="apple-touch-startup-image" href="{{ '/images/icons/docker-512.png' | url }}">
 
+  <link rel="shortcut icon" href="{{ '/images/icons/logo.png' | url }}">
+  <link rel="shortcut icon" type="image/svg+xml" href="{{ '/images/icons/logo.svg' | url }}" />
+
   <!-- feed -->
   <link rel="sitemap" type="application/xml" href="{% meta 'url' %}{{ '/sitemap.xml' | url }}" />
   <link rel="alternate" type="application/rss+xml" title="{% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" />
   <link rel="alternate" type="application/atom+xml" title="{% meta 'site' %}" href="{% meta 'url' %}{{ '/feed.xml' | url }}" />
 
   <!-- social media -->
+  {% set shareUrl %}/images/share/{% if shareimage %}{{ shareimage }}{% else %}docker-for-web-developers.png{% endif %}{% endset %}
   <meta property="og:site_name" content="{% meta 'site' %}">
   <meta property="og:url" content="{% meta 'url' %}{{ page.url | url }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="{% meta 'url' %}{{ '/images/docker-for-web-developers.png' | url }}">
+  <meta property="og:image" content="{% meta 'url' %}{{ shareUrl | url }}">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="{% meta 'language' %}">
 
@@ -71,7 +76,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
-  <meta property="twitter:image" content="{% meta 'url' %}{{ '/images/docker-for-web-developers.png' | url }}">
+  <meta property="twitter:image" content="{% meta 'url' %}{{ shareUrl | url }}">
 
 </head>
 <body>
