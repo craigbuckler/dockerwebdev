@@ -31,11 +31,6 @@
   transform: rotateY(-25deg);
   animation: book 2s ease-in-out 2s 1 forwards;
 
-  // IE hackery
-  * {
-    position: relative;
-  }
-
   h1 {
     font-size: 2.2rem;
   }
