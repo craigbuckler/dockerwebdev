@@ -1,8 +1,10 @@
 # DockerWebDev.com
 
-[DockerWebDev.com website](https://dockerwebdev.com/) - Eleventy static site.
+["Docker for Web Developers" book and video course website](https://dockerwebdev.com/).
 
-Settings and design tokens in `site.json`. Site built using Eleventy, PostCSS, and Rollup.js.
+Built as an Eleventy static site with PostCSS and Rollup.js processing.
+
+Settings and design tokens in `site.json`.
 
 Run in development mode:
 
@@ -43,13 +45,13 @@ Build critical and main CSS files using PostCSS:
 
 Optionally, `npm run purge:css` can be run to remove unused styles.
 
-Tokens are imported from `site.json` and set as Sass variables. Nested properties are flattened, e.g.
+Tokens are imported from the `"token"` object in `site.json` and set as Sass variables. Nested properties are flattened, e.g.
 
 ```json
-"dark": { "back": "#000", "fore": "#FFF" }
+"theme": { "back": "#000", "fore": "#FFF" }
 ```
 
-becomes the variables `$dark_back` and `$dark_fore`.
+becomes the variables `$theme_back` and `$theme_fore`.
 
 PostCSS permits Sass-like SCSS syntax including:
 
