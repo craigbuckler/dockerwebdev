@@ -66,4 +66,8 @@ I was eventually shown the light by another developer *(thanks Glynne!)* I dived
 
 The course concisely explains the benefits of Docker then jumps straight in with real-world examples and development projects using a variety of technologies. You'll be running Docker in minutes and will learn the core concepts quickly.
 
-[**Buy *"Docker for Web Developers"*&hellip;**]({{ '/' | url }})
+---
+
+Buy the *"Docker for Web Developers"* course today&hellip;
+
+{% include "../_includes/snippets/_prices.html" %}

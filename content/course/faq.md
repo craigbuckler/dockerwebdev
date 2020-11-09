@@ -186,7 +186,7 @@ The following frequently-asked questions should answer most queries, but please 
 <details open>
 <summary>I'm convinced!</summary>
 
-<p>That's great &ndash; buy <em>"Docker for Web Developers"</em> today&hellip;</p>
+<p>That's great, thank you! Buy the <em>"Docker for Web Developers"</em> book and/or video course today&hellip;</p>
 
 {% include "../_includes/snippets/_prices.html" %}
 </details>
