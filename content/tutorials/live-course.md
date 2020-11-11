@@ -1,6 +1,6 @@
 ---
 title: "An introduction to Docker: LIVE course, January 2021"
-description: The live "Introduction to Docker" course will be held online in January 2021. Learn the benefits Docker and how to use it in your own projects.
+description: The live Introduction to Docker course will be held online in January 2021. Learn the benefits Docker and how to use it in your own projects.
 keywords: live, online, zoom, schedule, seminar, presentation, benefits, apply
 shareimage: docker-live.png
 date: 2020-11-11
@@ -21,13 +21,13 @@ tags:
 
 **"An Introduction to Docker"** is a hands-on one-day course split over two half-days:
 
-* **12 January 2021** &ndash; DAY 1:
-  13:30 UK / 14:30 Europe / 8:30 New York &ndash; 3.5 hours
+* **Day one: 12 January 2021**
+  3.5 hours starting 13:30 UK / 14:30 Europe / 8:30 New York
 
   *An overview of Docker benefits, concepts, and techniques for all participants with live demonstrations, practical examples, and a Q&A session.*
 
-* **13 or 14 January 2021** &ndash; DAY 2:
-  13:30 UK / 14:30 Europe / 8:30 New York &ndash; 3.5 hours
+* **Day two: 13 or 14 January 2021**:
+  3.5 hours starting 13:30 UK / 14:30 Europe / 8:30 New York
 
   *Hands-on practical projects including application development, live code editing, debugging, and best-practice techniques. Participants will be split into smaller groups for personal assistance.*
 
@@ -51,6 +51,7 @@ All participants receive:
 1. Sample code for use in your own projects.
 1. A discounted copy of the ["Docker for Web Developers" book & video course]({{ '/' | url }}).
 1. A certificate of attendance.
+1. Knowledge which will change your approach to application development forever!
 
 
 ## Why should you learn Docker?
