@@ -3,30 +3,53 @@ import { pageInfo, tokenReplace } from './util';
 
 (() => {
 
-  if (!document.queryCommandSupported('copy')) return;
+  if (!navigator.clipboard) return;
 
   const cfg = {
-    class:    'copyable',
-    active:   'active',
-    done:     'done',
-    datacopy: 'copyable'
+    copyable:   ['pre', '.copyable'],
+    codetext:   'copy',
+    codeclass:  'copycode icon copy',
+    codedone:   'code copied',
+    active:     'active',
+    done:       'done',
+    datacopy:   'copyable'
   };
 
   // enable copy links
   window.addEventListener('load', copyInit);
   document.addEventListener('viewload', copyInit);
 
-  function copyInit() {
-
-    Array.from( document.querySelectorAll(`.${ cfg.class }:not(.${ cfg.active })`) )
-      .forEach(a => a.classList.add(cfg.active));
-
-  }
-
   // handle copy links
   document.body.addEventListener('click', copyLink);
 
-  function copyLink(e) {
+
+  // activate copy links
+  function copyInit() {
+
+    cfg.copyable.forEach(s => {
+
+      Array.from( document.querySelectorAll(`${ s }:not(.${ cfg.active })`) )
+        .forEach(a => {
+
+          a.classList.add(cfg.active);
+
+          if (!s.startsWith('.')) {
+            const codeCopy = document.createElement('div');
+            codeCopy.dataset[cfg.datacopy] = '#';
+            codeCopy.dataset[`${ cfg.datacopy }Done`] = cfg.codedone;
+            codeCopy.className = cfg.codeclass;
+            codeCopy.textContent = cfg.codetext;
+            a.insertAdjacentElement('afterend', codeCopy);
+          }
+
+        });
+
+    });
+
+  }
+
+  // copy value or input field
+  async function copyLink(e) {
 
     const
       link = e && e.target,
@@ -35,57 +58,43 @@ import { pageInfo, tokenReplace } from './util';
     if (value === null) return;
 
     // find or create associated field
-    let field, input;
+    let copyText, copied;
 
-    if (value) {
-      input = document.createElement('input');
-      input.value = tokenReplace(value, pageInfo());
-      field = document.body.appendChild(input);
+    if (value === '#') {
+
+      // copy code block
+      copyText = link.previousSibling.innerText;
+
+    }
+    else if (value) {
+
+      // copy specific value
+      copyText = tokenReplace(value, pageInfo());
+
     }
     else if (link.htmlFor) {
-      field = document.getElementById(link.htmlFor);
-    }
 
-    if (!field) return;
-
-    // copy value to clipboard
-    let copied = false;
-
-    if (field.select && field.value) {
-
-      // form input
-      field.select();
-      try {
-        document.execCommand('copy');
-        copied = true;
-      }
-      catch (err) {}
-
-    }
-    else if (window.getSelection) {
-
-      // DOM element
-      try {
-        var range = document.createRange();
-        range.selectNode(field);
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-        copied = true;
-      }
-      catch(err) {}
+      // copy a form field
+      copyText = document.getElementById(link.htmlFor).value;
 
     }
 
-    if (!copied) return;
+    if (!copyText) return;
 
     e.preventDefault();
 
-    // remove input
-    if (input) document.body.removeChild(field);
+    try {
+      await navigator.clipboard.writeText(copyText);
+      copied = true;
+    } catch (err) {
+      console.log('copy failed', err);
+    }
 
-    // show/hide indicator
-    link.onanimationend = () => link.classList.remove(cfg.done);
-    link.classList.add(cfg.done);
+    if (copied) {
+      // show/hide success indicator
+      link.addEventListener('animationend', () => link.classList.remove(cfg.done), { once: true });
+      link.classList.add(cfg.done);
+    }
 
   }
 

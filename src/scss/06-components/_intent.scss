@@ -23,16 +23,27 @@
 
 }
 
-[data-copyable] {
+[data-copyable], .copycode {
   display: block;
   position: relative;
+}
+
+.copycode {
+	float: right;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	padding: 0.2em 0.5em;
+	margin-top: -3rem;
+	color: $theme_link1;
+	border-radius: 0 0 0 5px;
+	cursor: pointer;
 }
 
 [data-copyable]::after {
   display: none;
   position: absolute;
   top: 100%;
-  left: 90%;
+  right: 0;
   content: attr(data-copyable-done);
   font-size: 0.85em;
   white-space: nowrap;
@@ -45,11 +56,11 @@
 .done[data-copyable]::after {
   display: block;
   opacity: 0;
-  transform: translateX(-1em);
+  transform: translateY(-1em);
   animation: copied 2s ease;
 }
 
 @keyframes copied {
-  70% { opacity: 1; transform: translateX(0); }
-  100% { opacity: 0; transform: translateX(0); }
+  70% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(0); }
 }

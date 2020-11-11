@@ -5,6 +5,7 @@
 
 const
   domain = self.location.origin + '__root__',
+  version = '__version__',
   CACHE = '__PWAcache__',
   offlineHTML = '__root__' + 'offline.html',
   offlineJSON = '__root__' + 'offline.json',
@@ -12,13 +13,13 @@ const
   installFilesEssential = [
     'index.json',
     'manifest.webmanifest',
-    'css/main.css',
-    'js/main.js'
+    'css/main.css?' + version,
+    'js/main.js?' + version,
   ].map(u => '__root__' + u).concat(offlineHTML, offlineJSON),
 
   installFilesDesirable = [
     '',
-    'js/a.js',
+    'js/a.js?' + version,
     'images/icons/logo.svg'
   ].map(u => '__root__' + u);
 

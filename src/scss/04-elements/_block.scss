@@ -39,12 +39,19 @@ cite {
 }
 
 aside {
-  font-style: italic;
-  text-align: center;
   padding-bottom: 1em;
   background-color: $theme_back2;
   border: 3px solid $theme_back3;
   border-style: solid none;
+
+  p {
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+aside:first-of-type {
+  font-size: 1.2em;
 }
 
 ul, ol {
@@ -56,6 +63,7 @@ ul {
 }
 
 li {
+  padding-left: 0.25em;
   margin-top: 0.8em;
 }
 
@@ -82,9 +90,9 @@ hr {
   max-width: 100%;
   height: 0;
   padding: 0;
-  margin: 2em auto;
+  margin: 4em auto;
   border: 0 none;
-  border-top: 2px dotted $theme_back3;
+  border-top: 3px dotted $theme_back3;
 }
 
 .note {

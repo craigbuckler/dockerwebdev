@@ -123,7 +123,7 @@ To install WSL2:
 
 1. Enable hardware virtualization support in your BIOS.
 
-   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels —- typically by hitting `DEL`, `F2`, or `F10` as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
+   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels &ndash; typically by hitting <kbd>DEL</kbd>, <kbd>F2</kbd>, or <kbd>F10</kbd> as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
 
    **WARNING! Be careful when changing BIOS settings &ndash; one wrong move could trash your PC.**
 
@@ -171,7 +171,7 @@ To install Hyper-V:
 
 1. Enable hardware virtualization support in your BIOS.
 
-   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels —- typically by hitting `DEL`, `F2`, or `F10` as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
+   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels &ndash; typically by hitting <kbd>DEL</kbd>, <kbd>F2</kbd>, or <kbd>F10</kbd> as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
 
    **WARNING! Be careful when changing BIOS settings &ndash; one wrong move could trash your PC.**
 

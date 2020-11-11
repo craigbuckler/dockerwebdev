@@ -7,7 +7,11 @@ body, h2, h3 {
 	counter-set: lineNumber var(--linestart);
 }
 
-code .highlight-line:before {
+.highlight-line {
+	user-select: all;
+}
+
+code .highlight-line::before {
   content: counter(lineNumber);
   counter-increment: lineNumber;
   width: 2.5em;
@@ -24,7 +28,8 @@ code .highlight-line:before {
 pre[class*="language-"],
 code {
   font-family: $type_code_font;
-  font-size: $type_code_size;
+	font-size: $type_code_size;
+	font-style: normal;
 	line-height: $type_code_lineheight;
 	direction: ltr;
 	text-align: left;
@@ -39,12 +44,12 @@ code {
 // code block
 pre[class*="language-"] {
 	padding: 1em;
-	margin: 2em 0 3em;
+	margin: 2rem 0 3rem;
 	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"], .copycode {
 	background: #1d1f21;
 }
 
@@ -54,6 +59,7 @@ pre[class*="language-"] {
 	background: #1d1f21;
 	border: 1px solid #393d41;
 	border-radius: .3em;
+	user-select: all;
 }
 
 .token.comment,

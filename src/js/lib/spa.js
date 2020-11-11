@@ -88,13 +88,18 @@
       active.blur();
     }
 
-    // trigger viewload event
-    document.dispatchEvent(
-      new CustomEvent('viewload', { detail: { url }})
-    );
+    // short delay for rendering to complete
+    setTimeout(() => {
 
-    // scroll to top
-    if (scrollTop) setTimeout(() => { window.scrollTo(0,0); }, 10);
+      // scroll to top
+      if (scrollTop) window.scrollTo(0,0);
+
+      // trigger viewload event
+      document.dispatchEvent(
+        new CustomEvent('viewload', { detail: { url }})
+      );
+
+    }, 10);
 
   }
 

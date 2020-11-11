@@ -30,7 +30,9 @@ module.exports = config => {
     linkify: true,
     typographer: true
   }).use(markdownItAnchor, {
-    permalink: false
+    permalink: true,
+    permalinkSymbol: '#',
+    permalinkClass: 'headlink'
   }));
 
 

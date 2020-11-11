@@ -11,7 +11,7 @@ tags:
   - course
 ---
 
-<figure class="imgcircle">
+<figure class="imgcircle" title="Craig Buckler">
   <img src="{{ '/images/craig.webp' | url }}" alt="Craig Buckler" />
 </figure>
 
