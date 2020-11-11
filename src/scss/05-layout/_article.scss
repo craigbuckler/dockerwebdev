@@ -2,7 +2,7 @@ main article:first-child {
   padding-top: 4em;
 }
 
-.primary > *:not(blockquote):not(aside):not(ul):not(ol):not(pre),
+.primary > *:not(blockquote):not(aside):not(ul):not(ol):not(pre):not(.copycode),
 .primary ul, .primary ol,
 .pagenav > *,
 .taglist > *,

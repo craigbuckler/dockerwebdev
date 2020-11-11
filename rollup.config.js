@@ -27,10 +27,14 @@ const
   // output plugins
   pluginsOut = [
     terser({
+      ecma: 2018,
       mangle: {
         toplevel: true
       },
       compress: {
+        module: true,
+        toplevel: true,
+        unsafe_arrows: true,
         drop_console: productionMode,
         drop_debugger: productionMode
       },

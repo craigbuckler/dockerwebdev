@@ -27,3 +27,16 @@ h3, summary, dt, blockquote, .intro {
   font-size: $type_head_size;
   font-weight: $type_head_weight;
 }
+
+a.headlink:link, a.headlink:visited {
+  visibility: hidden;
+  font-size: 0.75em;
+  vertical-align: top;
+  text-decoration: none;
+  outline: 0 none;
+  user-select: none;
+
+  :hover > &, :active > & :focus > & {
+    visibility: visible;
+  }
+}

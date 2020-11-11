@@ -7,7 +7,7 @@ priority: 0.9
 
   <article class="primary slantdark1">
 
-    <h1>{{ title }}</h1>
+    <h1 id="titlemain">{{ title }}</h1>
 
     {% if date %}<p class="time"><time datetime="{{ date | dateymd }}">{{ date | datefriendly }}</time></p>{% endif %}
 
@@ -19,7 +19,7 @@ priority: 0.9
 
     <p>Do you want an easy-to-follow course which demonstrates how to use Docker and create practical web development environments on your Windows, macOS, or Linux PC?</p>
 
-    <p><a href="{{ '/' | url }}"><em>Buy "Docker for Web Developers" today&hellip;</em></a></p>
+    <p><a href="{{ '/' | url }}"><em>Buy the "Docker for Web Developers" book &amp; video course&hellip;</em></a></p>
 
     {% include "../_includes/snippets/_prices.html" %}
 
