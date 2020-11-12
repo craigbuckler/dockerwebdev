@@ -1,19 +1,18 @@
 // animated SVG
 #docker-whale {
-  transform-origin: center;
-  transform: rotate(-1deg) translateY(-2%);
-  animation: whale 2s ease-in-out 0s infinite alternate;
+  animation: whale 2s ease-in-out 0s 4.5 alternate;
 }
 
 @keyframes whale {
-  to { transform: rotate(1deg) translateY(1%); }
+  0% { transform: rotate(-1deg) translateY(-2%); }
+  to { transform: rotate(1deg) translateY(2%); }
 }
 
 path#docker-sea {
-  transform: translateX(-1%);
-  animation: sea 1.7s ease 0s infinite alternate;
+  animation: sea 2s ease-in-out 0s 4.5 alternate;
 }
 
 @keyframes sea {
-  to { transform: translateX(2%); }
+  0% { transform: translateX(2%); }
+  to { transform: translateX(-2%); }
 }

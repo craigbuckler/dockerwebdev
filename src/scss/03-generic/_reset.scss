@@ -2,12 +2,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
   @include reset;
-
-  @media (prefers-reduced-motion: reduce) {
-    transition-duration: 1ms !important;
-    animation-duration: 1ms !important;
-  }
-
 }
 
 img {
@@ -15,4 +9,27 @@ img {
   max-width: 100%;
   height: auto;
   margin: 1.5em auto 2em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *, *:before, *:after {
+    transition-timing-function: step-start !important;
+    animation-delay: 0s !important;
+    animation-timing-function: step-start !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  a:hover, a:active, a:focus {
+    transform: none !important;
+  }
+
+  #docker-whale, path#docker-sea {
+    animation: none !important;
+  }
+
 }
