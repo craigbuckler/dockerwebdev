@@ -1,6 +1,6 @@
 ---
 title: Do you need Docker?
-description: The first chapter of "Docker for Web Developers" which introduces the concepts and benefits of Docker.
+description: The first chapter of the "Docker for Web Developers" book introduces Docker concepts and benefits.
 keywords: excerpt, sample, chapter, introduction, summary
 shareimage: do-you-need-docker.png
 date: 2020-10-28
@@ -12,7 +12,7 @@ tags:
 
 <aside>
 
-This is the first chapter of the *"Docker for Web Developers"* book which explains the benefits of using Docker for web development. The full course can be purchased from [DockerWebDev.com](https://dockerwebdev.com/).
+This is the first chapter of the *"Docker for Web Developers"* book. It explains the benefits of using Docker for web development. The full course can be purchased from [DockerWebDev.com](https://dockerwebdev.com/).
 
 </aside>
 
