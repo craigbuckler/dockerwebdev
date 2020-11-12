@@ -11,4 +11,4 @@ pagination:
   size: 12
 ---
 
-The following tutorials contain excerpts from the ["Docker for Web Developers" book and video course]({{ '/' | url }}) as well as additional information you may find useful.
+The following tutorials contain excerpts from the ["Docker for Web Developers" book and video course]({{ '/' | url }}) as well as additional Docker articles and assistance.

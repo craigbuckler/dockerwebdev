@@ -1,6 +1,6 @@
 ---
 title: What is Docker and how does it work?
-description: The second chapter of "Docker for Web Developers" explains what Docker is, how it works, and how it can help when setting up web development environments.
+description: The second chapter of the "Docker for Web Developers" book explains what Docker is, how it works, and how it can help when setting up web development environments.
 keywords: excerpt, sample, chapter, technology
 shareimage: what-is-docker.png
 date: 2020-10-29
@@ -12,7 +12,7 @@ tags:
 
 <aside>
 
-This is the second chapter of the *"Docker for Web Developers"* book which provides an overview of Docker concepts and technologies. The full course can be purchased from [DockerWebDev.com](https://dockerwebdev.com/).
+This is the second chapter of the *"Docker for Web Developers"* book. It provides an overview of Docker concepts and technologies. The full course can be purchased from [DockerWebDev.com](https://dockerwebdev.com/).
 
 </aside>
 

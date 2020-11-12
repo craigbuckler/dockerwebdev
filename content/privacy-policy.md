@@ -1,6 +1,6 @@
 ---
 title: Your privacy
-description: We keep your details secure and private. They won't be passed to anyone else.
+description: We keep your details secure and private. Nothing will be passed to anyone else and you won't be spammed.
 keywords: privacy, policy, security, gdpr
 layout: page.njk
 priority: 0.1
