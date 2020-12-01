@@ -15,7 +15,7 @@ eleventyNavigation:
 
 <section>
 
-<h2>Learn Docker quickly</h2>
+<h2>Learn Docker in 24 hours</h2>
 
 <p>An easy-to-follow book &amp; video course demonstrating how to create practical web development environments on Windows, macOS, &amp; Linux using Docker.</p>
 
@@ -29,11 +29,14 @@ eleventyNavigation:
 
 <article class="primary">
 
+> "Docker for Web Developers converted me. Docker seemed overly complex but you demystified it very well &ndash; thanks!"
+> <cite>[Lukas White, UK web developer](https://lukaswhite.com/)</cite>
+
 ## Docker LIVE!
 
-Announcement: the LIVE ***"Introduction to Docker"*** course is coming in January 2021.
+The LIVE ***"Introduction to Docker"*** course is coming in January 2021.
 
-[Find out more]({{ '/tutorials/live-course/' | url }}) and buy your ticket today&hellip;
+[Find out more]({{ '/tutorials/live-course/' | url }}) or book your ticket today&hellip;
 
 <p><a data-view="booklive" href="https://www.eventbrite.co.uk/e/an-introduction-to-docker-tickets-128105118859?aff=ebdssbeac" class="button">BOOK NOW</a></p>
 
