@@ -32,7 +32,7 @@ Someone is likely to compile Windows editions and the [Windows Subsystem for Lin
 
 ## Why use Docker?
 
-Docker is a tool that can install, configure, and manage software. It places a wrapper around executables known as a *container*. Containers are launched from pre-configured *images* which are a snapshot of an executable and it's libraries.
+Docker is a tool that can install, configure, and manage software. It places a wrapper around executables known as a *container*. Containers are launched from pre-configured *images* which are a snapshot of an executable and its libraries.
 
 Docker provides pre-built [Apache and PHP images](https://hub.docker.com/_/php) which can be downloaded and run on any OS where Docker is installed (see the [Docker installation instructions]({{ '/tutorials/install-docker/' | url }})).
 

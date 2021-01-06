@@ -10,19 +10,20 @@ $url = '';
 // redirects
 $redir = array(
 
-	'index' => '',
+	'index' 	=> '',
 	'welcome' => '',
-	'home' => '',
-  'topic' => 'tag/',
+	'home' 		=> '',
+  'topic' 	=> 'tag/',
   'subject' => 'tag/',
   'article' => 'tutorials/',
-	'blog' => 'tutorials/',
-	'priv' => 'privacy-policy/',
-  'course' => 'course/',
-  'video' => 'course/samples/',
-  'example' => 'course/samples/',
+	'blog' 		=> 'tutorials/',
+	'priv' 		=> 'privacy-policy/',
+  'course' 	=> 'course/',
+  'video' 	=> 'course/samples/',
+  'example'	=> 'course/samples/',
   'excerpt' => 'course/samples/',
-  'sample' => 'course/samples/'
+	'sample' 	=> 'course/samples/',
+	'live' 		=> 'tutorials/docker-live-course'
 
 );
 foreach ($redir as $pold => $pnew) if (strpos($addr, $pold) !== false) $url = '{% meta 'url' %}{{ '/' | url }}' . $pnew;

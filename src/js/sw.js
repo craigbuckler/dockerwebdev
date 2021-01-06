@@ -13,6 +13,7 @@ const
   installFilesEssential = [
     'index.json',
     'manifest.webmanifest',
+    // 'css/critical.css', // required when testing offline PWA during development
     'css/main.css?' + version,
     'js/main.js?' + version,
   ].map(u => '__root__' + u).concat(offlineHTML, offlineJSON),

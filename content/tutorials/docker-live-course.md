@@ -1,9 +1,9 @@
 ---
-title: "An introduction to Docker: LIVE course, January 2021"
-description: The live Introduction to Docker course will be held online in January 2021. Learn the benefits Docker and how to use it in your own projects.
+title: "An introduction to Docker: LIVE training course, March 2021"
+description: My Zoom-based Introduction to Docker course will be held online during March 2021. Learn how Docker will benefit your projects.
 keywords: live, online, zoom, schedule, seminar, presentation, benefits, apply
 shareimage: docker-live.png
-date: 2020-11-11
+date: 2021-01-06
 tags:
   - live
   - video
@@ -13,23 +13,25 @@ tags:
 
 <aside>
 
-**"An Introduction to Docker"** is a LIVE online course delivered over Zoom in January 2021. The tutor is Craig Buckler, author of the **"Docker for Web Developers"** book & video course.
+**"An Introduction to Docker"** is a LIVE online course delivered over Zoom in March 2021. Your tutor is Craig Buckler, author of the **"Docker for Web Developers"** book & video course.
 
 </aside>
 
-<img src="/images/docker-animated.svg" aria-labelledby="titlemain" style="max-width:25em" inline />
+<figure title="An introduction to Docker, live training course">
+  <img src="{{ '/images/zoom.webp' | url }}" alt="Docker training on Zoom" />
+</figure>
 
 **"An Introduction to Docker"** is a hands-on one-day course split over two half-days:
 
-* **Day one: 12 January 2021**
+* **Day one: 2 March 2021**
   3.5 hours starting 13:30 UK / 14:30 Europe / 8:30 New York
 
   *An overview of Docker benefits, concepts, and techniques for all participants with live demonstrations, practical examples, and a Q&A session.*
 
-* **Day two: 13 or 14 January 2021**:
+* **Day two: 3 or 4 March 2021**:
   3.5 hours starting 13:30 UK / 14:30 Europe / 8:30 New York
 
-  *Hands-on practical projects including application development, live code editing, debugging, and best-practice techniques. Participants will be split into smaller groups for personal assistance.*
+  *Hands-on practical projects including application development, live code editing, debugging, and best-practice techniques. Participants are split into smaller groups for personal assistance.*
 
 <p><a data-view="booklive" href="https://www.eventbrite.co.uk/e/an-introduction-to-docker-tickets-128105118859?aff=ebdssbeac" class="button">BOOK NOW</a></p>
 
@@ -38,7 +40,7 @@ tags:
 
 The course is aimed at developers, DevOps professionals, and IT managers who want to learn more about Docker or improve their application development and deployment processes.
 
-The course specifically refers to web technologies but the concepts can be applied to any stack.
+The course specifically refers to web technologies but the Docker concepts can be applied to any stack.
 
 
 ## What will you get?
@@ -55,6 +57,8 @@ All participants receive:
 
 
 ## Why should you learn Docker?
+
+<img src="/images/docker-animated.svg" aria-labelledby="titlemain" style="max-width:25em" inline />
 
 Docker can revolutionise project development and deployment.
 
@@ -119,11 +123,11 @@ You can [ask Craig anything on Twitter @craigbuckler](https://twitter.com/craigb
 
 ## How much does the course cost?
 
-The course is organised by [Software Cornwall](https://softwarecornwall.org/news/skills-and-training-news/employer-led-skills-news/an-introduction-to-docker/) and is open to attendees worldwide.
+The course is organised by [Software Cornwall](https://softwarecornwall.org/event/an-introduction-to-docker-2/) and is open to attendees worldwide.
 
 It costs £300 plus the Eventbrite booking fee and VAT, however&hellip;
 
-> participants in the UK or EU are eligible for HALF PRICE TICKETS thanks to backing from [The European Social Fund](https://ec.europa.eu/esf/)
+> participants in the UK and EU are eligible for HALF PRICE TICKETS thanks to backing from [The European Social Fund](https://ec.europa.eu/esf/)
 
 Tickets are limited so please&hellip;
 
