@@ -4,6 +4,13 @@
 
   if (!window.history) return;
 
+  let loader;
+
+  // attempt to load content on offline page
+  if (document.getElementById('__offlinepages__')) {
+    render(location.pathname, true);
+  }
+
   // current page history
   history.replaceState({ url: location.pathname }, '', location.pathname);
 
@@ -105,7 +112,6 @@
 
 
   // progress loader
-  let loader;
   function progress(pc = 0) {
 
     if (!loader) {
