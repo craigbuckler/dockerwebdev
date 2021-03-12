@@ -6,12 +6,12 @@ import { terser } from 'rollup-plugin-terser';
 const
   pkg = require('./package.json'),
   productionMode = (process.env.NODE_ENV !== 'development'),
-  variables = require('./lib/json').flatten( require('./site.json'), '__', '__' );
+  values = require('./lib/json').flatten( require('./site.json'), '__', '__' );
 
-variables.__dev__ = !productionMode;
-variables.__version__ = pkg.version;
-variables.__versionFile__ = pkg.version.replace(/\./g, '-');
-variables.__PWAcache__ = variables.__versionFile__ + '::' + variables.__siteshort__;
+values.__dev__ = !productionMode;
+values.__version__ = pkg.version;
+values.__versionFile__ = pkg.version.replace(/\./g, '-');
+values.__PWAcache__ = values.__versionFile__ + '::' + values.__siteshort__;
 
 const
 
@@ -21,7 +21,10 @@ const
       browser: true
     }),
     commonjs(),
-    replace(variables)
+    replace({
+      values,
+      preventAssignment: true
+    })
   ],
 
   // output plugins

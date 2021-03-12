@@ -3,7 +3,7 @@ title: How to setup an Apache, PHP, and HTTPS development environment with Docke
 description: Quickly create a robust PHP project development environment on your local machine with Apache and locally-trusted HTTPS certificates.
 keywords: apache, php, ssl, https, server
 shareimage: docker-apache-php-https.png
-date: 2020-12-01
+date: 2021-03-12
 tags:
   - apache
   - php
@@ -16,7 +16,7 @@ This Docker tutorial explains how to run a PHP application using Apache and *rea
 
 </aside>
 
-PHP may not be the trendiest technology but it's used by many developers and projects. According to [W3Techs in December 2020](https://w3techs.com/), [PHP is used on 79% of all websites](https://w3techs.com/technologies/overview/programming_language). That estimate may be unrealistic since sites may not &ndash; and ideally *shouldn't* &ndash; announce their stack. However, a more reliable statistic is that [WordPress powers 40% of the web]((https://w3techs.com/technologies/details/cm-wordpress)) and the <abbr title="Content Management System">CMS</abbr> runs on PHP.
+PHP may not be the trendiest technology but it's used by many developers and projects. According to [W3Techs in December 2020](https://w3techs.com/), [PHP is used on 79% of all websites](https://w3techs.com/technologies/overview/programming_language). That estimate may be unrealistic since sites may not &ndash; and ideally *shouldn't* &ndash; announce their stack. However, a more reliable statistic is that [WordPress powers 40% of the web](https://w3techs.com/technologies/details/cm-wordpress) and the <abbr title="Content Management System">CMS</abbr> runs on PHP.
 
 I rarely embark on new PHP projects but have many legacy sites and apps with folders full of `.php` files. Installing PHP can be time-consuming and error prone. There are various versions and you'll encounter further complexities when integrating PHP with a web server such as Apache to match a real hosting solutions.
 
@@ -33,6 +33,8 @@ Someone is likely to compile Windows editions and the [Windows Subsystem for Lin
 ## Why use Docker?
 
 Docker is a tool that can install, configure, and manage software. It places a wrapper around executables known as a *container*. Containers are launched from pre-configured *images* which are a snapshot of an executable and its libraries.
+
+> My ["Docker for Web Developers" book and video course]({{ '/' | url }}) concisely explains how to adopt Docker for your new and existing projects.
 
 Docker provides pre-built [Apache and PHP images](https://hub.docker.com/_/php) which can be downloaded and run on any OS where Docker is installed (see the [Docker installation instructions]({{ '/tutorials/install-docker/' | url }})).
 
@@ -111,17 +113,17 @@ Create a file named `000-default.conf` in the same directory with the following 
 
 ## Docker configuration
 
-Create a file named `Dockerfile` in your directory and add the following content to build a PHP and Apache image. You can choose from dozens of [starting images at Docker Hub](https://github.com/docker-library/docs/blob/master/php/README.md#supported-tags-and-respective-dockerfile-links) but this example uses `php:7.3-apache` which has the latest version of PHP 7.3 on Apache 2.4:
+Create a file named `Dockerfile` in your directory and add the following content to build a PHP and Apache image. You can choose from dozens of [starting images at Docker Hub](https://github.com/docker-library/docs/blob/master/php/README.md#supported-tags-and-respective-dockerfile-links) but this example uses `php:7.3-apache` which has the latest version of PHP 8 on Apache 2.4:
 
 ```yml
-FROM php:7.3-apache
+FROM php:8-apache
 
-RUN a2enmod ssl
-RUN a2enmod rewrite
-
+RUN a2enmod ssl && a2enmod rewrite
 RUN mkdir -p /etc/apache2/ssl
-COPY ./*.pem /etc/apache2/ssl/
-COPY ./000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
+
+COPY ./ssl/*.pem /etc/apache2/ssl/
+COPY ./apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 
 EXPOSE 80
 EXPOSE 443
@@ -130,35 +132,44 @@ EXPOSE 443
 The `Dockerfile`:
 
 1. Enables Apache's SSL and rewrite modules. Further modules can be enabled if necessary.
+1. Copies the PHP development configuration file to `php.ini` so errors and warnings are shown.
 1. Creates an `/etc/apache2/ssl` directory and copies the SSL `.pem` certificate files [created above](#ssl-certificates).
 1. Copies the [Apache configuration file](#apache-configuration).
 1. Exposes ports 80 and 443 for HTTP and HTTPS accordingly.
 
+If necessary, you can define a your own `php.ini` file and `COPY` it into the image at `/usr/local/etc/php/php.ini`.
+
+<aside>
+
+**Note**: the separate `Dockerfile` `RUN` commands can be merged on to one line and separated with `&&`. This makes the Docker build process faster and more efficient although the code is more difficult to read.
+
+</aside>
+
 
 ## Build the PHP Docker image
 
-Build a Docker image named `php73` from your `Dockerfile` by navigating to the directory in a terminal and entering:
+Build a Docker image named `php8` from your `Dockerfile` by navigating to the directory in a terminal and entering:
 
 ```bash
-docker image build -t php73 .
+docker image build -t php8 .
 ```
 
-*(That last `.` period is important!)*
+*(The last `.` period is important!)*
 
-Assuming you don't have errors, a new Docker image will be built. Run `docker image ls` to see `php73` in the list of images.
+Assuming you don't have errors, a new Docker image will be built. Run `docker image ls` to see `php8` in the list of images.
 
 
 ## Launch a PHP container
 
-You can now start a Docker container from the `php73` image. Navigate to any directory containing a PHP project and run the following `docker` command:
+You can now start a Docker container from the `php8` image. Navigate to any directory containing a PHP project and run the following `docker` command:
 
 ```bash
 docker run \
   -it --rm \
   -p 8080:80 -p 443:443 \
-  --name php73site \
+  --name php8site \
   -v "$PWD":/var/www/html \
-  php73
+  php8
 ```
 
 <aside>
@@ -179,9 +190,9 @@ Alternately, you may find it easier to launch the container with Docker Compose.
 version: '3'
 services:
 
-  php73site:
-    image: php73
-    container_name: php73site
+  php8site:
+    image: php8
+    container_name: php8site
     volumes:
       - ./:/var/www/html
     ports:
@@ -218,10 +229,12 @@ Launch it in your browser at <http://localhost:8080/> or <https://localhost/>. T
 
 ## Dynamic Docker development
 
-A little knowledge of Docker is all that's required to create a secure Apache and PHP 7.3 development environment. The benefits:
+A little knowledge of Docker is all that's required to create a secure Apache and PHP development environment. The benefits:
 
-* you did not need to manually download, install, or configure any software
+* you did not need to manually download, install, or configure additional software
 * your OS has not changed &ndash; the container cannot conflict with other versions of Apache or PHP you have installed
 * the container will work indentically on any other OS without modification.
 
-Finally, you're not limited to PHP and Apache! Docker techniques can be applied to whatever server, language runtimes, or other software dependencies your application needs.
+Finally...
+
+> You're not limited to PHP and Apache! Docker can manage whatever server, language runtimes, databases, or other software dependencies your project needs.

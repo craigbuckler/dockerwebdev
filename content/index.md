@@ -1,7 +1,7 @@
 ---
 title: Docker for Web Developers
 description: A book and video course showing how to revolutionize your web development projects with Docker.
-date: 2021-01-06
+date: 2021-03-12
 keywords: learn, help
 layout: base.njk
 priority: 1.0
@@ -34,20 +34,9 @@ eleventyNavigation:
 > <cite>[Lukas White, UK web developer](https://lukaswhite.com/)</cite>
 
 
-## LIVE Docker training course!
-
-<figure title="An introduction to Docker, live training course">
-  <img src="{{ '/images/zoom.webp' | url }}" alt="Docker training on Zoom" />
-</figure>
-
-My ***"Introduction to Docker"*** Zoom-based training course is running from 3 to 5 March 2021. [Find out more about the live Docker course]({{ '/tutorials/docker-live-course/' | url }}) or book your ticket today&hellip;
-
-<p><a data-view="booklive" href="https://www.eventbrite.co.uk/e/an-introduction-to-docker-tickets-128105118859?aff=ebdssbeac" class="button">BOOK NOW</a></p>
-
-
 ## What is Docker?
 
-Docker is a software management tool which will revolutionise your web projects. You will quickly discover its benefits including:
+Docker is a software management tool which will revolutionise your web projects. Its benefits include:
 
 
 ### Install project dependencies in minutes
@@ -96,6 +85,7 @@ Find out more&hellip;
 * [Docker course content]({{ '/course/' | url }})
 * [sample videos and book excerpts]({{ '/course/samples/' | url }})
 * [what you need to know]({{ '/course/requirements/' | url }})
+* [attend a Docker LIVE training course]({{ '/tutorials/docker-live-course/' | url }})
 
 or buy it now&hellip;
 
