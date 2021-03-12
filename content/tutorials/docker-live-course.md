@@ -1,9 +1,9 @@
 ---
-title: "An introduction to Docker: LIVE training course, March 2021"
-description: My Zoom-based Introduction to Docker course will be held online during March 2021. Learn how Docker will benefit your projects.
+title: "An introduction to Docker: LIVE training course"
+description: Attend my Zoom-based Docker course to learn how Docker can be used in your projects.
 keywords: live, online, zoom, schedule, seminar, presentation, benefits, apply
 shareimage: docker-live.png
-date: 2021-01-06
+date: 2021-03-11
 tags:
   - live
   - video
@@ -13,7 +13,7 @@ tags:
 
 <aside>
 
-**"An Introduction to Docker"** is a LIVE online course delivered over Zoom in March 2021. Your tutor is Craig Buckler, author of the **"Docker for Web Developers"** book & video course.
+**"An Introduction to Docker"** is a LIVE online course delivered over Zoom. Your tutor is Craig Buckler, author of the **"Docker for Web Developers"** book & video course.
 
 </aside>
 
@@ -23,17 +23,15 @@ tags:
 
 **"An Introduction to Docker"** is a hands-on one-day course split over two half-days:
 
-* **Day one: 2 March 2021**
-  3.5 hours starting 13:30 UK / 14:30 Europe / 8:30 New York
+* **Day one**: 3.5 hours
 
   *An overview of Docker benefits, concepts, and techniques for all participants with live demonstrations, practical examples, and a Q&A session.*
 
-* **Day two: 3 or 4 March 2021**:
-  3.5 hours starting 13:30 UK / 14:30 Europe / 8:30 New York
+* **Day two**: 3.5 hours
 
   *Hands-on practical projects including application development, live code editing, debugging, and best-practice techniques. Participants are split into smaller groups for personal assistance.*
 
-<p><a data-view="booklive" href="https://www.eventbrite.co.uk/e/an-introduction-to-docker-tickets-128105118859?aff=ebdssbeac" class="button">BOOK NOW</a></p>
+<p>Please <a data-view="newsletter" href="https://tinyletter.com/dockerwebdev">sign-up for my newsletter</a> to find out the dates, times, and prices of the next course.</p>
 
 
 ## Who is the course for?
@@ -87,7 +85,7 @@ To attend the course, you require:
 If you would like to follow the hands-on examples and run Docker on your PC, you will also require:
 
 1. A modern PC running a recent edition of Windows 10, mac OS, or Linux (ideally a Debian or Ubuntu-based distro).
-1. A recent [installation of Docker]({{ '/tutorials/install-docker/' | url }}). Further assistance will be available during the course.
+1. A recent [installation of Docker]({{ '/tutorials/install-docker/' | url }}). Further assistance will be available before and during the course.
 1. A terminal application for entering command-line instructions.
 1. A text editor such as [VS Code](https://code.visualstudio.com/), [Atom](https://atom.io/), or [Sublime Text](https://www.sublimetext.com/).
 
@@ -123,12 +121,8 @@ You can [ask Craig anything on Twitter @craigbuckler](https://twitter.com/craigb
 
 ## How much does the course cost?
 
-The course is organised by [Software Cornwall](https://softwarecornwall.org/event/an-introduction-to-docker-2/) and is open to attendees worldwide.
+The course is organised by [Software Cornwall](https://softwarecornwall.org/event/an-introduction-to-docker-2/) and is open to attendees worldwide. The final price will be published here shortly, but participants in the UK and EU are eligible for HALF PRICE TICKETS thanks to backing from [The European Social Fund](https://ec.europa.eu/esf/)
 
-It costs £300 plus the Eventbrite booking fee and VAT, however&hellip;
+Please sign-up for my newsletter to be alerted when the next course is announced:
 
-> participants in the UK and EU are eligible for HALF PRICE TICKETS thanks to backing from [The European Social Fund](https://ec.europa.eu/esf/)
-
-Tickets are limited so please&hellip;
-
-<p><a data-view="booklive" href="https://www.eventbrite.co.uk/e/an-introduction-to-docker-tickets-128105118859?aff=ebdssbeac" class="button">BOOK NOW</a></p>
+<p><a data-view="newsletter" href="https://tinyletter.com/dockerwebdev" class="button">SIGN UP</a></p>

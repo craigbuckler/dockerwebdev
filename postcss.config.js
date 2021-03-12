@@ -1,12 +1,14 @@
 // import site tokens
 const variables = require('./lib/json').flatten( require('./site.json').token );
 
-module.exports = (ctx) => {
+module.exports = (cfg) => {
+
+  const productionMode = (cfg.env !== 'development');
 
   return {
 
-    map: ctx.options.map,
-    parser: ctx.file.extname === '.scss' ? 'postcss-scss' : false,
+    map: cfg.options.map,
+    parser: cfg.file.extname === '.scss' ? 'postcss-scss' : false,
     plugins: [
       require('postcss-advanced-variables')({
         variables
@@ -18,7 +20,7 @@ module.exports = (ctx) => {
         loadPaths: ['images/']
       }),
       require('autoprefixer')(),
-      require('cssnano')()
+      productionMode ? require('cssnano')() : null
     ]
 
   };
