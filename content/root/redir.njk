@@ -24,7 +24,8 @@ $redir = array(
   'excerpt' => 'course/samples/',
 	'sample' 	=> 'course/samples/',
 	'instal'	=> 'tutorials/install-docker/',
-	'live' 		=> 'tutorials/docker-live-course'
+	'clea'		=> 'tutorials/clean-up-docker/',
+	'live' 		=> 'tutorials/docker-live-course/'
 
 );
 foreach ($redir as $pold => $pnew) if (strpos($addr, $pold) !== false) $url = '{% meta 'url' %}{{ '/' | url }}' . $pnew;

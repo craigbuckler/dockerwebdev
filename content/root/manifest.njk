@@ -8,15 +8,63 @@ eleventyExcludeFromCollections: true
 	"name"							: "{% meta 'site' %}",
 	"short_name"				: "{% meta 'siteshort' %}",
 	"description"				: "{% meta 'description' %}",
+  "categories"        : [ "docker", "course", "education", "book", "video", "tutorial", "article" ],
 	"scope"							: "{{ '/' | url }}",
 	"start_url"					: "{{ '/' | url }}",
 	"display"						: "standalone",
+  "orintation"        : "any",
 	"theme_color"				: "{% meta 'token_theme_color' %}",
 	"background_color"	: "{% meta 'token_theme_color' %}",
+  "shortcuts"         : [
+    {
+      "name"          : "Docker course",
+      "short_name"	  : "course",
+      "description"   : "About the Docker for Web Developers book and video course.",
+      "url"           : "/course/",
+      "icons": [
+        {
+          "src"           : "{{ '/images/icons/docker-096.png' | url }}",
+          "sizes"         : "96x96",
+          "type"          : "image/png"
+        }
+      ]
+    },
+    {
+      "name"          : "Docker tutorials",
+      "short_name"	  : "tutorials",
+      "description"   : "Docker tutorials and free course content.",
+      "url"           : "/tutorials/",
+      "icons": [
+        {
+          "src"           : "{{ '/images/icons/docker-096.png' | url }}",
+          "sizes"         : "96x96",
+          "type"          : "image/png"
+        }
+      ]
+    },
+    {
+      "name"          : "Docker topics",
+      "short_name"	  : "topics",
+      "description"   : "Links to Docker content by topic.",
+      "url"           : "/tag/",
+      "icons": [
+        {
+          "src"           : "{{ '/images/icons/docker-096.png' | url }}",
+          "sizes"         : "96x96",
+          "type"          : "image/png"
+        }
+      ]
+    }
+  ],
 	"icons": [
 		{
       "src"           : "{{ '/images/icons/docker-076.png' | url }}",
       "sizes"         : "76x76",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "{{ '/images/icons/docker-096.png' | url }}",
+      "sizes"         : "96x96",
       "type"          : "image/png"
     },
 		{
@@ -50,5 +98,22 @@ eleventyExcludeFromCollections: true
       "type"          : "image/png",
       "purpose"       : "maskable"
     }
-	]
+	],
+  "screenshots": [
+		{
+      "src"           : "{{ '/images/share/docker-for-web-developers.png' | url }}",
+      "sizes"         : "800x400",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "{{ '/images/share/what-is-docker.png' | url }}",
+      "sizes"         : "800x400",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "{{ '/images/share/docker-benefits.png' | url }}",
+      "sizes"         : "800x400",
+      "type"          : "image/png"
+    }
+  ]
 }

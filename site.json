@@ -4,7 +4,7 @@
   "url": "https://dockerwebdev.com",
   "root": "/",
   "language": "en-GB",
-  "description": "How to use Docker for web development. A concise and practical book and video course to help you use Docker in web projects.",
+  "description": "How to use Docker for web development. A concise and practical book and video course which demonstrates how you can use Docker in your web projects.",
   "keywords": "docker, docker-compose, docker swarm, kubernetes, learn, training, course, book, video, introduction, tutorial, web, development, environment, dependencies, deployment, production, windows, mac os, linux",
   "topic": "Docker book and video course",
   "author": "Craig Buckler",

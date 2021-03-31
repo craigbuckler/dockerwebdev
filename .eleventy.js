@@ -88,7 +88,9 @@ module.exports = config => {
   config.addFilter('dateymd', dateformat.ymd);
 
   // format word count and reading time
-  config.addFilter('readtime', require('./lib/filters/readtime'));
+  const readtime = require('./lib/filters/readtime');
+  config.addFilter('countapprox', readtime.wordcount);
+  config.addFilter('readtime', readtime.friendly);
 
 
   /* --- SHORTCODES --- */
