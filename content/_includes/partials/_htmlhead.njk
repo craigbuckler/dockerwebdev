@@ -15,7 +15,7 @@
   <link rel="preload" href="{{ cssMainUrl | url }}" as="style" />
 
   <!-- main ES6 modules -->
-  <script type="module" src="{{ jsMainUrl | url }}" defer></script>
+  <script type="module" src="{{ jsMainUrl | url }}"></script>
 
   <!-- analytics ES5 -->
   {% set analytics %}{% meta 'analytics' %}{% endset %}
@@ -46,6 +46,7 @@
   <link rel="apple-touch-icon" sizes="192x192" href="{{ '/images/icons/docker-192.png' | url }}" />
   <link rel="apple-touch-icon" sizes="152x152" href="{{ '/images/icons/docker-152.png' | url }}" />
   <link rel="apple-touch-icon" sizes="120x120" href="{{ '/images/icons/docker-120.png' | url }}" />
+  <link rel="apple-touch-icon" sizes="96x96" href="{{ '/images/icons/docker-096.png' | url }}" />
   <link rel="apple-touch-icon" sizes="76x76" href="{{ '/images/icons/docker-076.png' | url }}" />
   <link rel="apple-touch-startup-image" href="{{ '/images/icons/docker-512.png' | url }}">
 

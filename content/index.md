@@ -1,7 +1,7 @@
 ---
 title: Docker for Web Developers
 description: A book and video course showing how to revolutionize your web development projects with Docker.
-date: 2021-03-12
+date: 2021-03-31
 keywords: learn, help
 layout: base.njk
 priority: 1.0
@@ -84,8 +84,7 @@ Find out more&hellip;
 
 * [Docker course content]({{ '/course/' | url }})
 * [sample videos and book excerpts]({{ '/course/samples/' | url }})
-* [what you need to know]({{ '/course/requirements/' | url }})
-* [attend a Docker LIVE training course]({{ '/tutorials/docker-live-course/' | url }})
+* [read free Docker tutorials]({{ '/tutorials/' | url }})
 
 or buy it now&hellip;
 
