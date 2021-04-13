@@ -70,7 +70,7 @@ Docker can revolutionise project development and deployment.
    Your project and its dependencies can be distributed to other development machines and production servers. It will work identically even when some software is not supported on that OS. Docker ends *"but it works on my PC"* complications!
 
 1. **Continue to use your existing OS, tools, and workflows**
-   Developers can continue to use their preferred tools. It does not matter whether they are using Windows, macOS, Linux, or specific IDEs &ndash; Docker provides all the benefits of local development and debugging.
+   Developers can continue to use their preferred tools. It does not matter whether they are using Windows, macOS, Linux, or specific IDEs -- Docker provides all the benefits of local development and debugging.
 
 1. **Deployments become faster and more robust**
    Docker can scale your application according to demand and keep it running if instances fail.

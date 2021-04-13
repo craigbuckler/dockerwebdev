@@ -150,7 +150,7 @@ Reminder: [sign-up for Docker Hub account](https://hub.docker.com/) if you'd lik
 
 An image is configured using a Dockerfile. It typically defines:
 
-1. a starting base image &ndash; usually an operating system
+1. a starting base image -- usually an operating system
 1. work directories and user permissions
 1. all necessary installation steps, such as defining environment variables, copying files from the host, running install processes, etc.
 1. whether the container should attach one or more [volumes](#volumes) for data storage
@@ -197,14 +197,14 @@ Official images on Docker Hub don't require a Docker ID, e.g. `mysql` (which pre
 
 Containers do not retain state between restarts. This is generally a *good thing*; any number of containers can be started from the same base image and each can handle incoming requests regardless of how or when they were launched (see [Orchestration](#orchestration)).
 
-However, some containers &ndash; such as databases &ndash; absolutely must retain data so Docker provides two storage mechanism types:
+However, some containers -- such as databases -- absolutely must retain data so Docker provides two storage mechanism types:
 
 1. *Volumes*: a Docker-managed file system, and
 1. *Bind mounts*: a file or directory on the host machine.
 
 Either can map to a directory on the container, such as `/data/db` for MongoDB storage.
 
-Volumes are the recommended way to persist data. In some cases, it's the only option &ndash; for example, MongoDB does not currently support bind mounts on Windows or macOS file systems.
+Volumes are the recommended way to persist data. In some cases, it's the only option -- for example, MongoDB does not currently support bind mounts on Windows or macOS file systems.
 
 However, bind mounts are practical during development. An application folder on the host OS can be mounted within the container so any file changes trigger an application restart, browser refresh, etc.
 
@@ -242,7 +242,7 @@ With careful planning, it's possible to create complex Docker networks which hei
 
 ## Docker Compose
 
-A single container is launched with a single `docker` command. An application requiring several containers &ndash; say Node.js, NGINX, and MongoDB &ndash; must be started with three commands. You could launch each in three terminals in the correct order (probably MongoDB, then the Node.js application, then NGINX).
+A single container is launched with a single `docker` command. An application requiring several containers -- say Node.js, NGINX, and MongoDB -- must be started with three commands. You could launch each in three terminals in the correct order (probably MongoDB, then the Node.js application, then NGINX).
 
 Docker Compose is a tool for managing multiple containers with associated volumes and networks. A single configuration file, normally named `docker-compose.yml`, defines the containers and can override Dockerfile settings where necessary.
 
@@ -292,7 +292,7 @@ This may be practical when you're using infrastructures, platforms, or software 
 
 ### Use Docker on production servers where practical
 
-Your live production server uses Docker containers for some &ndash; *but not all* &ndash; dependencies. Your application is likely to be a good candidate, but a database could be provided by a cloud service, and a load balancer could be supplied by the hosting company.
+Your live production server uses Docker containers for some -- *but not all* -- dependencies. Your application is likely to be a good candidate, but a database could be provided by a cloud service, and a load balancer could be supplied by the hosting company.
 
 Your development PC can still emulate this environment using Docker containers. That said, a test database could be provided by the same cloud service to eliminate compatibility issues.
 
@@ -324,7 +324,7 @@ This book uses the following approach where practical:
 
 An image can therefore be used as-is on production servers regardless of whichever orchestration or deployment process is adopted.
 
-Don't worry about this for now &ndash; the process will become clearer in the following chapters.
+Don't worry about this for now -- the process will become clearer in the following chapters.
 
 
 ## When *not* to use Docker

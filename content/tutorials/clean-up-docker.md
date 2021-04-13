@@ -1,6 +1,6 @@
 ---
 title: How to clean your Docker data
-description: Docker can use considerable disk space but you can back-up and delete ununecessary data your drive with a few simple commands.
+description: Docker can use considerable disk space but you can back-up and delete unnecessary data your drive with a few simple commands.
 keywords: data, files, store, state, back-up, copy, clean, delete, remove, image, container, volume, network
 shareimage: docker-clean.png
 date: 2021-03-31
@@ -98,7 +98,7 @@ Again, any number of space-separated network names/IDs can be added to this comm
 
 ## Volume vaporisation
 
-A Docker *volume* is a virtual disk image. It must be attached to a running container so it can save files or other state information between restarts. Volume sizes depend on the application using it, but a typical database will require several hundred metabytes of space even when it's mostly empty.
+A Docker *volume* is a virtual disk image. It must be attached to a running container so it can save files or other state information between restarts. Volume sizes depend on the application using it, but a typical database will require several hundred megabytes of space even when it's mostly empty.
 
 View all Docker-managed disk volumes by entering:
 

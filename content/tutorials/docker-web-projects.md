@@ -37,7 +37,7 @@ Docker runs apps in an isolated environment known as a container. In essence, yo
 
 Your host OS is not modified or configured in any way. It's easy to add, remove, or update a container as necessary.
 
-This also allows you can run different versions of the same dependency &ndash; *even at the same time*. For example, perhaps you require PHP5 for a legacy application but PHP7 for a new project.
+This also allows you can run different versions of the same dependency -- *even at the same time*. For example, perhaps you require PHP5 for a legacy application but PHP7 for a new project.
 
 ## Access
 
@@ -52,8 +52,8 @@ Finally, it's possible to connect to the container's shell using SSH to run admi
 
 Once you have a good set-up, developing with Docker is easier and safer than developing locally. It encourages risk-free experimentation:
 
-* you can run older software without being forced to upgrade. PHP3, Python 2, MongoDB 1 &ndash; *it doesn't matter*.
-* trying a new application or upgrading to the latest version is no longer an issue &ndash; *you can roll back if there are problems*.
+* you can run older software without being forced to upgrade. PHP3, Python 2, MongoDB 1 -- *it doesn't matter*.
+* trying a new application or upgrading to the latest version is no longer an issue -- *you can roll back if there are problems*.
 * creating dangerous code, such as a deletion utility, won't accidentally wipe your critical OS files!
 
 

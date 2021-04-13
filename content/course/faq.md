@@ -66,7 +66,7 @@ The following frequently-asked questions should answer most queries, but please 
 
 <p>The videos were recorded at 1080p (1920 x 1080 resolution) using a professional microphone. Text and code is enlarged so you can watch videos on a phone or smaller browser window.</p>
 
-<p>The <a href="{{ '/course/samples/' | url }}">example videos</a> are hosted on YouTube &ndash; the course itself has better quality.</p>
+<p>The <a href="{{ '/course/samples/' | url }}">example videos</a> are hosted on YouTube -- the course itself has better quality.</p>
 </details>
 
 <details>
@@ -98,7 +98,7 @@ The following frequently-asked questions should answer most queries, but please 
 <details>
 <summary>Will the course be updated if Docker changes?</summary>
 
-<p>Yes &ndash; for at least two years after launch. You'll be alerted about updates and can download resources again.</p>
+<p>Yes -- for at least two years after launch. You'll be alerted about updates and can download resources again.</p>
 </details>
 
 <details>
@@ -124,7 +124,7 @@ The following frequently-asked questions should answer most queries, but please 
 <details>
 <summary>Is there a discount for bulk or team purchases?</summary>
 
-<p>Sure &ndash; <a href="#contact">contact me</a> with the number of copies you need.</p>
+<p>Sure -- <a href="#contact">contact me</a> with the number of copies you need.</p>
 </details>
 
 <details>

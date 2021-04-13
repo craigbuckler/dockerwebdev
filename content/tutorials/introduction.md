@@ -37,7 +37,7 @@ Managing this stack can be a *challenge*.
 
 ## *"It works on my machine, buddy"*
 
-Imagine your latest application has become successful. You've had to hire another developer to give you more time to rake in money. They turn up at work on day one, clone your repository, launch the code, and &ndash; ***BANG*** &ndash; it fails with an obscure error message.
+Imagine your latest application has become successful. You've had to hire another developer to give you more time to rake in money. They turn up at work on day one, clone your repository, launch the code, and -- ***BANG*** -- it fails with an obscure error message.
 
 Debugging may help, but your environments are not the same&hellip;
 
@@ -60,7 +60,7 @@ Some companies would implement a locked-down device policy, where you're prevent
 
 Rather than restricting devices and software, the application could be run within a Virtual Machine (VM). A VM allows an operating system to be installed in an emulated hardware environment; in essence, it's a PC running on your PC.
 
-Cross-platform VM options include [VMware](https://www.vmware.com/) and [VirtualBox](https://www.virtualbox.org/). You could create a Linux (or other) VM with your application and all its dependencies. The VM is just data: it can be copied and run on any *real* Windows, macOS, or Linux device. Every developer &ndash; and the live server &ndash; could run the same environment.
+Cross-platform VM options include [VMware](https://www.vmware.com/) and [VirtualBox](https://www.virtualbox.org/). You could create a Linux (or other) VM with your application and all its dependencies. The VM is just data: it can be copied and run on any *real* Windows, macOS, or Linux device. Every developer -- and the live server -- could run the same environment.
 
 Unfortunately, VMs quickly become impractical:
 
@@ -95,7 +95,7 @@ Similar Docker environments can also be deployed in production:
 
 *Neither was I.*
 
-When I first encountered Docker, it seemed like an unnecessary and somewhat daunting hurdle. I had plenty of experience running VMs and configuring software dependencies &ndash; *surely I didn't need it?*
+When I first encountered Docker, it seemed like an unnecessary and somewhat daunting hurdle. I had plenty of experience running VMs and configuring software dependencies -- *surely I didn't need it?*
 
 Docker documentation is comprehensive but it has a steep learning curve. Tutorials are often poor and:
 
@@ -144,7 +144,7 @@ Docker can be used to replicate that environment so all dependencies are availab
 
 Serverless applications implement most functionality in the browser typically with a JavaScript framework to create a Single Page Application (SPA). The core site/application is downloaded once.
 
-Additional data and services are provided by small APIs perhaps running as serverless functions. Despite the name, servers are still used &ndash; but you don't need to worry about managing them. You create a function which is launched on demand from a JavaScript Ajax request, e.g. code that emails form data to a sales team.
+Additional data and services are provided by small APIs perhaps running as serverless functions. Despite the name, servers are still used -- but you don't need to worry about managing them. You create a function which is launched on demand from a JavaScript Ajax request, e.g. code that emails form data to a sales team.
 
 Docker can be used in development environments to:
 
@@ -174,7 +174,7 @@ What you've learned in this chapter:
 
    It runs on Windows, macOS, and Linux. Your application will work on any PC.
 
-1. Docker can &ndash; *and should* &ndash; be used in your development environment.
+1. Docker can -- *and should* -- be used in your development environment.
 
    You can also use it in production systems if it's practical to do so.
 

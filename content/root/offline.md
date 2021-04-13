@@ -9,6 +9,6 @@ priority: 0.0
 
 You are not connected to a wi-fi or mobile network.
 
-Please connect or view a page you've accessed previously:
+Please connect or view a page you've already downloaded:
 
 <ul id="{% meta 'offlinepages' %}"></ul>
