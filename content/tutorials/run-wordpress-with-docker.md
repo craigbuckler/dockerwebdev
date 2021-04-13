@@ -13,7 +13,9 @@ tags:
 
 More than [40% of all sites run the WordPress Content Management System](https://w3techs.com/technologies/details/cm-wordpress). As a web developer, you're almost certain to have encountered it.
 
-WordPress requires Apache, PHP, MySQL, and the WordPress source code. That's a lot of dependencies if you need to set-up a development environment. You *could* choose to install the applications:
+> WordPress requires Apache, PHP, MySQL, and the WordPress source code. A lot of dependencies are required for your development environment.
+
+You *could* choose to install the applications:
 
 1. directly on your local PC,
 1. using an all-in-one package such as [XAMPP](https://www.apachefriends.org/), or
@@ -28,7 +30,7 @@ Docker solves WordPress woes. It can:
 
 * install all dependencies in minutes on any OS
 * launch older editions of MySQL 5 preferred by the CMS
-* run WordPress quickly -- faster than native Windows
+* run WordPress quickly -- *faster than native Windows*
 * permit local file editing using your preferred tools, and
 * create a fully-isolated development environment for each site.
 
@@ -142,4 +144,4 @@ The `root` user and `mysecret` password will need to be changed if you used diff
 
 To shutdown WordPress, enter `docker-compose down` in another terminal window. Starting again with `docker-compose up` will be almost instantaneous and the application will be in the same state you left it.
 
-["Docker for Web Developers"]({{ '/' | url }}) provides futher information about running WordPress with Docker and explains how to add and develop your own custom theme.
+> ["Docker for Web Developers"]({{ '/' | url }}) provides futher information about running WordPress with Docker and explains how to add and develop your own custom theme.

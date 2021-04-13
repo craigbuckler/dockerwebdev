@@ -34,7 +34,7 @@ eleventyNavigation:
 > <cite>[Lukas White, UK web developer](https://lukaswhite.com/)</cite>
 
 
-## What is Docker?
+## Why you need Docker
 
 Docker is a software management tool which will revolutionise your web projects. Its benefits include:
 
@@ -91,8 +91,8 @@ or buy it now&hellip;
 {% include "./_includes/snippets/_prices.html" %}
 
 
-### What if you don't like the course?
+### Risk free
 
-It comes with a full money-back guarantee. *You have nothing to lose!*
+The course comes with a full money-back guarantee if you're not completely satisfied. *You have nothing to lose!*
 
 </article>
