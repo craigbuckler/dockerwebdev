@@ -11,7 +11,7 @@ tags:
   - course
 ---
 
-The course book and video follow the Docker topics shown below. The book also provides additional appendicies with reference information.
+The course book and video follow the Docker topics shown below. The book also provides additional appendices with reference information.
 
 The content is updated as Docker and other technologies evolve. *All updates are **free** forever* so [**buy it now&hellip;**]({{ '/' | url }})
 

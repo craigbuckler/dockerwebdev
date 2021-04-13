@@ -16,11 +16,11 @@ This Docker tutorial explains how to run a PHP application using Apache and *rea
 
 </aside>
 
-PHP may not be the trendiest technology but it's used by many developers and projects. According to [W3Techs in December 2020](https://w3techs.com/), [PHP is used on 79% of all websites](https://w3techs.com/technologies/overview/programming_language). That estimate may be unrealistic since sites may not &ndash; and ideally *shouldn't* &ndash; announce their stack. However, a more reliable statistic is that [WordPress powers 40% of the web](https://w3techs.com/technologies/details/cm-wordpress) and the <abbr title="Content Management System">CMS</abbr> runs on PHP.
+PHP may not be the trendiest technology but it's used by many developers and projects. According to [W3Techs in December 2020](https://w3techs.com/), [PHP is used on 79% of all websites](https://w3techs.com/technologies/overview/programming_language). That estimate may be unrealistic since sites may not -- and ideally *shouldn't* -- announce their stack. However, a more reliable statistic is that [WordPress powers 40% of the web](https://w3techs.com/technologies/details/cm-wordpress) and the <abbr title="Content Management System">CMS</abbr> runs on PHP.
 
 I rarely embark on new PHP projects but have many legacy sites and apps with folders full of `.php` files. Installing PHP can be time-consuming and error prone. There are various versions and you'll encounter further complexities when integrating PHP with a web server such as Apache to match a real hosting solutions.
 
-Additionally, Windows users are offered a [confusing array of options](https://windows.php.net/download/) although the situation is about to become easier &ndash; *Microsoft is dropping PHP support in Windows*:
+Additionally, Windows users are offered a [confusing array of options](https://windows.php.net/download/) although the situation is about to become easier -- *Microsoft is dropping PHP support in Windows*:
 
 > "We are not going to be supporting PHP for Windows in any capacity for version 8.0 and beyond."
 > <cite>[Dale Hirt, Microsoft](https://news-web.php.net/php.internals/110907)</cite>
@@ -38,12 +38,12 @@ Docker is a tool that can install, configure, and manage software. It places a w
 
 Docker provides pre-built [Apache and PHP images](https://hub.docker.com/_/php) which can be downloaded and run on any OS where Docker is installed (see the [Docker installation instructions]({{ '/tutorials/install-docker/' | url }})).
 
-The following sections describe how to prepare a Docker development environment which can execute PHP files locatd on your host PC.
+The following sections describe how to prepare a Docker development environment which can execute PHP files located on your host PC.
 
 
 ## Create SSL certificates
 
-Web apps use HTTPS to ensure communication between the client and the server is encrypted and cannot be intercepted. Google also penilizes content sites which remain on HTTP.
+Web apps use HTTPS to ensure communication between the client and the server is encrypted and cannot be intercepted. Google also penalizes content sites which remain on HTTP.
 
 For local development, developers either:
 
@@ -232,8 +232,8 @@ Launch it in your browser at <http://localhost:8080/> or <https://localhost/>. T
 A little knowledge of Docker is all that's required to create a secure Apache and PHP development environment. The benefits:
 
 * you did not need to manually download, install, or configure additional software
-* your OS has not changed &ndash; the container cannot conflict with other versions of Apache or PHP you have installed
-* the container will work indentically on any other OS without modification.
+* your OS has not changed -- the container cannot conflict with other versions of Apache or PHP you have installed
+* the container will work identically on any other OS without modification.
 
 Finally...
 

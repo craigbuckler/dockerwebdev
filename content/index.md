@@ -30,7 +30,7 @@ eleventyNavigation:
 
 <article class="primary">
 
-> "Docker for Web Developers converted me. Docker seemed overly complex but you demystified it very well &ndash; thanks!"
+> "Docker for Web Developers converted me. Docker seemed overly complex but you demystified it very well -- thanks!"
 > <cite>[Lukas White, UK web developer](https://lukaswhite.com/)</cite>
 
 

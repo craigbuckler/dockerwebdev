@@ -31,8 +31,8 @@ You may have encountered some of my other books, courses, and training materials
 You can find out more about me at:
 
 <ol class="iconlist">
-<li><a data-view="craigbuckler.com" href="https://craigbuckler.com/" class="icon user">craigbuckler.com</a> &ndash; personal site</li>
-<li><a data-view="optimalworks.net" href="https://www.optimalworks.net/" class="icon business">OptimalWorks.net</a> &ndash; business site</li>
+<li><a data-view="craigbuckler.com" href="https://craigbuckler.com/" class="icon user">craigbuckler.com</a> -- personal site</li>
+<li><a data-view="optimalworks.net" href="https://www.optimalworks.net/" class="icon business">OptimalWorks.net</a> -- business site</li>
 <li><a data-view="twitter" href="https://twitter.com/craigbuckler" class="icon twitter">@craigbuckler on Twitter</a></li>
 <li><a data-view="linkedin" href="https://www.linkedin.com/in/craigbuckler" class="icon linkedin">LinkedIn</a></li>
 <li><a data-view="github" href="https://github.com/craigbuckler" class="icon github">GitHub</a></li>
@@ -42,7 +42,7 @@ You can find out more about me at:
 
 ## Why did I create a Docker course?
 
-When I first encountered Docker, it seemed like an unnecessary and somewhat daunting hurdle. I had plenty of experience running VMs and configuring software dependencies &ndash; *surely I didn't need it?*
+When I first encountered Docker, it seemed like an unnecessary and somewhat daunting hurdle. I had plenty of experience running VMs and configuring software dependencies -- *surely I didn't need it?*
 
 > The documentation is comprehensive but Docker has a steep learning curve.
 

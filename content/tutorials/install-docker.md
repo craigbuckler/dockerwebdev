@@ -123,9 +123,9 @@ To install WSL2:
 
 1. Enable hardware virtualization support in your BIOS.
 
-   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels &ndash; typically by hitting <kbd>DEL</kbd>, <kbd>F2</kbd>, or <kbd>F10</kbd> as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
+   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels -- typically by hitting <kbd>DEL</kbd>, <kbd>F2</kbd>, or <kbd>F10</kbd> as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
 
-   **WARNING! Be careful when changing BIOS settings &ndash; one wrong move could trash your PC.**
+   **WARNING! Be careful when changing BIOS settings -- one wrong move could trash your PC.**
 
 1. Enable the **Virtual Machine Platform** and **Windows Subsystem for Linux** options in the **Turn Windows features on or off** panel:
 
@@ -145,7 +145,7 @@ To install WSL2:
 
 1. To complete the installation, launch your distro by clicking its Store's **Launch** button or choosing its icon from the Start menu.
 
-   You *may* be prompted to install a kernel update &ndash; follow the instructions and launch the distro again.
+   You *may* be prompted to install a kernel update -- follow the instructions and launch the distro again.
 
 1. Enter a Linux username and password. These are separate from your Windows credentials although choosing the same ones can be practical.
 
@@ -171,9 +171,9 @@ To install Hyper-V:
 
 1. Enable hardware virtualization support in your BIOS.
 
-   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels &ndash; typically by hitting <kbd>DEL</kbd>, <kbd>F2</kbd>, or <kbd>F10</kbd> as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
+   This will be active on most devices, but check by rebooting and accessing your PC's BIOS panels -- typically by hitting <kbd>DEL</kbd>, <kbd>F2</kbd>, or <kbd>F10</kbd> as your system starts. Look for **Virtualization Technology**, **VTx** or similar options. Ensure they are enabled, save, and reboot.
 
-   **WARNING! Be careful when changing BIOS settings &ndash; one wrong move could trash your PC.**
+   **WARNING! Be careful when changing BIOS settings -- one wrong move could trash your PC.**
 
 1. Enable the **Hyper-V** option in the **Turn Windows features on or off** panel then reboot.
 
@@ -203,7 +203,7 @@ Alternatively, WSL2 can be enabled by checking **Use the WSL 2 based engine** in
 
 ![Docker Windows engine]({{ '/images/figures/docker-windows-engine.webp' | url }})
 
-**When using WSL2**, at least one Linux distro must be enabled &ndash; the default is chosen. You can also permit Docker commands in other distros by accessing the **WSL integration** panel in the **Resources** section of the Docker **Settings**:
+**When using WSL2**, at least one Linux distro must be enabled -- the default is chosen. You can also permit Docker commands in other distros by accessing the **WSL integration** panel in the **Resources** section of the Docker **Settings**:
 
 ![Docker Windows WSL2 selection]({{ '/images/figures/docker-windows-wsl.webp' | url }})
 
