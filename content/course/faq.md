@@ -1,5 +1,5 @@
 ---
-title: Docker & course FAQs
+title: Frequently asked questions about the Docker course
 description: Frequently asked questions about the "Docker for Web Developers" book and video course.
 keywords: faq, questions, answers
 date: 2020-10-25
@@ -148,7 +148,7 @@ The following frequently-asked questions should answer most queries, but please 
 <details>
 <summary>Are my details kept private?</summary>
 
-<p>Yes. See the strict <a href="{{ '/privacy-policy' | url }}">DockerWebDev.com privacy policy</a> and the <a href="https://gumroad.com/privacy">Gumroad privacy policy</a>.</p>
+<p>Yes. See the strict <a href="{{ '/privacy-policy/' | url }}">DockerWebDev.com privacy policy</a> and the <a href="https://gumroad.com/privacy">Gumroad privacy policy</a>.</p>
 </details>
 
 <details>

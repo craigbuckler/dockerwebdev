@@ -1,5 +1,5 @@
 ---
-title: How to install an isolated WordPress development environment with Docker
+title: How to install a WordPress development environment with Docker
 description: Use Docker to install and run an isolated WordPress development environment in minutes.
 keywords: wordpress, cms, install, run, manage, configure, wp-content, theme, plugins, develop
 shareimage: docker-wordpress.png
@@ -101,11 +101,11 @@ A new `wp-content` sub-directory will appear in your project folder. This contai
 sudo chmod 777 -R wp-content
 ```
 
-Open <http://localhost:8001/> in your browser and follow the WordPress installation process:
+Open `http://localhost:8001/` in your browser and follow the WordPress installation process:
 
 ![install WordPress]({{ '/images/figures/wordpress-install.webp' | url }})
 
-You will then be prompted to log on at <http://localhost:8001/wp-admin> using the ID and password you chose during installation:
+You will then be prompted to log on at `http://localhost:8001/wp-admin` using the ID and password you chose during installation:
 
 ![WordPress dashboard]({{ '/images/figures/wordpress-dashboard.webp' | url }})
 

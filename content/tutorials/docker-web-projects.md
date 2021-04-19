@@ -142,7 +142,7 @@ It will take several minutes to download the container images and initialize the
 mysql | ... [Server] X Plugin ready for connections.
 ```
 
-Open <localhost:8080> in your browser to launch Adminer. Enter the login credentials:
+Open `http://localhost:8080/` in your browser to launch Adminer. Enter the login credentials:
 
 * Server: `mysql`
 * Username: `root`
@@ -150,7 +150,7 @@ Open <localhost:8080> in your browser to launch Adminer. Enter the login credent
 
 You can then browse, create, edit, or drop databases, tables, indexes, users, and other items.
 
-You could even create a web application which stores data in the MySQL database at <localhost:3306>.
+You could even create a web application which stores data in the MySQL database at `http://localhost:3306/`.
 
 To stop the containers, press <kbd>Ctrl</kbd> | <kbd>Cmd</kbd> + <kbd>C</kbd> in the terminal or enter:
 

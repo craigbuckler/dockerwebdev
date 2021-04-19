@@ -407,4 +407,4 @@ What you've learned in this chapter:
 
    However, it's not necessarily essential or practical to use it for every application component on production systems.
 
-Enough theory. It's time to [install Docker]({{ '/tutorials/install-docker' | url }})&hellip;
+Enough theory. It's time to [install Docker]({{ '/tutorials/install-docker/' | url }})&hellip;

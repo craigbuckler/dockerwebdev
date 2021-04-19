@@ -12,7 +12,8 @@ pagination:
     - undefined
   addAllPagesToCollections: true
 eleventyComputed:
-  title: "\"{{ tag }}\" pages"
+  title: "Docker tutorials which feature \"{{ tag }}\""
+  description: "A list of Docker tutorials featuring the topic: {{ tag }}."
 permalink: /tag/{{ tag | normalise }}/
 priority: 0.3
 ---
