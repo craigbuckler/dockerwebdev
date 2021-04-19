@@ -24,6 +24,9 @@
   <!-- manifest -->
   <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}" />
 
+  <!-- canonical -->
+  <link rel="canonical" href="{% meta 'url' %}{{ page.url | url }}" />
+
   <!-- meta data -->
   <meta name="description" content="{{ description }}" />
   {% if keywords %}<meta name="keywords" content="{{ keywords }}, {% meta 'keywords' %}" />{% endif %}

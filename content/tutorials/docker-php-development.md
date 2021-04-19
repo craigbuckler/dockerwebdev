@@ -1,5 +1,5 @@
 ---
-title: How to setup an Apache, PHP, and HTTPS development environment with Docker
+title: Setup an Apache, PHP, and HTTPS development environment with Docker
 description: Quickly create a robust PHP project development environment on your local machine with Apache and locally-trusted HTTPS certificates.
 keywords: apache, php, ssl, https, server
 shareimage: docker-apache-php-https.png
@@ -25,7 +25,7 @@ Additionally, Windows users are offered a [confusing array of options](https://w
 > "We are not going to be supporting PHP for Windows in any capacity for version 8.0 and beyond."
 > <cite>[Dale Hirt, Microsoft](https://news-web.php.net/php.internals/110907)</cite>
 
-Someone is likely to compile Windows editions and the [Windows Subsystem for Linux](({{ '/tutorials/install-docker' | url }})) provides another option. However, the point remains that maintaining one or more PHP development environments can be difficult&hellip;
+Someone is likely to compile Windows editions and the [Windows Subsystem for Linux]({{ '/tutorials/install-docker/' | url }}) provides another option. However, the point remains that maintaining one or more PHP development environments can be difficult&hellip;
 
 &hellip;*unless you use Docker*.
 
@@ -224,7 +224,7 @@ You can test PHP execution with an example `index.php` file:
 phpinfo();
 ```
 
-Launch it in your browser at <http://localhost:8080/> or <https://localhost/>. The HTTPS version will use the [mkcert SSL](#ssl-certificates) but, unlike self-signed certificates, the browser will not throw a security alert.
+Launch it in your browser at `http://localhost:8080/` or `https://localhost/`. The HTTPS version will use the [mkcert SSL](#ssl-certificates) but, unlike self-signed certificates, the browser will not throw a security alert.
 
 
 ## Dynamic Docker development

@@ -1,5 +1,6 @@
 ---
-title: Docker tutorials
+title: Docker and related technology tutorials
+description: A selection of free Docker tutorials and excerpts from the Docker for Web Developers book.
 layout: list.njk
 eleventyNavigation:
   key: tutorials
@@ -11,4 +12,4 @@ pagination:
   size: 12
 ---
 
-The following tutorials contain excerpts from the ["Docker for Web Developers" book and video course]({{ '/' | url }}) as well as additional Docker articles and assistance.
+The following tutorials contain excerpts from the ["Docker for Web Developers" book and video course]({{ '/' | url }}) as well as additional Docker information and assistance.

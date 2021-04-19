@@ -1,6 +1,6 @@
 ---
-title: The Docker course
-description: Details about the "Docker for Web Developers" book and video course.
+title: The Docker for Web Developers book and video course
+description: Further details about the "Docker for Web Developers" book and video course.
 keywords: about, details, information
 layout: list.njk
 date: 2021-03-31

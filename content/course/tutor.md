@@ -1,5 +1,5 @@
 ---
-title: Your Docker tutor
+title: About Craig Buckler, your Docker tutor
 description: The "Docker for Web Developers" course was devised and developed by Craig Buckler.
 keywords: Craig Buckler, tutor, instructor, trainer
 date: 2020-10-24
