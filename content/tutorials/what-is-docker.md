@@ -124,7 +124,7 @@ The Windows edition of Docker allows you to [switch between](https://docs.docker
 
 1. the [Windows Subsystem for Linux (WSL) 2](https://docs.microsoft.com/windows/wsl/wsl2-index): a highly-integrated seamless VM which is available on all editions of Windows, or
 
-1. [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/): the Microsoft hypervisor provided with Windows 10 Professional and Enterprise.
+1. [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/): the Microsoft hypervisor provided with Windows 10/11 Professional and Enterprise.
 
 It is therefore more efficient to run Docker on Linux but this rarely matters on a development PC. *Use whatever OS and tools you prefer.*
 

@@ -3,7 +3,7 @@ title: Setup an Apache, PHP, and HTTPS development environment with Docker
 description: Quickly create a robust PHP project development environment on your local machine with Apache and locally-trusted HTTPS certificates.
 keywords: apache, php, ssl, https, server
 shareimage: docker-apache-php-https.png
-date: 2021-03-12
+date: 2022-11-09
 tags:
   - apache
   - php
@@ -16,7 +16,7 @@ This Docker tutorial explains how to run a PHP application using Apache and *rea
 
 </aside>
 
-PHP may not be the trendiest technology but it's used by many developers and projects. According to [W3Techs in December 2020](https://w3techs.com/), [PHP is used on 79% of all websites](https://w3techs.com/technologies/overview/programming_language). That estimate may be unrealistic since sites may not -- and ideally *shouldn't* -- announce their stack. However, a more reliable statistic is that [WordPress powers 40% of the web](https://w3techs.com/technologies/details/cm-wordpress) and the <abbr title="Content Management System">CMS</abbr> runs on PHP.
+PHP may not be the trendiest technology but it's used by many developers and projects. According to [W3Techs](https://w3techs.com/), [PHP is used on 78% of all websites](https://w3techs.com/technologies/overview/programming_language). That may be an underestimate since sites may not -- and ideally *shouldn't* -- announce their stack. A more reliable statistic is that [WordPress powers 43% of the web](https://w3techs.com/technologies/details/cm-wordpress) and the <abbr title="Content Management System">CMS</abbr> uses PHP.
 
 I rarely embark on new PHP projects but have many legacy sites and apps with folders full of `.php` files. Installing PHP can be time-consuming and error prone. There are various versions and you'll encounter further complexities when integrating PHP with a web server such as Apache to match a real hosting solutions.
 
@@ -34,7 +34,7 @@ Someone is likely to compile Windows editions and the [Windows Subsystem for Lin
 
 Docker is a tool that can install, configure, and manage software. It places a wrapper around executables known as a *container*. Containers are launched from pre-configured *images* which are a snapshot of an executable and its libraries.
 
-> My ["Docker for Web Developers" book and video course]({{ '/' | url }}) concisely explains how to adopt Docker for your new and existing projects.
+> My ["Docker for Web Developers"]({{ '/' | url }}) book and video course concisely explains how to adopt Docker for your new and existing projects.
 
 Docker provides pre-built [Apache and PHP images](https://hub.docker.com/_/php) which can be downloaded and run on any OS where Docker is installed (see the [Docker installation instructions]({{ '/tutorials/install-docker/' | url }})).
 
@@ -113,7 +113,7 @@ Create a file named `000-default.conf` in the same directory with the following 
 
 ## Docker configuration
 
-Create a file named `Dockerfile` in your directory and add the following content to build a PHP and Apache image. You can choose from dozens of [starting images at Docker Hub](https://github.com/docker-library/docs/blob/master/php/README.md#supported-tags-and-respective-dockerfile-links) but this example uses `php:7.3-apache` which has the latest version of PHP 8 on Apache 2.4:
+Create a file named `Dockerfile` in your directory and add the following content to build a PHP and Apache image. You can choose from dozens of [starting images at Docker Hub](https://github.com/docker-library/docs/blob/master/php/README.md#supported-tags-and-respective-dockerfile-links) but this example uses `php:8-apache` which has the latest version of PHP 8 on Apache 2.4:
 
 ```yml
 FROM php:8-apache
