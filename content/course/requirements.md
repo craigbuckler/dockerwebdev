@@ -21,7 +21,7 @@ The course is designed for **developers at all levels of experience**. You need 
 
 > If you've ever built a web page, you know enough to get started with Docker.
 
-You'll be using a code editor and the command line. Any appropriate software on Windows 10, mac OS, or Linux should be suitable.
+You'll be using a code editor and the command line. Any appropriate software on Windows 10/11, mac OS, or Linux should be suitable.
 
 
 ## Do I need to know specific languages or technologies?

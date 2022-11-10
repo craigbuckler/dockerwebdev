@@ -84,7 +84,7 @@ To attend the course, you require:
 
 If you would like to follow the hands-on examples and run Docker on your PC, you will also require:
 
-1. A modern PC running a recent edition of Windows 10, mac OS, or Linux (ideally a Debian or Ubuntu-based distro).
+1. A modern PC running a recent edition of Windows 10/11, mac OS, or Linux (ideally a Debian or Ubuntu-based distro).
 1. A recent [installation of Docker]({{ '/tutorials/install-docker/' | url }}). Further assistance will be available before and during the course.
 1. A terminal application for entering command-line instructions.
 1. A text editor such as [VS Code](https://code.visualstudio.com/), [Atom](https://atom.io/), or [Sublime Text](https://www.sublimetext.com/).

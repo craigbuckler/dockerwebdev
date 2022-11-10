@@ -15,7 +15,7 @@ This is the third chapter of the *"Docker for Web Developers"* book. It explains
 
 </aside>
 
-Docker can be installed on [Linux](#install-docker-on-linux), [mac OS](#install-docker-on-macos), or [Windows 10](#install-docker-on-windows).
+Docker can be installed on [Linux](#install-docker-on-linux), [mac OS](#install-docker-on-macos), or [Windows](#install-docker-on-windows).
 
 Requirements and installation instructions can be found on the [Docker Docs](https://docs.docker.com/engine/install/) help pages.
 
@@ -24,7 +24,9 @@ Requirements and installation instructions can be found on the [Docker Docs](htt
 
 ## Install Docker on Linux
 
-Docker is often available in official Linux repositories, although these usually offer older editions. The latest edition is supported on recent 64-bit editions of popular Linux distros:
+[Docker Desktop for Linux](https://docs.docker.com/desktop/install/linux-install/) can be downloaded from Docker Hub. The installer includes the Docker server, CLI, Docker Compose, Docker Swarm, and Kubernetes.
+
+Alternatively, the Docker command-line tool is available in official Linux repositories although these are often older editions. The latest edition is supported on recent 64-bit editions of popular Linux distros:
 
 * [Ubuntu (and derivatives such as Mint)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
@@ -38,14 +40,15 @@ Follow the Docker documentation for your distro. For example, [Docker for Ubuntu
 ```bash
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+sudo apt-get install ca-certificates curl gnupg lsb-release
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
 sudo apt-get update
-
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 <aside>
@@ -67,19 +70,6 @@ sudo usermod -aG docker $USER
 ```
 
 Then reboot to apply all changes.
-
-
-### Install Docker Compose on Linux
-
-Docker Compose is [installed separately](https://docs.docker.com/compose/install/) using the command:
-
-```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/<VERSION>/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-where `<VERSION>` is the [latest release number](https://github.com/docker/compose/releases), e.g. `1.27.4`.
 
 
 ## Install Docker on macOS
@@ -104,18 +94,16 @@ Docker Desktop for Windows requires either [WSL2](#windows-subsystem-for-linux-(
 
 ### Windows Subsystem for Linux (WSL) 2
 
-WSL allows you to run full Linux environments directly on Windows 10.
+WSL allows you to run full Linux environments directly on Windows 10 or Windows 11.
 
 > IMPORTANT!
 > You can **not** install the Linux edition of Docker within a WSL-powered Linux distro. You must [install Docker Desktop for Windows](#install-docker-desktop-for-windows) which allows Docker commands to be run in all Windows and Linux terminals.
 
-[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) is the [recommended default option](https://docs.docker.com/docker-for-windows/wsl/) for Docker on Windows. It is faster than [Hyper-V](#hyper-v) and available in all editions of Windows from the May 2020 update (version 2004, OS build 19041).
+[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) is the [recommended default option](https://docs.docker.com/docker-for-windows/wsl/) for Docker on Windows. It is faster than [Hyper-V](#hyper-v) and available in all editions of Windows 11 and Windows 10 from the May 2020 update (version 2004, OS build 19041).
 
 <aside>
 
-Windows 10 S is not supported but you can normally upgrade to Home in the Settings.
-
-You may be able to trigger the 2004 update: click **Check for updates** in the **Update & Security** panel of **Settings**. If your PC reports that 2004 is not yet available, you must either wait until Microsoft releases a fix for your device or use [Hyper-V](#hyper-v) and switch to WSL2 later.
+Docker cannot be installed on Windows S but you can normally switch to Windows Home at no additional cost in the Settings.
 
 </aside>
 
@@ -165,7 +153,7 @@ More information about installing and using WSL2:
 
 ### Hyper-V
 
-The Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/) hypervisor is provided free with Windows 10 Professional and Enterprise. *(Windows Home users must use [WSL2](#windows-subsystem-for-linux-(wsl)-2).)*
+The Microsoft [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/) hypervisor is provided free with Windows 10 and 11 Professional and Enterprise. *(Windows Home users must use [WSL2](#windows-subsystem-for-linux-(wsl)-2).)*
 
 To install Hyper-V:
 
@@ -186,7 +174,7 @@ You can now install Docker Desktop.
 
 ### Install Docker Desktop for Windows
 
-[Docker Desktop for Windows 10](https://docs.docker.com/docker-for-windows/install/) can be downloaded from Docker Hub. The installer includes the Docker server, CLI, Docker Compose, Docker Swarm, and Kubernetes.
+[Docker Desktop for Windows 10 and 11](https://docs.docker.com/docker-for-windows/install/) can be downloaded from Docker Hub. The installer includes the Docker server, CLI, Docker Compose, Docker Swarm, and Kubernetes.
 
 Two editions are available: **stable** and **edge** with experimental features. The **stable** version is best for most developers.
 
