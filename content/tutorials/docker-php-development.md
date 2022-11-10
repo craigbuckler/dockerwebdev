@@ -3,7 +3,7 @@ title: Setup an Apache, PHP, and HTTPS development environment with Docker
 description: Quickly create a robust PHP project development environment on your local machine with Apache and locally-trusted HTTPS certificates.
 keywords: apache, php, ssl, https, server
 shareimage: docker-apache-php-https.png
-date: 2021-03-12
+date: 2022-11-09
 tags:
   - apache
   - php
